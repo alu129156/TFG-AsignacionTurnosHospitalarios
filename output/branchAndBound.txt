@@ -1,0 +1,269 @@
+RESULTADOS EJECUCIONES BRANCH AND BOUND 
+INPUT: [Enfermeras=7, DIAS=2, DEMANDA=2, LS=1, US=1] 
+INPUT: [Enfermeras=7, DIAS=2, DEMANDA=2, LS=2, US=2] 
+{
+	FO Minima: 0,
+	Iteraciones: 54,
+	Tiempo de exec: 0.0001547 segundos,
+	Horario optimo:
+	{
+		Dia 1:
+		{
+			Early: {e_1, e_2},
+			Day: {e_3, e_4},
+			Late: {e_5, e_6},
+		},
+		Dia 2:
+		{
+			Early: {e_1, e_2},
+			Day: {e_3, e_4},
+			Late: {e_5, e_6},
+		},
+	}
+}
+
+INPUT: [Enfermeras=10, DIAS=2, DEMANDA=3, LS=1, US=1] 
+INPUT: [Enfermeras=10, DIAS=2, DEMANDA=3, LS=2, US=2] 
+{
+	FO Minima: 0,
+	Iteraciones: 108,
+	Tiempo de exec: 0.0001585 segundos,
+	Horario optimo:
+	{
+		Dia 1:
+		{
+			Early: {e_1, e_2, e_3},
+			Day: {e_4, e_5, e_6},
+			Late: {e_7, e_8, e_9},
+		},
+		Dia 2:
+		{
+			Early: {e_1, e_2, e_3},
+			Day: {e_4, e_5, e_6},
+			Late: {e_7, e_8, e_9},
+		},
+	}
+}
+
+INPUT: [Enfermeras=7, DIAS=3, DEMANDA=2, LS=1, US=2] 
+INPUT: [Enfermeras=7, DIAS=3, DEMANDA=2, LS=2, US=2] 
+INPUT: [Enfermeras=7, DIAS=3, DEMANDA=2, LS=3, US=3] 
+{
+	FO Minima: 0,
+	Iteraciones: 81,
+	Tiempo de exec: 0.0001073 segundos,
+	Horario optimo:
+	{
+		Dia 1:
+		{
+			Early: {e_1, e_2},
+			Day: {e_3, e_4},
+			Late: {e_5, e_6},
+		},
+		Dia 2:
+		{
+			Early: {e_1, e_2},
+			Day: {e_3, e_4},
+			Late: {e_5, e_6},
+		},
+		Dia 3:
+		{
+			Early: {e_1, e_2},
+			Day: {e_3, e_4},
+			Late: {e_5, e_6},
+		},
+	}
+}
+
+INPUT: [Enfermeras=10, DIAS=3, DEMANDA=3, LS=1, US=2] 
+INPUT: [Enfermeras=10, DIAS=3, DEMANDA=3, LS=2, US=2] 
+INPUT: [Enfermeras=10, DIAS=3, DEMANDA=3, LS=3, US=3] 
+{
+	FO Minima: 0,
+	Iteraciones: 162,
+	Tiempo de exec: 0.00021 segundos,
+	Horario optimo:
+	{
+		Dia 1:
+		{
+			Early: {e_1, e_2, e_3},
+			Day: {e_4, e_5, e_6},
+			Late: {e_7, e_8, e_9},
+		},
+		Dia 2:
+		{
+			Early: {e_1, e_2, e_3},
+			Day: {e_4, e_5, e_6},
+			Late: {e_7, e_8, e_9},
+		},
+		Dia 3:
+		{
+			Early: {e_1, e_2, e_3},
+			Day: {e_4, e_5, e_6},
+			Late: {e_7, e_8, e_9},
+		},
+	}
+}
+
+INPUT: [Enfermeras=7, DIAS=4, DEMANDA=2, LS=1, US=1] 
+INPUT: [Enfermeras=7, DIAS=4, DEMANDA=2, LS=2, US=2] 
+INPUT: [Enfermeras=7, DIAS=4, DEMANDA=2, LS=3, US=3] 
+INPUT: [Enfermeras=7, DIAS=4, DEMANDA=2, LS=4, US=4] 
+{
+	FO Minima: 0,
+	Iteraciones: 108,
+	Tiempo de exec: 0.0001421 segundos,
+	Horario optimo:
+	{
+		Dia 1:
+		{
+			Early: {e_1, e_2},
+			Day: {e_3, e_4},
+			Late: {e_5, e_6},
+		},
+		Dia 2:
+		{
+			Early: {e_1, e_2},
+			Day: {e_3, e_4},
+			Late: {e_5, e_6},
+		},
+		Dia 3:
+		{
+			Early: {e_1, e_2},
+			Day: {e_3, e_4},
+			Late: {e_5, e_6},
+		},
+		Dia 4:
+		{
+			Early: {e_1, e_2},
+			Day: {e_3, e_4},
+			Late: {e_5, e_6},
+		},
+	}
+}
+
+INPUT: [Enfermeras=10, DIAS=4, DEMANDA=3, LS=1, US=3] 
+INPUT: [Enfermeras=10, DIAS=4, DEMANDA=3, LS=2, US=3] 
+INPUT: [Enfermeras=10, DIAS=4, DEMANDA=3, LS=3, US=3] 
+INPUT: [Enfermeras=10, DIAS=4, DEMANDA=3, LS=4, US=4] 
+{
+	FO Minima: 0,
+	Iteraciones: 216,
+	Tiempo de exec: 0.0002894 segundos,
+	Horario optimo:
+	{
+		Dia 1:
+		{
+			Early: {e_1, e_2, e_3},
+			Day: {e_4, e_5, e_6},
+			Late: {e_7, e_8, e_9},
+		},
+		Dia 2:
+		{
+			Early: {e_1, e_2, e_3},
+			Day: {e_4, e_5, e_6},
+			Late: {e_7, e_8, e_9},
+		},
+		Dia 3:
+		{
+			Early: {e_1, e_2, e_3},
+			Day: {e_4, e_5, e_6},
+			Late: {e_7, e_8, e_9},
+		},
+		Dia 4:
+		{
+			Early: {e_1, e_2, e_3},
+			Day: {e_4, e_5, e_6},
+			Late: {e_7, e_8, e_9},
+		},
+	}
+}
+
+INPUT: [Enfermeras=7, DIAS=5, DEMANDA=2, LS=1, US=3] 
+INPUT: [Enfermeras=7, DIAS=5, DEMANDA=2, LS=2, US=2] 
+INPUT: [Enfermeras=7, DIAS=5, DEMANDA=2, LS=3, US=4] 
+INPUT: [Enfermeras=7, DIAS=5, DEMANDA=2, LS=4, US=4] 
+INPUT: [Enfermeras=7, DIAS=5, DEMANDA=2, LS=5, US=5] 
+{
+	FO Minima: 0,
+	Iteraciones: 135,
+	Tiempo de exec: 0.0002055 segundos,
+	Horario optimo:
+	{
+		Dia 1:
+		{
+			Early: {e_1, e_2},
+			Day: {e_3, e_4},
+			Late: {e_5, e_6},
+		},
+		Dia 2:
+		{
+			Early: {e_1, e_2},
+			Day: {e_3, e_4},
+			Late: {e_5, e_6},
+		},
+		Dia 3:
+		{
+			Early: {e_1, e_2},
+			Day: {e_3, e_4},
+			Late: {e_5, e_6},
+		},
+		Dia 4:
+		{
+			Early: {e_1, e_2},
+			Day: {e_3, e_4},
+			Late: {e_5, e_6},
+		},
+		Dia 5:
+		{
+			Early: {e_1, e_2},
+			Day: {e_3, e_4},
+			Late: {e_5, e_6},
+		},
+	}
+}
+
+INPUT: [Enfermeras=10, DIAS=5, DEMANDA=3, LS=1, US=3] 
+INPUT: [Enfermeras=10, DIAS=5, DEMANDA=3, LS=2, US=4] 
+INPUT: [Enfermeras=10, DIAS=5, DEMANDA=3, LS=3, US=4] 
+INPUT: [Enfermeras=10, DIAS=5, DEMANDA=3, LS=4, US=4] 
+INPUT: [Enfermeras=10, DIAS=5, DEMANDA=3, LS=5, US=5] 
+{
+	FO Minima: 0,
+	Iteraciones: 270,
+	Tiempo de exec: 0.0003847 segundos,
+	Horario optimo:
+	{
+		Dia 1:
+		{
+			Early: {e_1, e_2, e_3},
+			Day: {e_4, e_5, e_6},
+			Late: {e_7, e_8, e_9},
+		},
+		Dia 2:
+		{
+			Early: {e_1, e_2, e_3},
+			Day: {e_4, e_5, e_6},
+			Late: {e_7, e_8, e_9},
+		},
+		Dia 3:
+		{
+			Early: {e_1, e_2, e_3},
+			Day: {e_4, e_5, e_6},
+			Late: {e_7, e_8, e_9},
+		},
+		Dia 4:
+		{
+			Early: {e_1, e_2, e_3},
+			Day: {e_4, e_5, e_6},
+			Late: {e_7, e_8, e_9},
+		},
+		Dia 5:
+		{
+			Early: {e_1, e_2, e_3},
+			Day: {e_4, e_5, e_6},
+			Late: {e_7, e_8, e_9},
+		},
+	}
+}
+
