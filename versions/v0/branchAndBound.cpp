@@ -9,6 +9,7 @@
 
 // #define DIAS 4
 // #define DEMANDA 3
+# define LIMITE_TIEMPO 420
 #define ULTIMO_TURNO 2
 // #define LIMITE_INFERIOR 5
 // #define LIMITE_SUPERIOR 5
@@ -54,6 +55,15 @@ struct SolucionFinal {
     double funcionObjetivo;
     vector<vector<Empleado>> solucion;
 };
+
+void verifyTime(const chrono::time_point<chrono::high_resolution_clock>& startTime) {
+    auto now = chrono::high_resolution_clock::now();
+    double elapsed = chrono::duration<double>(now - startTime).count();
+    if (elapsed > LIMITE_TIEMPO) {
+        cout << "{\n\terror: Tiempo excedido\n}\n\n";
+        exit(1);
+    }
+}
 
 double calcularFuncionObjetivo(const vector<vector<Empleado>>& solucion, int LS, int US, double w1, double w2) {
     double fo = 0.0;
@@ -109,10 +119,13 @@ void explorarArbol(
     vector<vector<Empleado>>& posibleSolucion,
     unordered_map<string, int>& empleadoAsignaciones,
     unordered_map<string, bool> empleadoTurnoEnDia,
-    int actualDemanda, SolucionFinal& mejorSolucion
+    int actualDemanda, SolucionFinal& mejorSolucion,
+    const chrono::time_point<chrono::high_resolution_clock>& startTime
 ) {
 
     for (int i = 0; i < restEmployees.size(); i++) {
+        verifyTime(startTime);
+
         it++;
         Empleado e = restEmployees[i];
         bool turnoEnDiaPrevio = empleadoTurnoEnDia[e.nombre];
@@ -145,17 +158,17 @@ void explorarArbol(
                 empleadoTurnoEnDia[empleado.nombre] = false;
             }
             explorarArbol(dia + 1, 0, employees, restEmployeesNext, posibleSolucion,
-             empleadoAsignaciones, empleadoTurnoEnDia, 0, mejorSolucion);
+             empleadoAsignaciones, empleadoTurnoEnDia, 0, mejorSolucion, startTime);
 
             // Restaurar estado para el backtracking
             empleadoTurnoEnDia = empleadosTurnosEnDiaPrevio;
         } else { // turno < 2
             if (actualDemanda == DEMANDA - 1) { // Cambio de turno
                 explorarArbol(dia, turno + 1, employees, restEmployees, posibleSolucion,
-                 empleadoAsignaciones, empleadoTurnoEnDia, 0, mejorSolucion);
+                 empleadoAsignaciones, empleadoTurnoEnDia, 0, mejorSolucion, startTime);
             } else { // Mismo turno, actualizando la demanda
                 explorarArbol(dia, turno, employees, restEmployees, posibleSolucion, empleadoAsignaciones,
-                 empleadoTurnoEnDia, actualDemanda + 1, mejorSolucion);
+                 empleadoTurnoEnDia, actualDemanda + 1, mejorSolucion, startTime);
             }
         }
 
@@ -199,7 +212,8 @@ int main(int argc, char* argv[]) {
 
     SolucionFinal mejorSolucion = {INFINITY, {}};
     auto start = chrono::high_resolution_clock::now();
-    explorarArbol(0, 0, empleados, restEmployees, posibleSolucion, empleadoAsignaciones, empleadoTurnoEnDia, 0, mejorSolucion);
+    explorarArbol(0, 0, empleados, restEmployees, posibleSolucion, empleadoAsignaciones,
+                     empleadoTurnoEnDia, 0, mejorSolucion, start);
     auto end = chrono::high_resolution_clock::now();
     chrono::duration<double> duration = end - start;
     cout << "{" << endl;
