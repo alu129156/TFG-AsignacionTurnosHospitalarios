@@ -1,0 +1,1051 @@
+[ 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 7,
+			"dias": 2,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 1,
+			"limite_superior_asignaciones": 1
+		},
+		"FO": 50,
+		"nodos_explorados": 36392421,
+		"tiempo_de_exec_segundos": 84.3421,
+		"horario_optimo":
+		{
+			"dia_1":
+			{
+				"Early": ["e_1", "e_2"],
+				"Day": ["e_3", "e_4"],
+				"Late": ["e_5", "e_6"]
+			},
+			"dia_2":
+			{
+				"Early": ["e_1", "e_2"],
+				"Day": ["e_3", "e_4"],
+				"Late": ["e_5", "e_7"]
+			}
+		}
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 7,
+			"dias": 2,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 2,
+			"limite_superior_asignaciones": 2
+		},
+		"FO": 0,
+		"nodos_explorados": 54,
+		"tiempo_de_exec_segundos": 6.9e-05,
+		"horario_optimo":
+		{
+			"dia_1":
+			{
+				"Early": ["e_1", "e_2"],
+				"Day": ["e_3", "e_4"],
+				"Late": ["e_5", "e_6"]
+			},
+			"dia_2":
+			{
+				"Early": ["e_1", "e_2"],
+				"Day": ["e_3", "e_4"],
+				"Late": ["e_5", "e_6"]
+			}
+		}
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 7,
+			"dias": 2,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 3,
+			"limite_superior_asignaciones": 3
+		},
+		"FO": 60,
+		"nodos_explorados": 8686,
+		"tiempo_de_exec_segundos": 0.0094217,
+		"horario_optimo":
+		{
+			"dia_1":
+			{
+				"Early": ["e_1", "e_2"],
+				"Day": ["e_3", "e_4"],
+				"Late": ["e_5", "e_6"]
+			},
+			"dia_2":
+			{
+				"Early": ["e_1", "e_2"],
+				"Day": ["e_3", "e_4"],
+				"Late": ["e_5", "e_6"]
+			}
+		}
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 10,
+			"dias": 2,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 1,
+			"limite_superior_asignaciones": 2
+		},
+		"FO": 0,
+		"nodos_explorados": 108,
+		"tiempo_de_exec_segundos": 0.0001375,
+		"horario_optimo":
+		{
+			"dia_1":
+			{
+				"Early": ["e_1", "e_2", "e_3"],
+				"Day": ["e_4", "e_5", "e_6"],
+				"Late": ["e_7", "e_8", "e_9"]
+			},
+			"dia_2":
+			{
+				"Early": ["e_1", "e_2", "e_3"],
+				"Day": ["e_4", "e_5", "e_6"],
+				"Late": ["e_7", "e_8", "e_9"]
+			}
+		}
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 10,
+			"dias": 2,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 2,
+			"limite_superior_asignaciones": 2
+		},
+		"FO": 0,
+		"nodos_explorados": 108,
+		"tiempo_de_exec_segundos": 0.0001469,
+		"horario_optimo":
+		{
+			"dia_1":
+			{
+				"Early": ["e_1", "e_2", "e_3"],
+				"Day": ["e_4", "e_5", "e_6"],
+				"Late": ["e_7", "e_8", "e_9"]
+			},
+			"dia_2":
+			{
+				"Early": ["e_1", "e_2", "e_3"],
+				"Day": ["e_4", "e_5", "e_6"],
+				"Late": ["e_7", "e_8", "e_9"]
+			}
+		}
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 10,
+			"dias": 2,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 3,
+			"limite_superior_asignaciones": 3
+		},
+		"FO": 90,
+		"nodos_explorados": 6235354,
+		"tiempo_de_exec_segundos": 12.9282,
+		"horario_optimo":
+		{
+			"dia_1":
+			{
+				"Early": ["e_1", "e_2", "e_3"],
+				"Day": ["e_4", "e_5", "e_6"],
+				"Late": ["e_7", "e_8", "e_9"]
+			},
+			"dia_2":
+			{
+				"Early": ["e_1", "e_2", "e_3"],
+				"Day": ["e_4", "e_5", "e_6"],
+				"Late": ["e_7", "e_8", "e_9"]
+			}
+		}
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 7,
+			"dias": 3,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 1,
+			"limite_superior_asignaciones": 1
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 7,
+			"dias": 3,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 2,
+			"limite_superior_asignaciones": 3
+		},
+		"FO": 0,
+		"nodos_explorados": 81,
+		"tiempo_de_exec_segundos": 0.0001126,
+		"horario_optimo":
+		{
+			"dia_1":
+			{
+				"Early": ["e_1", "e_2"],
+				"Day": ["e_3", "e_4"],
+				"Late": ["e_5", "e_6"]
+			},
+			"dia_2":
+			{
+				"Early": ["e_1", "e_2"],
+				"Day": ["e_3", "e_4"],
+				"Late": ["e_5", "e_6"]
+			},
+			"dia_3":
+			{
+				"Early": ["e_1", "e_2"],
+				"Day": ["e_3", "e_4"],
+				"Late": ["e_5", "e_6"]
+			}
+		}
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 7,
+			"dias": 3,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 3,
+			"limite_superior_asignaciones": 3
+		},
+		"FO": 0,
+		"nodos_explorados": 81,
+		"tiempo_de_exec_segundos": 0.0001078,
+		"horario_optimo":
+		{
+			"dia_1":
+			{
+				"Early": ["e_1", "e_2"],
+				"Day": ["e_3", "e_4"],
+				"Late": ["e_5", "e_6"]
+			},
+			"dia_2":
+			{
+				"Early": ["e_1", "e_2"],
+				"Day": ["e_3", "e_4"],
+				"Late": ["e_5", "e_6"]
+			},
+			"dia_3":
+			{
+				"Early": ["e_1", "e_2"],
+				"Day": ["e_3", "e_4"],
+				"Late": ["e_5", "e_6"]
+			}
+		}
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 7,
+			"dias": 3,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 4,
+			"limite_superior_asignaciones": 4
+		},
+		"FO": 60,
+		"nodos_explorados": 8713,
+		"tiempo_de_exec_segundos": 0.0100334,
+		"horario_optimo":
+		{
+			"dia_1":
+			{
+				"Early": ["e_1", "e_2"],
+				"Day": ["e_3", "e_4"],
+				"Late": ["e_5", "e_6"]
+			},
+			"dia_2":
+			{
+				"Early": ["e_1", "e_2"],
+				"Day": ["e_3", "e_4"],
+				"Late": ["e_5", "e_6"]
+			},
+			"dia_3":
+			{
+				"Early": ["e_1", "e_2"],
+				"Day": ["e_3", "e_4"],
+				"Late": ["e_5", "e_6"]
+			}
+		}
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 10,
+			"dias": 3,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 1,
+			"limite_superior_asignaciones": 3
+		},
+		"FO": 0,
+		"nodos_explorados": 162,
+		"tiempo_de_exec_segundos": 0.0002132,
+		"horario_optimo":
+		{
+			"dia_1":
+			{
+				"Early": ["e_1", "e_2", "e_3"],
+				"Day": ["e_4", "e_5", "e_6"],
+				"Late": ["e_7", "e_8", "e_9"]
+			},
+			"dia_2":
+			{
+				"Early": ["e_1", "e_2", "e_3"],
+				"Day": ["e_4", "e_5", "e_6"],
+				"Late": ["e_7", "e_8", "e_9"]
+			},
+			"dia_3":
+			{
+				"Early": ["e_1", "e_2", "e_3"],
+				"Day": ["e_4", "e_5", "e_6"],
+				"Late": ["e_7", "e_8", "e_9"]
+			}
+		}
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 10,
+			"dias": 3,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 2,
+			"limite_superior_asignaciones": 2
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 10,
+			"dias": 3,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 3,
+			"limite_superior_asignaciones": 3
+		},
+		"FO": 0,
+		"nodos_explorados": 162,
+		"tiempo_de_exec_segundos": 0.0003104,
+		"horario_optimo":
+		{
+			"dia_1":
+			{
+				"Early": ["e_1", "e_2", "e_3"],
+				"Day": ["e_4", "e_5", "e_6"],
+				"Late": ["e_7", "e_8", "e_9"]
+			},
+			"dia_2":
+			{
+				"Early": ["e_1", "e_2", "e_3"],
+				"Day": ["e_4", "e_5", "e_6"],
+				"Late": ["e_7", "e_8", "e_9"]
+			},
+			"dia_3":
+			{
+				"Early": ["e_1", "e_2", "e_3"],
+				"Day": ["e_4", "e_5", "e_6"],
+				"Late": ["e_7", "e_8", "e_9"]
+			}
+		}
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 10,
+			"dias": 3,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 4,
+			"limite_superior_asignaciones": 4
+		},
+		"FO": 90,
+		"nodos_explorados": 6235408,
+		"tiempo_de_exec_segundos": 11.3174,
+		"horario_optimo":
+		{
+			"dia_1":
+			{
+				"Early": ["e_1", "e_2", "e_3"],
+				"Day": ["e_4", "e_5", "e_6"],
+				"Late": ["e_7", "e_8", "e_9"]
+			},
+			"dia_2":
+			{
+				"Early": ["e_1", "e_2", "e_3"],
+				"Day": ["e_4", "e_5", "e_6"],
+				"Late": ["e_7", "e_8", "e_9"]
+			},
+			"dia_3":
+			{
+				"Early": ["e_1", "e_2", "e_3"],
+				"Day": ["e_4", "e_5", "e_6"],
+				"Late": ["e_7", "e_8", "e_9"]
+			}
+		}
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 7,
+			"dias": 4,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 1,
+			"limite_superior_asignaciones": 4
+		},
+		"FO": 0,
+		"nodos_explorados": 108,
+		"tiempo_de_exec_segundos": 0.0003247,
+		"horario_optimo":
+		{
+			"dia_1":
+			{
+				"Early": ["e_1", "e_2"],
+				"Day": ["e_3", "e_4"],
+				"Late": ["e_5", "e_6"]
+			},
+			"dia_2":
+			{
+				"Early": ["e_1", "e_2"],
+				"Day": ["e_3", "e_4"],
+				"Late": ["e_5", "e_6"]
+			},
+			"dia_3":
+			{
+				"Early": ["e_1", "e_2"],
+				"Day": ["e_3", "e_4"],
+				"Late": ["e_5", "e_6"]
+			},
+			"dia_4":
+			{
+				"Early": ["e_1", "e_2"],
+				"Day": ["e_3", "e_4"],
+				"Late": ["e_5", "e_6"]
+			}
+		}
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 7,
+			"dias": 4,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 2,
+			"limite_superior_asignaciones": 2
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 7,
+			"dias": 4,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 3,
+			"limite_superior_asignaciones": 4
+		},
+		"FO": 0,
+		"nodos_explorados": 108,
+		"tiempo_de_exec_segundos": 0.0001642,
+		"horario_optimo":
+		{
+			"dia_1":
+			{
+				"Early": ["e_1", "e_2"],
+				"Day": ["e_3", "e_4"],
+				"Late": ["e_5", "e_6"]
+			},
+			"dia_2":
+			{
+				"Early": ["e_1", "e_2"],
+				"Day": ["e_3", "e_4"],
+				"Late": ["e_5", "e_6"]
+			},
+			"dia_3":
+			{
+				"Early": ["e_1", "e_2"],
+				"Day": ["e_3", "e_4"],
+				"Late": ["e_5", "e_6"]
+			},
+			"dia_4":
+			{
+				"Early": ["e_1", "e_2"],
+				"Day": ["e_3", "e_4"],
+				"Late": ["e_5", "e_6"]
+			}
+		}
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 7,
+			"dias": 4,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 4,
+			"limite_superior_asignaciones": 4
+		},
+		"FO": 0,
+		"nodos_explorados": 108,
+		"tiempo_de_exec_segundos": 0.0003603,
+		"horario_optimo":
+		{
+			"dia_1":
+			{
+				"Early": ["e_1", "e_2"],
+				"Day": ["e_3", "e_4"],
+				"Late": ["e_5", "e_6"]
+			},
+			"dia_2":
+			{
+				"Early": ["e_1", "e_2"],
+				"Day": ["e_3", "e_4"],
+				"Late": ["e_5", "e_6"]
+			},
+			"dia_3":
+			{
+				"Early": ["e_1", "e_2"],
+				"Day": ["e_3", "e_4"],
+				"Late": ["e_5", "e_6"]
+			},
+			"dia_4":
+			{
+				"Early": ["e_1", "e_2"],
+				"Day": ["e_3", "e_4"],
+				"Late": ["e_5", "e_6"]
+			}
+		}
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 7,
+			"dias": 4,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 5,
+			"limite_superior_asignaciones": 5
+		},
+		"FO": 60,
+		"nodos_explorados": 8740,
+		"tiempo_de_exec_segundos": 0.0127077,
+		"horario_optimo":
+		{
+			"dia_1":
+			{
+				"Early": ["e_1", "e_2"],
+				"Day": ["e_3", "e_4"],
+				"Late": ["e_5", "e_6"]
+			},
+			"dia_2":
+			{
+				"Early": ["e_1", "e_2"],
+				"Day": ["e_3", "e_4"],
+				"Late": ["e_5", "e_6"]
+			},
+			"dia_3":
+			{
+				"Early": ["e_1", "e_2"],
+				"Day": ["e_3", "e_4"],
+				"Late": ["e_5", "e_6"]
+			},
+			"dia_4":
+			{
+				"Early": ["e_1", "e_2"],
+				"Day": ["e_3", "e_4"],
+				"Late": ["e_5", "e_6"]
+			}
+		}
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 10,
+			"dias": 4,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 1,
+			"limite_superior_asignaciones": 3
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 10,
+			"dias": 4,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 2,
+			"limite_superior_asignaciones": 2
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 10,
+			"dias": 4,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 3,
+			"limite_superior_asignaciones": 4
+		},
+		"FO": 0,
+		"nodos_explorados": 216,
+		"tiempo_de_exec_segundos": 0.0003337,
+		"horario_optimo":
+		{
+			"dia_1":
+			{
+				"Early": ["e_1", "e_2", "e_3"],
+				"Day": ["e_4", "e_5", "e_6"],
+				"Late": ["e_7", "e_8", "e_9"]
+			},
+			"dia_2":
+			{
+				"Early": ["e_1", "e_2", "e_3"],
+				"Day": ["e_4", "e_5", "e_6"],
+				"Late": ["e_7", "e_8", "e_9"]
+			},
+			"dia_3":
+			{
+				"Early": ["e_1", "e_2", "e_3"],
+				"Day": ["e_4", "e_5", "e_6"],
+				"Late": ["e_7", "e_8", "e_9"]
+			},
+			"dia_4":
+			{
+				"Early": ["e_1", "e_2", "e_3"],
+				"Day": ["e_4", "e_5", "e_6"],
+				"Late": ["e_7", "e_8", "e_9"]
+			}
+		}
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 10,
+			"dias": 4,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 4,
+			"limite_superior_asignaciones": 4
+		},
+		"FO": 0,
+		"nodos_explorados": 216,
+		"tiempo_de_exec_segundos": 0.0004985,
+		"horario_optimo":
+		{
+			"dia_1":
+			{
+				"Early": ["e_1", "e_2", "e_3"],
+				"Day": ["e_4", "e_5", "e_6"],
+				"Late": ["e_7", "e_8", "e_9"]
+			},
+			"dia_2":
+			{
+				"Early": ["e_1", "e_2", "e_3"],
+				"Day": ["e_4", "e_5", "e_6"],
+				"Late": ["e_7", "e_8", "e_9"]
+			},
+			"dia_3":
+			{
+				"Early": ["e_1", "e_2", "e_3"],
+				"Day": ["e_4", "e_5", "e_6"],
+				"Late": ["e_7", "e_8", "e_9"]
+			},
+			"dia_4":
+			{
+				"Early": ["e_1", "e_2", "e_3"],
+				"Day": ["e_4", "e_5", "e_6"],
+				"Late": ["e_7", "e_8", "e_9"]
+			}
+		}
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 10,
+			"dias": 4,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 5,
+			"limite_superior_asignaciones": 5
+		},
+		"FO": 90,
+		"nodos_explorados": 6235462,
+		"tiempo_de_exec_segundos": 11.1634,
+		"horario_optimo":
+		{
+			"dia_1":
+			{
+				"Early": ["e_1", "e_2", "e_3"],
+				"Day": ["e_4", "e_5", "e_6"],
+				"Late": ["e_7", "e_8", "e_9"]
+			},
+			"dia_2":
+			{
+				"Early": ["e_1", "e_2", "e_3"],
+				"Day": ["e_4", "e_5", "e_6"],
+				"Late": ["e_7", "e_8", "e_9"]
+			},
+			"dia_3":
+			{
+				"Early": ["e_1", "e_2", "e_3"],
+				"Day": ["e_4", "e_5", "e_6"],
+				"Late": ["e_7", "e_8", "e_9"]
+			},
+			"dia_4":
+			{
+				"Early": ["e_1", "e_2", "e_3"],
+				"Day": ["e_4", "e_5", "e_6"],
+				"Late": ["e_7", "e_8", "e_9"]
+			}
+		}
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 7,
+			"dias": 5,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 1,
+			"limite_superior_asignaciones": 5
+		},
+		"FO": 0,
+		"nodos_explorados": 135,
+		"tiempo_de_exec_segundos": 0.0002046,
+		"horario_optimo":
+		{
+			"dia_1":
+			{
+				"Early": ["e_1", "e_2"],
+				"Day": ["e_3", "e_4"],
+				"Late": ["e_5", "e_6"]
+			},
+			"dia_2":
+			{
+				"Early": ["e_1", "e_2"],
+				"Day": ["e_3", "e_4"],
+				"Late": ["e_5", "e_6"]
+			},
+			"dia_3":
+			{
+				"Early": ["e_1", "e_2"],
+				"Day": ["e_3", "e_4"],
+				"Late": ["e_5", "e_6"]
+			},
+			"dia_4":
+			{
+				"Early": ["e_1", "e_2"],
+				"Day": ["e_3", "e_4"],
+				"Late": ["e_5", "e_6"]
+			},
+			"dia_5":
+			{
+				"Early": ["e_1", "e_2"],
+				"Day": ["e_3", "e_4"],
+				"Late": ["e_5", "e_6"]
+			}
+		}
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 7,
+			"dias": 5,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 2,
+			"limite_superior_asignaciones": 2
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 7,
+			"dias": 5,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 3,
+			"limite_superior_asignaciones": 3
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 7,
+			"dias": 5,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 4,
+			"limite_superior_asignaciones": 4
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 7,
+			"dias": 5,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 5,
+			"limite_superior_asignaciones": 5
+		},
+		"FO": 0,
+		"nodos_explorados": 135,
+		"tiempo_de_exec_segundos": 0.0002389,
+		"horario_optimo":
+		{
+			"dia_1":
+			{
+				"Early": ["e_1", "e_2"],
+				"Day": ["e_3", "e_4"],
+				"Late": ["e_5", "e_6"]
+			},
+			"dia_2":
+			{
+				"Early": ["e_1", "e_2"],
+				"Day": ["e_3", "e_4"],
+				"Late": ["e_5", "e_6"]
+			},
+			"dia_3":
+			{
+				"Early": ["e_1", "e_2"],
+				"Day": ["e_3", "e_4"],
+				"Late": ["e_5", "e_6"]
+			},
+			"dia_4":
+			{
+				"Early": ["e_1", "e_2"],
+				"Day": ["e_3", "e_4"],
+				"Late": ["e_5", "e_6"]
+			},
+			"dia_5":
+			{
+				"Early": ["e_1", "e_2"],
+				"Day": ["e_3", "e_4"],
+				"Late": ["e_5", "e_6"]
+			}
+		}
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 7,
+			"dias": 5,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 6,
+			"limite_superior_asignaciones": 6
+		},
+		"FO": 60,
+		"nodos_explorados": 8767,
+		"tiempo_de_exec_segundos": 0.0128698,
+		"horario_optimo":
+		{
+			"dia_1":
+			{
+				"Early": ["e_1", "e_2"],
+				"Day": ["e_3", "e_4"],
+				"Late": ["e_5", "e_6"]
+			},
+			"dia_2":
+			{
+				"Early": ["e_1", "e_2"],
+				"Day": ["e_3", "e_4"],
+				"Late": ["e_5", "e_6"]
+			},
+			"dia_3":
+			{
+				"Early": ["e_1", "e_2"],
+				"Day": ["e_3", "e_4"],
+				"Late": ["e_5", "e_6"]
+			},
+			"dia_4":
+			{
+				"Early": ["e_1", "e_2"],
+				"Day": ["e_3", "e_4"],
+				"Late": ["e_5", "e_6"]
+			},
+			"dia_5":
+			{
+				"Early": ["e_1", "e_2"],
+				"Day": ["e_3", "e_4"],
+				"Late": ["e_5", "e_6"]
+			}
+		}
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 10,
+			"dias": 5,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 1,
+			"limite_superior_asignaciones": 5
+		},
+		"FO": 0,
+		"nodos_explorados": 270,
+		"tiempo_de_exec_segundos": 0.0004047,
+		"horario_optimo":
+		{
+			"dia_1":
+			{
+				"Early": ["e_1", "e_2", "e_3"],
+				"Day": ["e_4", "e_5", "e_6"],
+				"Late": ["e_7", "e_8", "e_9"]
+			},
+			"dia_2":
+			{
+				"Early": ["e_1", "e_2", "e_3"],
+				"Day": ["e_4", "e_5", "e_6"],
+				"Late": ["e_7", "e_8", "e_9"]
+			},
+			"dia_3":
+			{
+				"Early": ["e_1", "e_2", "e_3"],
+				"Day": ["e_4", "e_5", "e_6"],
+				"Late": ["e_7", "e_8", "e_9"]
+			},
+			"dia_4":
+			{
+				"Early": ["e_1", "e_2", "e_3"],
+				"Day": ["e_4", "e_5", "e_6"],
+				"Late": ["e_7", "e_8", "e_9"]
+			},
+			"dia_5":
+			{
+				"Early": ["e_1", "e_2", "e_3"],
+				"Day": ["e_4", "e_5", "e_6"],
+				"Late": ["e_7", "e_8", "e_9"]
+			}
+		}
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 10,
+			"dias": 5,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 2,
+			"limite_superior_asignaciones": 2
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 10,
+			"dias": 5,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 3,
+			"limite_superior_asignaciones": 3
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 10,
+			"dias": 5,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 4,
+			"limite_superior_asignaciones": 4
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 10,
+			"dias": 5,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 5,
+			"limite_superior_asignaciones": 5
+		},
+		"FO": 0,
+		"nodos_explorados": 270,
+		"tiempo_de_exec_segundos": 0.0006087,
+		"horario_optimo":
+		{
+			"dia_1":
+			{
+				"Early": ["e_1", "e_2", "e_3"],
+				"Day": ["e_4", "e_5", "e_6"],
+				"Late": ["e_7", "e_8", "e_9"]
+			},
+			"dia_2":
+			{
+				"Early": ["e_1", "e_2", "e_3"],
+				"Day": ["e_4", "e_5", "e_6"],
+				"Late": ["e_7", "e_8", "e_9"]
+			},
+			"dia_3":
+			{
+				"Early": ["e_1", "e_2", "e_3"],
+				"Day": ["e_4", "e_5", "e_6"],
+				"Late": ["e_7", "e_8", "e_9"]
+			},
+			"dia_4":
+			{
+				"Early": ["e_1", "e_2", "e_3"],
+				"Day": ["e_4", "e_5", "e_6"],
+				"Late": ["e_7", "e_8", "e_9"]
+			},
+			"dia_5":
+			{
+				"Early": ["e_1", "e_2", "e_3"],
+				"Day": ["e_4", "e_5", "e_6"],
+				"Late": ["e_7", "e_8", "e_9"]
+			}
+		}
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 10,
+			"dias": 5,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 6,
+			"limite_superior_asignaciones": 6
+		},
+		"FO": 90,
+		"nodos_explorados": 6235516,
+		"tiempo_de_exec_segundos": 11.4709,
+		"horario_optimo":
+		{
+			"dia_1":
+			{
+				"Early": ["e_1", "e_2", "e_3"],
+				"Day": ["e_4", "e_5", "e_6"],
+				"Late": ["e_7", "e_8", "e_9"]
+			},
+			"dia_2":
+			{
+				"Early": ["e_1", "e_2", "e_3"],
+				"Day": ["e_4", "e_5", "e_6"],
+				"Late": ["e_7", "e_8", "e_9"]
+			},
+			"dia_3":
+			{
+				"Early": ["e_1", "e_2", "e_3"],
+				"Day": ["e_4", "e_5", "e_6"],
+				"Late": ["e_7", "e_8", "e_9"]
+			},
+			"dia_4":
+			{
+				"Early": ["e_1", "e_2", "e_3"],
+				"Day": ["e_4", "e_5", "e_6"],
+				"Late": ["e_7", "e_8", "e_9"]
+			},
+			"dia_5":
+			{
+				"Early": ["e_1", "e_2", "e_3"],
+				"Day": ["e_4", "e_5", "e_6"],
+				"Late": ["e_7", "e_8", "e_9"]
+			}
+		}
+	} 
+] 
