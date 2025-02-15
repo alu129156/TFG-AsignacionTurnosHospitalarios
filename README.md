@@ -30,9 +30,13 @@
 
 ## 💪🏼Ejecución de una versión
 
-1. Accede a la carpeta scripts y ejecuta el .bat que desees:
+1. Accede a la carpeta scripts y después a la versión que deseas ejecutar:
     ```sh
     cd scripts\v_{idVersion}
-    .\NombreScript.bat
     ```
+2. Ejecuta este script concreto:
+    ```sh
+    .\run_all_experiments.bat
+    ```
+    Se encarga de ejecutar todas las comparaciones de algoritmos de la versión elegida.
 > Nota: En versiones posteriores, se agregarán scripts en bash para macOS.
