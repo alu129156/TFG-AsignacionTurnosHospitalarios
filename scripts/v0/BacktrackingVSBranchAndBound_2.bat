@@ -4,10 +4,11 @@ setlocal enabledelayedexpansion
 cd ..\..\versions\v0
 
 set EXEC_DIR=..\..\executables\v0
+set OUTPUT_IMAGES_FOLDER=..\..\output\v0\Backtracking-BranchAndBound\images
 
 :: Eliminar ejecutables si existen
 if exist %EXEC_DIR%\bruteForce.exe del %EXEC_DIR%\bruteForce.exe
-if exist %EXEC_DIR%\branchAndBound.exe del %EXEC_DIR%\branchAndBound.exe
+if exist %EXEC_DIR%\branchAndBound_2.exe del %EXEC_DIR%\branchAndBound_2.exe
 
 :: Compilar algoritmos
 g++ ".\bruteForce.cpp" -o %EXEC_DIR%\bruteForce.exe
@@ -27,17 +28,22 @@ if not exist %EXEC_DIR%\bruteForce.exe (
     echo No se encontró bruteForce.exe después de la compilación.
     exit /b 1
 )
-if not exist %EXEC_DIR%\branchAndBound.exe (
-    echo No se encontró branchAndBound.exe después de la compilación.
+if not exist %EXEC_DIR%\branchAndBound_2.exe (
+    echo No se encontró branchAndBound_2.exe después de la compilación.
     exit /b 1
 )
 
 cd %EXEC_DIR%
 
+:: Crear la carpeta images vacía
+if exist %OUTPUT_IMAGES_FOLDER% (
+    rmdir /s /q %OUTPUT_IMAGES_FOLDER%
+)
+mkdir %OUTPUT_IMAGES_FOLDER%
+
 :: Archivos de salida
 set BF_OUTPUT=..\..\output\v0\Backtracking-BranchAndBound\bruteForce.json
-set BB_OUTPUT=..\..\output\\v0\Backtracking-BranchAndBound\branchAndBound.json
-
+set BB_OUTPUT=..\..\output\v0\Backtracking-BranchAndBound\branchAndBound.json
 
 echo [ >> %BB_OUTPUT%
 echo [ >> %BF_OUTPUT%
@@ -60,7 +66,6 @@ for %%D in (2 3 4 5) do (
 
             echo ------Ejecutando: Enfermeras=!numEnfermeras!, DIAS=!DIA!, DEMANDA=!M!, LS=!L!, US=!US!
 
-            :: Ejecutar branchAndBound y guardar la salida en un archivo temporal
             call .\branchAndBound.exe !numEnfermeras! !DIA! !M! !L! !US! >> %BB_OUTPUT%
             set bab_exit_code=!ERRORLEVEL!
             if !bab_exit_code! neq 0 (
@@ -98,7 +103,7 @@ cd ..\..\scripts\v0\postprocessing
 
 :: Activar el entorno virtual y ejecutar el script
 call ..\..\..\venv\Scripts\activate
-python postprocessing_script.py ..\%BF_OUTPUT% ..\%BB_OUTPUT%
+python postprocessing_script.py ..\%OUTPUT_IMAGES_FOLDER% ..\%BF_OUTPUT% ..\%BB_OUTPUT%
 deactivate
 
 echo ¡SCRIPT FINALIZADO!
