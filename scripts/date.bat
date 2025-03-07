@@ -11,6 +11,7 @@ for /f "tokens=1-2 delims=:." %%D in ("%TIME%") do (
 )
 
 set DATETIME=%YEAR%-%MONTH%-%DAY%_%HOUR%-%MINUTE%
+set DATETIME=%DATETIME: =%
 
 :: Variable de entorno
 setx DATETIME %DATETIME%

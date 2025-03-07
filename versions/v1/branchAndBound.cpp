@@ -4,6 +4,7 @@
 #include <algorithm>
 #include <cmath>
 #include <set>
+#include <stack>
 #include <unordered_map>
 #include <chrono>
 
@@ -34,6 +35,8 @@ public:
     int errorIncumpleMaxT;
     int errorIncumpleMinL;
     int errorIncumpleMaxL;
+    stack<int> restriccionesMaxT;
+    stack<int> restriccionesMaxL;
     bool noL;
     bool noT;
     Empleado(string nombre)
@@ -42,6 +45,8 @@ public:
         errorIncumpleMaxT(0),
         errorIncumpleMinL(0),
         errorIncumpleMaxL(0),
+        restriccionesMaxT(),
+        restriccionesMaxL(),
         noL(true),
         noT(true) {}
 };
@@ -104,12 +109,44 @@ int empleadoIdx(const vector<Empleado>& empleados, string empleadoNombre) {
     return -1;
 }
 
+double calcularCotaInf(
+    const vector<Empleado>& employees,
+    const unordered_map<string, int>& empleadoAsignaciones,
+    int dia,
+    unordered_map<string, bool>& empleadoTurnoEnDia
+) {
+    double f = 0.0;
+    for (const auto& [nombreEmpleado, asignacionesEmpleado] : empleadoAsignaciones) {
+            bool turnoEmpleadoEnDia = empleadoTurnoEnDia[nombreEmpleado];
+            double restDays = (turnoEmpleadoEnDia) ? DIAS - dia - 1 : DIAS - dia;
+
+            double ei = max(0, asignacionesEmpleado - MAX_ASIGNACIONES);
+            double ei_prime = max(0, MIN_ASIGNACIONES - asignacionesEmpleado);
+            double ki = max(0.0, ei_prime - restDays);
+
+            f += PESO_W1 * ei + PESO_W2 * ki;
+    }
+
+    for(const auto& e: employees) {
+        f += (e.errorIncumpleMinL + e.errorIncumpleMinT);
+        f += e.errorIncumpleMaxT;
+        if(!e.restriccionesMaxT.empty()) {
+            f += e.restriccionesMaxT.top();
+        }
+        f += e.errorIncumpleMaxL;
+        if(!e.restriccionesMaxL.empty()) {
+            f += e.restriccionesMaxL.top();
+        }
+    }
+    return f;
+}
+
 double calcularFuncionObjetivo(
     const vector<Empleado>& employees,
     const vector<vector<Empleado>>& solucion,
     unordered_map<string, int>& empleadoAsignaciones
 ) {
-    double fo = 0.0;
+    double fo = 0;
 
     for (const auto& empleado : empleadoAsignaciones) {
         int asignacionesEmpleado = empleado.second;
@@ -132,8 +169,12 @@ double calcularFuncionObjetivo(
 
 int explorarArbol(
     int dia, int turno, vector<Empleado>& employees, const vector<Empleado>& copyEmployees,
-    vector<Empleado> restEmployees, vector<vector<Empleado>>& posibleSolucion, 
-    SolucionFinal& mejorSolucion, int actualDemanda, unordered_map<string, int> empleadoAsignaciones,
+    vector<Empleado> restEmployees,
+    vector<vector<Empleado>>& posibleSolucion, 
+    SolucionFinal& mejorSolucion,
+    int actualDemanda,
+    unordered_map<string, int>& empleadoAsignaciones,
+    unordered_map<string, bool>& empleadoTurnoEnDia,
     unordered_map<string, int>& consecutivosT, unordered_map<string, int>& consecutivosL,
     const chrono::time_point<chrono::high_resolution_clock>& startTime
 ) {
@@ -143,9 +184,12 @@ int explorarArbol(
 
         nodos++;
         Empleado e = restEmployees[i];
+        bool turnoEnDiaPrevio = empleadoTurnoEnDia[e.nombre];
         restEmployees.erase(restEmployees.begin() + i);
         posibleSolucion[dia].push_back(e);
         empleadoAsignaciones[e.nombre]++;
+        empleadoTurnoEnDia[e.nombre] = true;
+
         int idx = empleadoIdx(employees, e.nombre);
         int prevConsecT = consecutivosT[e.nombre];
         int prevConsecL = consecutivosL[e.nombre];
@@ -172,6 +216,10 @@ int explorarArbol(
                 employees[idx].errorIncumpleMinL += MIN_DIAS_LIBRES_CONSECUTIVOS * PESO_W6;
             }
         }
+        int restriccionMaxT = max(0, consecutivosT[e.nombre] - MAX_DIAS_TRABAJADOS_CONSECUTIVOS) * PESO_W3;
+        employees[idx].restriccionesMaxT.push(restriccionMaxT);
+
+        double cotaInf_noFinalDelDia = calcularCotaInf(employees, empleadoAsignaciones, dia, empleadoTurnoEnDia);
 
         if(actualDemanda == DEMANDA - 1 && turno == ULTIMO_TURNO) {
             unordered_map<string, int> prevConsecT, prevConsecL;
@@ -208,6 +256,9 @@ int explorarArbol(
                         employees[rIdx].errorIncumpleMinT += MIN_DIAS_TRABAJADOS_CONSECUTIVOS * PESO_W4;
                     }
                 }
+
+                int restriccionMaxL = max(0, consecutivosL[rE.nombre] - MAX_DIAS_LIBRES_CONSECUTIVOS) * PESO_W5;
+                employees[rIdx].restriccionesMaxL.push(restriccionMaxL);
             }
 
             if(dia == DIAS - 1) { // HOJA: calcula FO
@@ -218,9 +269,22 @@ int explorarArbol(
                     //cout << fo << endl;
                 }
             } else { // Siguiente Dia
-                vector<Empleado> restEmployeesNext = copyEmployees;
-                nodos += explorarArbol(dia + 1, 0, employees, copyEmployees, restEmployeesNext, posibleSolucion, mejorSolucion, 0, 
-                empleadoAsignaciones, consecutivosT, consecutivosL, startTime);
+                bool poda = false;
+                double cotaInf_finalDelDia = calcularCotaInf(employees, empleadoAsignaciones, dia, empleadoTurnoEnDia);
+                if (cotaInf_finalDelDia >= mejorSolucion.funcionObjetivo) { // Poda
+                    poda = true;
+                }
+
+                if(!poda) {
+                    vector<Empleado> restEmployeesNext = copyEmployees;
+                    unordered_map<string, bool> empleadosTurnosEnDiaPrevio = empleadoTurnoEnDia;
+                    for (const auto& empleado : employees) {
+                        empleadoTurnoEnDia[empleado.nombre] = false;
+                    }
+                    nodos += explorarArbol(dia + 1, 0, employees, copyEmployees, restEmployeesNext, posibleSolucion,
+                        mejorSolucion, 0, empleadoAsignaciones, empleadoTurnoEnDia, consecutivosT, consecutivosL, startTime);
+                    empleadoTurnoEnDia = empleadosTurnosEnDiaPrevio;
+                }
             }
 
             // Restaurar estado para Backtracking
@@ -236,14 +300,18 @@ int explorarArbol(
                     employees[rIdx].errorIncumpleMaxL,
                     employees[rIdx].noL
                 ) = prevErrors[rE.nombre];
+                employees[rIdx].restriccionesMaxL.pop();
             }
+        } else if(cotaInf_noFinalDelDia >= mejorSolucion.funcionObjetivo) {
+                // Poda: No continuamos con esta rama porque la cota inferior ya es peor que la mejor FO encontrada.
+                        //cout << "(nuevo_F, dia, turno, demanda) = (" << cotaInf_noFinalDelDia <<"," << dia << "," << turno << "," << actualDemanda <<")" << endl;
         } else { // turno < 2
             if(actualDemanda == DEMANDA - 1) { // Cambio de turno
-                nodos += explorarArbol(dia, turno + 1, employees, copyEmployees, restEmployees, posibleSolucion, mejorSolucion, 0,
-                    empleadoAsignaciones, consecutivosT, consecutivosL, startTime);
+                nodos += explorarArbol(dia, turno + 1, employees, copyEmployees, restEmployees, posibleSolucion,
+                    mejorSolucion, 0, empleadoAsignaciones, empleadoTurnoEnDia, consecutivosT, consecutivosL, startTime);
             } else { // Mismo turno, actualizando la demanda
                 nodos += explorarArbol(dia, turno, employees,copyEmployees, restEmployees, posibleSolucion, mejorSolucion,
-                    actualDemanda + 1, empleadoAsignaciones, consecutivosT, consecutivosL, startTime);
+                    actualDemanda + 1, empleadoAsignaciones, empleadoTurnoEnDia, consecutivosT, consecutivosL, startTime);
             }
         }
 
@@ -251,13 +319,15 @@ int explorarArbol(
         posibleSolucion[dia].pop_back();
         restEmployees.insert(restEmployees.begin() + i, e);
         empleadoAsignaciones[e.nombre]--;
+        empleadoTurnoEnDia[e.nombre] = turnoEnDiaPrevio;
         consecutivosT[e.nombre] = prevConsecT;
         consecutivosL[e.nombre] = prevConsecL;
         employees[idx].errorIncumpleMaxL = prevErrorMaxL;
-        employees[idx].errorIncumpleMinL = prevErrorMinL;
+        employees[idx].errorIncumpleMinL = prevErrorMinL; 
         employees[idx].errorIncumpleMaxT = prevErrorMaxT;
         employees[idx].errorIncumpleMinT = prevErrorMinT;
         employees[idx].noT = prevNoT;
+        employees[idx].restriccionesMaxT.pop();
     }
     return nodos;
 }
@@ -294,17 +364,19 @@ int main(int argc, char* argv[]) {
     SolucionFinal mejorSolucion = {INFINITY, {}};
 
     unordered_map<string, int> empleadoAsignaciones;
+    unordered_map<string, bool> empleadoTurnoEnDia;
     unordered_map<string, int> consecutivosT;
     unordered_map<string, int> consecutivosL;
     for (const auto& empleado : empleados) {
         empleadoAsignaciones[empleado.nombre] = 0;
+        empleadoTurnoEnDia[empleado.nombre] = false;
         consecutivosT[empleado.nombre] = 0;
         consecutivosL[empleado.nombre] = 0;
     }
 
     auto start = chrono::high_resolution_clock::now();
     int nodosExplorados = explorarArbol(0, 0, empleados, copyEmployees, restEmployees, posibleSolucion, mejorSolucion, 0,
-        empleadoAsignaciones, consecutivosT, consecutivosL, start);
+        empleadoAsignaciones, empleadoTurnoEnDia, consecutivosT, consecutivosL, start);
 
     auto end = chrono::high_resolution_clock::now();
     chrono::duration<double> duration = end - start;
