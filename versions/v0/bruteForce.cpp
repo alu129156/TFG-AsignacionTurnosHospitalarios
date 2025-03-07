@@ -71,23 +71,19 @@ void verifyTime(const chrono::time_point<chrono::high_resolution_clock>& startTi
     }
 }
 
-double calcularFuncionObjetivo(const vector<vector<Empleado>>& solucion, int LS, int US, double w1, double w2) {
-    double fo = 0;
-    unordered_map<string, int> empleadoMap;
+double calcularFuncionObjetivo(
+    const vector<vector<Empleado>>& solucion,
+    unordered_map<string, int> empleadoAsignaciones
+) {
+    double fo = 0.0;
 
-    for (const auto& empleadosDia : solucion) {
-        for(const auto& empleado: empleadosDia) {
-            empleadoMap[empleado.nombre]++;
-        }
-    }
-
-    for (const auto& empleado : empleadoMap) {
+    for (const auto& empleado : empleadoAsignaciones) {
         int totalTurnosEmpleado = empleado.second;
-        int e1 = max(0, totalTurnosEmpleado - US);
-        double r1 = w1 * e1;
+        int e1 = max(0, totalTurnosEmpleado - LIMITE_SUPERIOR);
+        double r1 = PESO_W1 * e1;
 
-        int e2 = max(0, LS - totalTurnosEmpleado);
-        double r2 = w2 * e2;
+        int e2 = max(0, LIMITE_INFERIOR - totalTurnosEmpleado);
+        double r2 = PESO_W2 * e2;
 
         fo += (r1 + r2);
     }
@@ -97,7 +93,8 @@ double calcularFuncionObjetivo(const vector<vector<Empleado>>& solucion, int LS,
 
 int explorarArbol(int dia, int turno, const vector<Empleado>& employees, vector<Empleado> restEmployees,
                     vector<vector<Empleado>> posibleSolucion, SolucionFinal& mejorSolucion,
-                    int actualDemanda, const chrono::time_point<chrono::high_resolution_clock>& startTime) {
+                    int actualDemanda, unordered_map<string, int> empleadoAsignaciones,
+                    const chrono::time_point<chrono::high_resolution_clock>& startTime) {
     int nodos = 0;
     for(int i = 0; i < restEmployees.size(); i++) {
         verifyTime(startTime);
@@ -106,27 +103,33 @@ int explorarArbol(int dia, int turno, const vector<Empleado>& employees, vector<
         Empleado e = restEmployees[i];
         restEmployees.erase(restEmployees.begin() + i);
         posibleSolucion[dia].push_back(e);
+        empleadoAsignaciones[e.nombre]++;
 
         if(actualDemanda == DEMANDA - 1 && turno == ULTIMO_TURNO && dia == DIAS - 1) { // HOJA: calcula FO
-            double fo = calcularFuncionObjetivo(posibleSolucion, LIMITE_INFERIOR, LIMITE_SUPERIOR, PESO_W1, PESO_W2);
+            double fo = calcularFuncionObjetivo(posibleSolucion, empleadoAsignaciones);
             if (fo < mejorSolucion.funcionObjetivo) {
                 mejorSolucion.funcionObjetivo = fo;
                 mejorSolucion.solucion = posibleSolucion;
+                cout << fo << endl;
             }
         } else if(turno == ULTIMO_TURNO && actualDemanda == DEMANDA - 1) {
             vector<Empleado> restEmployeesNext = employees;
-            nodos += explorarArbol(dia + 1, 0, employees, restEmployeesNext, posibleSolucion, mejorSolucion, 0, startTime);
+            nodos += explorarArbol(dia + 1, 0, employees, restEmployeesNext, posibleSolucion, mejorSolucion,
+                 0, empleadoAsignaciones, startTime);
         } else { // turno < 2
             if(actualDemanda == DEMANDA - 1) { // Cambio de turno
-                nodos += explorarArbol(dia, turno + 1, employees, restEmployees, posibleSolucion, mejorSolucion, 0, startTime);
+                nodos += explorarArbol(dia, turno + 1, employees, restEmployees, posibleSolucion, mejorSolucion,
+                     0, empleadoAsignaciones, startTime);
             } else { // Mismo turno, actualizando la demanda
-                nodos += explorarArbol(dia, turno, employees, restEmployees, posibleSolucion, mejorSolucion, actualDemanda + 1, startTime);
+                nodos += explorarArbol(dia, turno, employees, restEmployees, posibleSolucion, mejorSolucion,
+                     actualDemanda + 1, empleadoAsignaciones, startTime);
             }
         }
 
         // Restaurar estado para backtracking
         posibleSolucion[dia].pop_back();
         restEmployees.insert(restEmployees.begin() + i, e);
+        empleadoAsignaciones[e.nombre]--;
     }
     return nodos;
 }
@@ -155,9 +158,14 @@ int main(int argc, char* argv[]) {
     vector<vector<Empleado>> posibleSolucion(DIAS, vector<Empleado>());
     vector<Empleado> restEmployees = empleados;
     SolucionFinal mejorSolucion = {INFINITY, {}};
+    unordered_map<string, int> empleadoAsignaciones;
+    for (const auto& e : empleados) {
+        empleadoAsignaciones[e.nombre] = 0;
+    }
 
     auto start = chrono::high_resolution_clock::now();
-    int nodosExplorados = explorarArbol(0, 0, empleados, restEmployees, posibleSolucion, mejorSolucion, 0, start);
+    int nodosExplorados = explorarArbol(0, 0, empleados, restEmployees, posibleSolucion, mejorSolucion,
+         0, empleadoAsignaciones, start);
 
     auto end = chrono::high_resolution_clock::now();
     chrono::duration<double> duration = end - start;

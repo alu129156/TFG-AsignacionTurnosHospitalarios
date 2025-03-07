@@ -1,2 +1,4 @@
 .vscode/
 venv/
+executables/v*/*.exe
+output/v*/*.json

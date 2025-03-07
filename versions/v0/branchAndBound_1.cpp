@@ -76,15 +76,13 @@ double calcularFuncionObjetivo(const vector<vector<Empleado>>& solucion, unorder
 
     for (const auto& empleado : empleadoAsignaciones) {
         int asignacionesEmpleado = empleado.second;
-        if(asignacionesEmpleado > 0) {
-            int e1 = max(0, asignacionesEmpleado - LIMITE_SUPERIOR);
-            double r1 = PESO_W1 * e1;
-    
-            int e2 = max(0, LIMITE_INFERIOR - asignacionesEmpleado);
-            double r2 = PESO_W2 * e2;
-    
-            fo += (r1 + r2);
-        }
+        int e1 = max(0, asignacionesEmpleado - LIMITE_SUPERIOR);
+        double r1 = PESO_W1 * e1;
+
+        int e2 = max(0, LIMITE_INFERIOR - asignacionesEmpleado);
+        double r2 = PESO_W2 * e2;
+
+        fo += (r1 + r2);
     }
     return fo;
 }
@@ -95,15 +93,13 @@ double calcularCotaInf(
 ) {
     double f = 0.0;
     for (const auto& [nombreEmpleado, asignacionesEmpleado] : empleadoAsignaciones) {
-        if (asignacionesEmpleado > 0) {
-            double restDays = DIAS - dia;
+        double restDays = DIAS - dia;
 
-            double ei = max(0, asignacionesEmpleado - LIMITE_SUPERIOR);
-            double ei_prime = max(0, LIMITE_INFERIOR - asignacionesEmpleado);
-            double ki = max(0.0, ei_prime - restDays);
+        double ei = max(0, asignacionesEmpleado - LIMITE_SUPERIOR);
+        double ei_prime = max(0, LIMITE_INFERIOR - asignacionesEmpleado);
+        double ki = max(0.0, ei_prime - restDays);
 
-            f += PESO_W1 * ei + PESO_W2 * ki;
-        }
+        f += PESO_W1 * ei + PESO_W2 * ki;
     }
     return f;
 }
@@ -135,6 +131,7 @@ int explorarArbol(
             if (fo < mejorSolucion.funcionObjetivo) {
                 mejorSolucion.funcionObjetivo = fo;
                 mejorSolucion.solucion = posibleSolucion;
+                cout << fo << endl;
             }
         } else if (cotaInf >= mejorSolucion.funcionObjetivo) { // Poda
                     //cout << "(nuevo_F, dia, turno, demanda) = (" << cotaInf <<"," << dia << "," << turno << "," << actualDemanda <<")" << endl;
