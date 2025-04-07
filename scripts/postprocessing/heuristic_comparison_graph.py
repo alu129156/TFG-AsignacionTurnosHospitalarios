@@ -7,7 +7,7 @@ import sys
 
 # Función para extraer datos de FO
 def extract_fo_data(data):
-    return [entry["FO"] for entry in data] # if "mensaje" not in entry
+    return [entry["FO"] for entry in data if "mensaje" not in entry] # if "mensaje" not in entry
 
 # Verificar los argumentos de entrada
 if len(sys.argv) != 4:
@@ -39,11 +39,21 @@ with open(heuristic2_file, "r") as f:
 fo_heuristic1 = extract_fo_data(heuristic1_data)
 fo_heuristic2 = extract_fo_data(heuristic2_data)
 
-# Asegurarse de que ambas listas tengan la misma longitud
-# min_length = min(len(fo_heuristic1), len(fo_heuristic2))
-# fo_heuristic1 = fo_heuristic1[:min_length]
-# fo_heuristic2 = fo_heuristic2[:min_length]
+fo_pairs = [
+    (entry1["FO"], entry2["FO"])
+    for entry1, entry2 in zip(heuristic1_data, heuristic2_data)
+    if "mensaje" not in entry1 and "mensaje" not in entry2 and isinstance(entry1["FO"], (int, float)) and isinstance(entry2["FO"], (int, float))
+]
 
+# Separar los valores en listas para graficar
+# if fo_pairs:
+#     fo_heuristic1, fo_heuristic2 = zip(*fo_pairs)
+# else:
+#     fo_heuristic1, fo_heuristic2 = [], []
+
+# if not fo_heuristic1 or not fo_heuristic2:
+#     print("No hay datos válidos para graficar.")
+#     sys.exit(1)
 
 # Determinar los valores mínimo y máximo de las FO
 min_value = min(min(fo_heuristic1), min(fo_heuristic2))

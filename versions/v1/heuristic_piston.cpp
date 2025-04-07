@@ -18,7 +18,7 @@ int MAX_DIAS_TRABAJADOS_CONSECUTIVOS;
 int MIN_DIAS_TRABAJADOS_CONSECUTIVOS;
 int MAX_DIAS_LIBRES_CONSECUTIVOS;
 int MIN_DIAS_LIBRES_CONSECUTIVOS;
-#define LIMITE_TIEMPO 120
+#define LIMITE_TIEMPO 420
 #define ULTIMO_TURNO 2
 #define PESO_W1 10.0
 #define PESO_W2 10.0
@@ -317,7 +317,7 @@ SolucionFinal generarSolucionAleatoria(const vector<Empleado>& empleados) {
 
     Incumplimientos B(NUM_ENFERMERAS);
     double fo = calcularFuncionObjetivo(employees, solucion, empleadoAsignaciones, B);
-    cout <<  "FO_I: " << fo << endl;
+    //cout <<  "FO_I: " << fo << endl;
     return {fo, solucion, B};
 }
 

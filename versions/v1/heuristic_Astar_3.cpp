@@ -7,6 +7,7 @@
 #include <unordered_map>
 #include <queue>
 #include <chrono>
+#include <limits>
 
 int DIAS;
 int DEMANDA;
@@ -20,6 +21,7 @@ int MIN_DIAS_LIBRES_CONSECUTIVOS;
 #define LIMITE_TIEMPO 420
 #define MAX_COLA_SIZE 1000
 #define ULTIMO_TURNO 2
+#define LIMITE_EXPLORACION_PORCENTAJE 0.1
 #define PESO_W1 10.0
 #define PESO_W2 10.0
 #define PESO_W3 10.0
@@ -62,8 +64,8 @@ struct NodoAStar {
     double g;
     double h;
     double f;
-    bool operator>(const NodoAStar& otro) const {
-        return f > otro.f;
+    bool operator<(const NodoAStar& otro) const {
+        return f < otro.f;
     }
 };
 
@@ -78,9 +80,9 @@ void printInput() {
     ",\n\t\t\t\"limite_superior_dias_trabajados_consecutivos\": " << MAX_DIAS_TRABAJADOS_CONSECUTIVOS << "\n\t\t},\n";
 }
 
-bool isTimeCompleted(const chrono::time_point<chrono::high_resolution_clock>& startTime) {
-    auto now = chrono::high_resolution_clock::now();
-    double elapsed = chrono::duration<double>(now - startTime).count();
+bool isTimeCompleted(
+    const double& elapsed
+) {
     if (elapsed > LIMITE_TIEMPO) {
         return true;
     }
@@ -161,10 +163,10 @@ NodoAStar explorarArbolAStar(
     const unordered_map<string, int>& consecT,
     const chrono::time_point<chrono::high_resolution_clock>& startTime
 ) {
-    priority_queue<NodoAStar, vector<NodoAStar>, greater<NodoAStar>> frontera;
+    multiset<NodoAStar, less<NodoAStar>> frontera;
     vector<vector<Empleado>> solucionInicial(DIAS, vector<Empleado>());
 
-    frontera.push({false, solucionInicial, empleados, empleados,
+    frontera.insert({false, solucionInicial, empleados, empleados,
          empleadoAsignaciones, empleadoTurnoEnDia, consecT, consecL, 0, 0, 0, 0.0, 0.0, 0.0});
 
     NodoAStar mejorSolucion;
@@ -173,8 +175,19 @@ NodoAStar explorarArbolAStar(
     double umbral_factor = 1.75; // 175% ==> Se aceptan soluciones hasta un 75% peores que la mejorFO encontrada
 
     while (!frontera.empty()) {
-        NodoAStar actual = frontera.top();
-        frontera.pop();
+        auto now = chrono::high_resolution_clock::now();
+        double restTime = 1.0 - chrono::duration<double>(now - startTime).count()/LIMITE_TIEMPO;
+        auto it = frontera.begin();
+        NodoAStar actual = *it;
+        if(!actual.needQuickExploration) {
+            frontera.erase(it);
+        }
+
+        if (restTime <= LIMITE_EXPLORACION_PORCENTAJE && mejorSolucion.f == numeric_limits<double>::max()) {
+            cout << "Modo exploracion activao" << endl;
+            actual.needQuickExploration = true;
+            frontera.clear();
+        }
 
         vector<Empleado> empleadosDisponibles = actual.restEmpleados;
 
@@ -184,11 +197,14 @@ NodoAStar explorarArbolAStar(
 
         // Explorar hijos
         for (int i = 0; i < empleadosDisponibles.size(); i++) {
-            if(isTimeCompleted(startTime)) {
+            NodoAStar hijo = actual;
+            auto now = chrono::high_resolution_clock::now();
+            double elapsed = chrono::duration<double>(now - startTime).count();
+            if(isTimeCompleted(elapsed)) {
+                //cout << "Entro" << endl;
                 return mejorSolucion;
             }
 
-            NodoAStar hijo = actual;
             bool isHoja = (actual.dia == DIAS - 1 && actual.turno == ULTIMO_TURNO && actual.demanda == DEMANDA);
             if(!isHoja) {
                 string nombreE = empleadosDisponibles[i].nombre;
@@ -257,6 +273,13 @@ NodoAStar explorarArbolAStar(
                             if (hijo.f < mejorSolucion.f) {
                                 primera_hoja_encontrada = true;
                                 mejorSolucion = hijo;
+                                cout << "F: " << mejorSolucion.f << endl;
+                                // cout << "Primeros 10 elementos en frontera:\n";
+                                // int count = 0;
+                                // for (auto it = frontera.begin(); it != frontera.end() && count < 100; ++it, ++count) {
+                                //     cout << "Nodo " << count << ": f = " << it->f << endl;
+                                // }
+                                // cout << endl << endl;
                             }
                             continue;
                         }
@@ -270,16 +293,19 @@ NodoAStar explorarArbolAStar(
                 hijo.h = calcularHeuristica(hijo, false);
                 hijo.f = hijo.g + hijo.h;
 
-                if (frontera.size() < MAX_COLA_SIZE) {
-                    frontera.push(hijo);
-                } else if (hijo.f < frontera.top().f) {
-                    frontera.pop();
-                    frontera.push(hijo);
+                if (frontera.size() >= MAX_COLA_SIZE) {
+                    auto peorNodo = prev(frontera.end());
+                    if (hijo.f < peorNodo->f) {
+                        frontera.erase(peorNodo);
+                        frontera.insert(hijo);
+                    }
+                } else {
+                    frontera.insert(hijo);
                 }
-                
             }
         }
     }
+    cout << "Nodo" << endl;
     return mejorSolucion;
 }
 
@@ -327,7 +353,7 @@ int main(int argc, char* argv[]) {
     printInput();
     cout << "\t\t\"FO\": " << solucionEncontrada.f << "," << endl;
     cout << "\t\t\"tiempo_de_exec_segundos\": " << duration.count() << "," << endl;
-
+    cout << "\t\t\"exploracion_rapida\": " << solucionEncontrada.needQuickExploration << "," << endl;
     cout << "\t\t\"horario_optimo\":\n\t\t{" << endl;
 
     vector<string> tiposTurnos = {"Early", "Day", "Night"};

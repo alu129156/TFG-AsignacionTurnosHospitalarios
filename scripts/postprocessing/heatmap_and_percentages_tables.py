@@ -44,12 +44,17 @@ comparison_df = comparison_df.drop(columns=[col for col in comparison_df.columns
 fig, ax = plt.subplots(figsize=(14, 10))
 ax.axis("off")
 
+# Definir la paleta de colores azules
+colors = sns.color_palette("Blues", as_cmap=True)
+
 # Normalizar tiempos para el color (de azul a rojo, gris si hay "X")
 def color_mapper(value):
     if value != "X":
         value = float(value)
         norm_value = (value - min_time) / (max_time - min_time) if max_time > min_time else 0
-        return plt.cm.coolwarm(norm_value)
+        return colors(norm_value)
+    else:
+        return '#CCCCCC'
 
 # Obtener min y max de tiempos
 valid_times = comparison_df[[f"Tiempo_{alg1_name}", f"Tiempo_{alg2_name}"]].replace("X", np.nan).astype(float).dropna().values.flatten()
@@ -75,8 +80,25 @@ for i, row in enumerate(table_data[1:], start=1):
             cell_color = color_mapper(cell_value)
             if cell_color:
                 table[(i, j)].set_facecolor(cell_color)
-                table[(i, j)].get_text().set_text(f"{cell_value} seg")
+                if cell_value != "X":
+                    table[(i, j)].get_text().set_text(f"{cell_value} seg")
 
+
+# Ajustar la figura para incluir la leyenda debajo de la tabla
+fig.subplots_adjust(bottom=0.2)
+
+# Agregar una barra de colores (leyenda) debajo de la tabla
+cax = fig.add_axes([0.2, 0.05, 0.6, 0.03])  # Posición: [left, bottom, width, height]
+cbar = plt.colorbar(plt.cm.ScalarMappable(cmap="Blues"), cax=cax, orientation="horizontal")
+cbar.set_label("Tiempo en Segundos (Escala de Azul)")
+
+# Definir valores de referencia en la barra de colores
+cbar.set_ticks([0, 0.5, 1])
+cbar.set_ticklabels([
+    f"{round(min_time, 2)} (Azul Claro)", 
+    f"{round((min_time + max_time) / 2, 2)} (Azul Medio)", 
+    f"{round(max_time, 2)} (Azul Oscuro)"
+])
 
 # Guardar la imagen del nuevo "heatmap"
 comparison_table_fixed_path = os.path.join(output_dir, "custom_heatmap_comparison.png")
@@ -114,7 +136,7 @@ if not filtered_df.empty:
     )
 
     for col in ["Dias", "Enfermeras", "Demanda", "LS", "US"]:
-        percentage_nodes_df[col] = percentage_nodes_df[col].round().astype(int)
+        percentage_nodes_df[col] = percentage_nodes_df[col].round().astype(str)
 
 
     fig, ax = plt.subplots(figsize=(10, 6))

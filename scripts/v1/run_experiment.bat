@@ -71,7 +71,7 @@ for %%D in (2 3 4 5 6 7 8 9 10 11) do (
 
                 if !DIA!==11 (
                     if !M!==4 (
-                        if !LS!==!maxL! (
+                        if !LS!==!finalL! (
                             if !US!==!DIA! (
                                 set /A ultimaIteracion=1
                                 echo ITERACIONES ACABADAS
