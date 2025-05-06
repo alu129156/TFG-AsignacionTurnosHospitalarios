@@ -7,86 +7,15 @@
 #include <unordered_map>
 #include <queue>
 #include <chrono>
+#include "include/empleado_v1.h"
+#include "include/general_utils_v1.h"
+#include "include/main_utils_v1.h"
+#include "include/solucion_v1.h"
+#include "include/nodoAstar_v1.h"
 
-int DIAS;
-int DEMANDA;
-int MIN_ASIGNACIONES;
-int MAX_ASIGNACIONES;
-int NUM_ENFERMERAS;
-int MAX_DIAS_TRABAJADOS_CONSECUTIVOS;
-int MIN_DIAS_TRABAJADOS_CONSECUTIVOS;
-int MAX_DIAS_LIBRES_CONSECUTIVOS;
-int MIN_DIAS_LIBRES_CONSECUTIVOS;
-#define LIMITE_TIEMPO 420
 #define MAX_QUEUE_SIZE 1000
-#define ULTIMO_TURNO 2
-#define PESO_W1 10.0
-#define PESO_W2 10.0
-#define PESO_W3 10.0
-#define PESO_W4 10.0
-#define PESO_W5 10.0
-#define PESO_W6 10.0
 
 using namespace std;
-
-class Empleado {
-public:
-    string nombre;
-    int errorIncumpleMinT;
-    int errorIncumpleMaxT;
-    int errorIncumpleMinL;
-    int errorIncumpleMaxL;
-    bool noL;
-    bool noT;
-
-    Empleado(string nombre)
-        : nombre(nombre),
-        errorIncumpleMinT(0),
-        errorIncumpleMaxT(0),
-        errorIncumpleMinL(0),
-        errorIncumpleMaxL(0),
-        noL(true),
-        noT(true) {}
-};
-
-struct NodoAStar {
-    vector<vector<Empleado>> solucion;
-    vector<Empleado> empleados;
-    vector<Empleado> restEmpleados;
-    unordered_map<string, int> empleadoAsignaciones;
-    unordered_map<string, bool> empleadoTurnoEnDia;
-    unordered_map<string, int> consecutivosT;
-    unordered_map<string, int> consecutivosL;
-    int dia, turno, demanda;
-    double g;
-    double h;
-    double f;
-    bool operator>(const NodoAStar& otro) const {
-        return f > otro.f;
-    }
-};
-
-void printInput() {
-    cout << "\t\t\"input_data\":\n\t\t{\n\t\t\t\"numero_enfermeras\": " << NUM_ENFERMERAS << 
-    ",\n\t\t\t\"dias\": " << DIAS << ",\n\t\t\t\"demanda\": " << DEMANDA << 
-    ",\n\t\t\t\"limite_inferior_asignaciones\": " << MIN_ASIGNACIONES << 
-    ",\n\t\t\t\"limite_superior_asignaciones\": " << MAX_ASIGNACIONES <<
-    ",\n\t\t\t\"limite_inferior_dias_libres_consecutivos\": " << MIN_DIAS_LIBRES_CONSECUTIVOS <<
-    ",\n\t\t\t\"limite_superior_dias_libres_consecutivos\": " << MAX_DIAS_LIBRES_CONSECUTIVOS <<
-    ",\n\t\t\t\"limite_inferior_dias_trabajados_consecutivos\": " << MIN_DIAS_TRABAJADOS_CONSECUTIVOS <<
-    ",\n\t\t\t\"limite_superior_dias_trabajados_consecutivos\": " << MAX_DIAS_TRABAJADOS_CONSECUTIVOS << "\n\t\t},\n";
-}
-
-void verifyTime(const chrono::time_point<chrono::high_resolution_clock>& startTime) {
-    auto now = chrono::high_resolution_clock::now();
-    double elapsed = chrono::duration<double>(now - startTime).count();
-    if (elapsed > LIMITE_TIEMPO) {
-        cout << "\t{\n";
-        printInput();
-        cout << "\t\t\"mensaje\": \"se ha excedido del tiempo maximo permitido\"\n\t}";
-        exit(1);
-    }
-}
 
 // Calcular h(n) --> Saco un caso desfavorable, que puede subir h(n)
 double calcularHeuristica(
@@ -114,41 +43,6 @@ double calcularHeuristica(
     return h;
 }
 
-//g(n)
-double calcularFuncionObjetivo(
-    NodoAStar actual
-) {
-    double fo = 0;
-    unordered_map<string, int> empleadoMap;
-
-    for (const auto& empleado : actual.empleadoAsignaciones) {
-        int asignacionesEmpleado = empleado.second;
-
-        int e1 = max(0, asignacionesEmpleado - MAX_ASIGNACIONES);
-        double r1 = PESO_W1 * e1;
-
-        int e2 = max(0, MIN_ASIGNACIONES - asignacionesEmpleado);
-        double r2 = PESO_W2 * e2;
-
-        fo += (r1 + r2);
-    }
-
-    for(const auto& e: actual.empleados) {
-        fo += (e.errorIncumpleMaxL + e.errorIncumpleMaxT + e.errorIncumpleMinL + e.errorIncumpleMinT);
-    }
-
-    return fo;
-}
-
-int empleadoIdx(const vector<Empleado>& empleados, string empleadoNombre) {
-    for (int i = 0; i < empleados.size(); i++) {
-        if (empleados[i].nombre == empleadoNombre) {
-            return i;
-        }
-    }
-    return -1;
-}
-
 NodoAStar explorarArbolAStar(
     const vector<Empleado>& empleados,
     const unordered_map<string, int>& empleadoAsignaciones,
@@ -160,7 +54,7 @@ NodoAStar explorarArbolAStar(
     priority_queue<NodoAStar, vector<NodoAStar>, greater<NodoAStar>> frontera;
     vector<vector<Empleado>> solucionInicial(DIAS, vector<Empleado>());
 
-    frontera.push({solucionInicial, empleados, empleados,
+    frontera.push({false, solucionInicial, empleados, empleados,
          empleadoAsignaciones, empleadoTurnoEnDia, consecT, consecL, 0, 0, 0, 0.0, 0.0, 0.0});
 
     NodoAStar mejorSolucion;
@@ -174,7 +68,7 @@ NodoAStar explorarArbolAStar(
 
         // Explorar hijos
         for (int i = 0; i < empleadosDisponibles.size(); i++) {
-            verifyTime(startTime);
+            isTimeCompleted(startTime);
 
 
             NodoAStar hijo = actual;
@@ -240,14 +134,10 @@ NodoAStar explorarArbolAStar(
                             hijo.turno = 0;
                             hijo.demanda = 0;
                         } else {
-                            hijo.g = calcularFuncionObjetivo(hijo);
+                            hijo.g = calcularFuncionObjetivoAstar(hijo);
                             hijo.h = calcularHeuristica(hijo, true);
                             hijo.f = hijo.g + hijo.h;
                             return hijo;
-                            // if (hijo.f < mejorSolucion.f) {
-                            //     mejorSolucion = hijo;
-                            // }
-                            // continue;
                         }
                     } else {
                         hijo.turno++;
@@ -255,7 +145,7 @@ NodoAStar explorarArbolAStar(
                     }
                 }
                 
-                hijo.g = calcularFuncionObjetivo(hijo);
+                hijo.g = calcularFuncionObjetivoAstar(hijo);
                 hijo.h = calcularHeuristica(hijo, false);
                 hijo.f = hijo.g + hijo.h;
 
@@ -272,34 +162,24 @@ NodoAStar explorarArbolAStar(
 }
 
 int main(int argc, char* argv[]) {
-    if (argc != 10) {
-        cout << "Uso: programa <num_enfermeras> <num_dias> <demanda> <LS> <US> <LCF> <UCF> <LCW> <UCW>" << endl;
-        return 1;
-    }
+    Config cfg = leerParametros(argc, argv);
+    NUM_ENFERMERAS = cfg.enfermeras;
+    DIAS = cfg.dias;
+    DEMANDA = cfg.demanda;
+    MIN_ASIGNACIONES = cfg.min_asig;
+    MAX_ASIGNACIONES = cfg.max_asig;
+    MIN_DIAS_LIBRES_CONSECUTIVOS = cfg.min_dias_libres_consec;
+    MAX_DIAS_LIBRES_CONSECUTIVOS = cfg.max_dias_libres_consec;
+    MIN_DIAS_TRABAJADOS_CONSECUTIVOS = cfg.min_dias_trab_consec;
+    MAX_DIAS_TRABAJADOS_CONSECUTIVOS = cfg.max_dias_trab_consec;
+
+    vector<Empleado> empleados = generarEmpleados_v1(NUM_ENFERMERAS);
     
-    NUM_ENFERMERAS = stoi(argv[1]);
-    DIAS = stoi(argv[2]);
-    DEMANDA = stoi(argv[3]);
-    MIN_ASIGNACIONES = stoi(argv[4]);
-    MAX_ASIGNACIONES = stoi(argv[5]);
-    MIN_DIAS_LIBRES_CONSECUTIVOS = stoi(argv[6]);
-    MAX_DIAS_LIBRES_CONSECUTIVOS = stoi(argv[7]);
-    MIN_DIAS_TRABAJADOS_CONSECUTIVOS = stoi(argv[8]);
-    MAX_DIAS_TRABAJADOS_CONSECUTIVOS = stoi(argv[9]);
-
-    if(NUM_ENFERMERAS < 3 * DEMANDA) {
-        cout << "Necesitas " << 3 * DEMANDA - NUM_ENFERMERAS << " o mas enfermeras para asignar segun la demanda que pides";
-        return 1;
-    }
-
-    vector<Empleado> empleados = vector<Empleado>();
     unordered_map<string, bool> empleadoTurnoEnDia;
     unordered_map<string, int> empleadoAsignaciones;
     unordered_map<string, int> consecL;
     unordered_map<string, int> consecT;
-    for (int i = 0; i < NUM_ENFERMERAS; i++) {
-        Empleado e = Empleado("e_" + to_string(i + 1));
-        empleados.push_back(e);
+    for (const auto& e: empleados) {
         empleadoTurnoEnDia[e.nombre] = false;
         empleadoAsignaciones[e.nombre] = 0;
         consecT[e.nombre] = 0;
@@ -310,43 +190,8 @@ int main(int argc, char* argv[]) {
     NodoAStar solucionEncontrada = explorarArbolAStar(empleados, empleadoAsignaciones, empleadoTurnoEnDia, consecL, consecT, start);
     auto end = chrono::high_resolution_clock::now();
     chrono::duration<double> duration = end - start;
-
-    cout << "\t{" << endl;
-    printInput();
-    cout << "\t\t\"FO\": " << solucionEncontrada.f << "," << endl;
-    cout << "\t\t\"tiempo_de_exec_segundos\": " << duration.count() << "," << endl;
-
-    cout << "\t\t\"horario_optimo\":\n\t\t{" << endl;
-
-    vector<string> tiposTurnos = {"Early", "Day", "Night"};
-    for (int dia = 0; dia < solucionEncontrada.solucion.size(); dia++) {
-        cout << "\t\t\t\"dia_" << dia + 1 << "\":\n\t\t\t{\n";
-        for (int turno = 0; turno < 3; turno++) {
-            cout << "\t\t\t\t\"" << tiposTurnos[turno] << "\": [";
-
-            int inicio = turno * DEMANDA;
-            int fin = inicio + DEMANDA;
-
-            for (int j = inicio; j < fin && j < solucionEncontrada.solucion[dia].size(); j++) {
-                cout << "\"" << solucionEncontrada.solucion[dia][j].nombre << "\"";
-
-                if (j < fin - 1) {
-                    cout << ", ";
-                } else {
-                    cout << "]";
-                    if(!(turno == ULTIMO_TURNO)) {
-                        cout << ",";
-                    }
-                }
-            }
-            cout << endl;
-        }
-        string posibleComa = "";
-        if(!(dia == solucionEncontrada.solucion.size() -1)) {
-            posibleComa += ",";
-        }
-        cout << "\t\t\t}" + posibleComa + "\n";
-    }
-    cout << "\t\t}\n\t}";
+    SolucionFinal solucion = {solucionEncontrada.f, solucionEncontrada.solucion};
+    imprimirResultado(solucion, duration.count(), -1, true, solucionEncontrada.needQuickExploration);
+    
     return solucionEncontrada.solucion.empty() ? 1 : 0;
 }

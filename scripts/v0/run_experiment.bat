@@ -12,7 +12,7 @@ set EXEC_DIR=..\..\executables\v0
 if exist %EXEC_DIR%\%NAME%.exe del %EXEC_DIR%\%NAME%.exe
 
 :: Compilar los ejecutables
-g++ ".\%NAME%.cpp" -o %EXEC_DIR%\%NAME%.exe
+g++ -std=c++17 -Iinclude ".\src\empleado.cpp" ".\src\solucion.cpp" ".\src\general_utils.cpp" ".\src\main_utils.cpp" ".\src\nodoAstar.cpp" ".\%NAME%.cpp" -o %EXEC_DIR%\%NAME%.exe
 if %ERRORLEVEL% neq 0 (
     echo Error en la compilación de %NAME%.
     exit /b %ERRORLEVEL%
@@ -41,14 +41,15 @@ for %%D in (2 3 4 5) do (
         set /A maxL=!DIA!+1
         for /L %%L in (1,1,!maxL!) do (
             set L=%%L
-            set /A RANGE=!DIA!-!L!+1
+            set /A RANGE=!DIA!-!L!
             if !RANGE! LEQ 0 set RANGE=1
-            set /A RAND_US=!RANDOM! %% !RANGE!
-            set /A US=!L! + !RAND_US!
+            set /A PLUS_US=!RANGE! %% 2
+            set /A US=!L! + !PLUS_US!
 
             echo ------Ejecutando: Enfermeras=!numEnfermeras!, DIAS=!DIA!, DEMANDA=!M!, LS=!L!, US=!US!
 
             call .\%NAME%.exe !numEnfermeras! !DIA! !M! !L! !US! >> %OUTPUT%
+
 
             if !DIA!==5 (
                 if !M!==3 (

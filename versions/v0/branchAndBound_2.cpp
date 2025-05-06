@@ -1,3 +1,7 @@
+#include "include/empleado.h"
+#include "include/solucion.h"
+#include "include/general_utils.h"
+#include "include/main_utils.h"
 #include <iostream>
 #include <vector>
 #include <string>
@@ -7,89 +11,7 @@
 #include <unordered_map>
 #include <chrono>
 
-// #define DIAS 4
-// #define DEMANDA 3
-# define LIMITE_TIEMPO 420
-#define ULTIMO_TURNO 2
-// #define LIMITE_INFERIOR 5
-// #define LIMITE_SUPERIOR 5
-#define PESO_W1 10.0
-#define PESO_W2 10.0
-int NUM_ENFERMERAS;
-int DIAS;
-int DEMANDA;
-int LIMITE_INFERIOR;
-int LIMITE_SUPERIOR;
-
 using namespace std;
-
-class Empleado {
-public:
-    string nombre;
-    Empleado(string nombre)
-        : nombre(nombre) {}
-};
-
-class Nurse : public Empleado {
-public:
-    Nurse(string nombre)
-        : Empleado(nombre) {}
-};
-
-class Doctor : public Empleado {
-public:
-    Doctor(string nombre)
-        : Empleado(nombre) {}
-};
-
-struct Turno {
-    string nombre;
-};
-
-struct Turnos {
-    Turno early = {"Early"};
-    Turno day = {"Day"};
-    Turno late = {"Late"};
-};
-
-struct SolucionFinal {
-    double funcionObjetivo;
-    vector<vector<Empleado>> solucion;
-};
-
-void printInput() {
-    cout << "\t\t\"input_data\":\n\t\t{\n\t\t\t\"numero_enfermeras\": " << NUM_ENFERMERAS << 
-    ",\n\t\t\t\"dias\": " << DIAS << ",\n\t\t\t\"demanda\": " << DEMANDA << 
-    ",\n\t\t\t\"limite_inferior_asignaciones\": " << LIMITE_INFERIOR << 
-    ",\n\t\t\t\"limite_superior_asignaciones\": " << LIMITE_SUPERIOR << "\n\t\t},\n";
-}
-
-void verifyTime(const chrono::time_point<chrono::high_resolution_clock>& startTime) {
-    auto now = chrono::high_resolution_clock::now();
-    double elapsed = chrono::duration<double>(now - startTime).count();
-    if (elapsed > LIMITE_TIEMPO) {
-        cout << "\t{\n";
-        printInput();
-        cout << "\t\t\"mensaje\": \"se ha excedido del tiempo maximo permitido\"\n\t}";
-        exit(1);
-    }
-}
-
-double calcularFuncionObjetivo(const vector<vector<Empleado>>& solucion, unordered_map<string, int>& empleadoAsignaciones) {
-    double fo = 0.0;
-
-    for (const auto& empleado : empleadoAsignaciones) {
-        int asignacionesEmpleado = empleado.second;
-        int e1 = max(0, asignacionesEmpleado - LIMITE_SUPERIOR);
-        double r1 = PESO_W1 * e1;
-
-        int e2 = max(0, LIMITE_INFERIOR - asignacionesEmpleado);
-        double r2 = PESO_W2 * e2;
-
-        fo += (r1 + r2);
-    }
-    return fo;
-}
 
 double calcularCotaInf(
     unordered_map<string, int>& empleadoAsignaciones,
@@ -101,8 +23,8 @@ double calcularCotaInf(
         bool turnoEmpleadoEnDia = empleadoTurnoEnDia[nombreEmpleado];
         double restDays = (turnoEmpleadoEnDia) ? DIAS - dia - 1 : DIAS - dia;
 
-        double ei = max(0, asignacionesEmpleado - LIMITE_SUPERIOR);
-        double ei_prime = max(0, LIMITE_INFERIOR - asignacionesEmpleado);
+        double ei = max(0, asignacionesEmpleado - MAX_ASIGNACIONES);
+        double ei_prime = max(0, MIN_ASIGNACIONES - asignacionesEmpleado);
         double ki = max(0.0, ei_prime - restDays);
 
         f += PESO_W1 * ei + PESO_W2 * ki;
@@ -142,7 +64,6 @@ int explorarArbol(
                 mejorSolucion.solucion = posibleSolucion;
             }
         } else if (cotaInf >= mejorSolucion.funcionObjetivo) { // Poda
-                    //cout << "(nuevo_F, dia, turno, demanda) = (" << cotaInf <<"," << dia << "," << turno << "," << actualDemanda <<")" << endl;
             empleadoAsignaciones[e.nombre]--;
             empleadoTurnoEnDia[e.nombre] = turnoEnDiaPrevio;
             posibleSolucion[dia].pop_back();
@@ -179,25 +100,14 @@ int explorarArbol(
 }
 
 int main(int argc, char* argv[]) {
-    if (argc != 6) {
-        cout << "Uso: programa <num_enfermeras> <num_dias> <demanda> <LS> <US>" << endl;
-        return 1;
-    }
+    Config cfg = leerParametros(argc, argv);
+    NUM_ENFERMERAS = cfg.enfermeras;
+    DIAS = cfg.dias;
+    DEMANDA = cfg.demanda;
+    MIN_ASIGNACIONES = cfg.min_asig;
+    MAX_ASIGNACIONES = cfg.max_asig;
 
-    NUM_ENFERMERAS = stoi(argv[1]);
-    DIAS = stoi(argv[2]);
-    DEMANDA = stoi(argv[3]);
-    LIMITE_INFERIOR = stoi(argv[4]);
-    LIMITE_SUPERIOR = stoi(argv[5]);
-    if(NUM_ENFERMERAS < 3 * DEMANDA) {
-        cout << "Necesitas " << 3 * DEMANDA - NUM_ENFERMERAS << " o mas enfermeras para asignar segun la demanda que pides";
-        return 1;
-    }
-
-    vector<Empleado> empleados;
-    for (int i = 0; i < NUM_ENFERMERAS; i++) {
-        empleados.emplace_back("e_" + to_string(i + 1));
-    }
+    vector<Empleado> empleados = generarEmpleados(NUM_ENFERMERAS);
     vector<vector<Empleado>> posibleSolucion(DIAS, vector<Empleado>());
     vector<Empleado> restEmployees = empleados;
     unordered_map<string, int> empleadoAsignaciones;
@@ -214,44 +124,7 @@ int main(int argc, char* argv[]) {
                      empleadoTurnoEnDia, 0, mejorSolucion, start);
     auto end = chrono::high_resolution_clock::now();
     chrono::duration<double> duration = end - start;
-    
-    cout << "\t{" << endl;
-    printInput();
-    cout << "\t\t\"FO\": " << mejorSolucion.funcionObjetivo << "," << endl;
-    cout << "\t\t\"nodos_explorados\": " << nodosExplorados << ","  << endl;
-    cout << "\t\t\"tiempo_de_exec_segundos\": " << duration.count() << "," << endl;
 
-    cout << "\t\t\"horario_optimo\":\n\t\t{" << endl;
-    Turnos turnos;
-    vector<string> tiposTurnos = {turnos.early.nombre, turnos.day.nombre, turnos.late.nombre};
-    for (int dia = 0; dia < mejorSolucion.solucion.size(); dia++) {
-        cout << "\t\t\t\"dia_" << dia + 1 << "\":\n\t\t\t{\n";
-        for (int turno = 0; turno < 3; turno++) {
-            cout << "\t\t\t\t\"" << tiposTurnos[turno] << "\": [";
-
-            int inicio = turno * DEMANDA;
-            int fin = inicio + DEMANDA;
-
-            for (int j = inicio; j < fin && j < mejorSolucion.solucion[dia].size(); j++) {
-                cout << "\"" << mejorSolucion.solucion[dia][j].nombre << "\"";
-
-                if (j < fin - 1) {
-                    cout << ", ";
-                } else {
-                    cout << "]";
-                    if(!(turno == ULTIMO_TURNO)) {
-                        cout << ",";
-                    }
-                }
-            }
-            cout << endl;
-        }
-        string posibleComa = "";
-        if(!(dia == mejorSolucion.solucion.size() -1)) {
-            posibleComa += ",";
-        }
-        cout << "\t\t\t}" + posibleComa + "\n";
-    }
-    cout << "\t\t}\n\t}";
+    imprimirResultado(mejorSolucion, chrono::duration<double>(end - start).count(), nodosExplorados);
     return 0;
 }
