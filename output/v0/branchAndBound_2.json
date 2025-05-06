@@ -1,0 +1,640 @@
+[ 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 7,
+			"dias": 2,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 1,
+			"limite_superior_asignaciones": 2
+		},
+		"FO": 0,
+		"nodos_explorados": 54,
+		"tiempo_de_exec_segundos": 5.85e-05,
+		"horario_optimo":
+		{
+			"dia_1":
+			{
+				"Early": ["e_1", "e_2"],
+				"Day": ["e_3", "e_4"],
+				"Late": ["e_5", "e_6"]
+			},
+			"dia_2":
+			{
+				"Early": ["e_1", "e_2"],
+				"Day": ["e_3", "e_4"],
+				"Late": ["e_5", "e_7"]
+			}
+		}
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 7,
+			"dias": 2,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 2,
+			"limite_superior_asignaciones": 3
+		},
+		"FO": 20,
+		"nodos_explorados": 43650019,
+		"tiempo_de_exec_segundos": 40.1812,
+		"horario_optimo":
+		{
+			"dia_1":
+			{
+				"Early": ["e_1", "e_2"],
+				"Day": ["e_3", "e_4"],
+				"Late": ["e_5", "e_6"]
+			},
+			"dia_2":
+			{
+				"Early": ["e_1", "e_2"],
+				"Day": ["e_3", "e_4"],
+				"Late": ["e_5", "e_6"]
+			}
+		}
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 7,
+			"dias": 2,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 3,
+			"limite_superior_asignaciones": 4
+		},
+		"FO": 90,
+		"nodos_explorados": 43650019,
+		"tiempo_de_exec_segundos": 40.2577,
+		"horario_optimo":
+		{
+			"dia_1":
+			{
+				"Early": ["e_1", "e_2"],
+				"Day": ["e_3", "e_4"],
+				"Late": ["e_5", "e_6"]
+			},
+			"dia_2":
+			{
+				"Early": ["e_1", "e_2"],
+				"Day": ["e_3", "e_4"],
+				"Late": ["e_5", "e_6"]
+			}
+		}
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 10,
+			"dias": 2,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 1,
+			"limite_superior_asignaciones": 2
+		},
+		"FO": 0,
+		"nodos_explorados": 108,
+		"tiempo_de_exec_segundos": 0.0002002,
+		"horario_optimo":
+		{
+			"dia_1":
+			{
+				"Early": ["e_1", "e_2", "e_3"],
+				"Day": ["e_4", "e_5", "e_6"],
+				"Late": ["e_7", "e_8", "e_9"]
+			},
+			"dia_2":
+			{
+				"Early": ["e_1", "e_2", "e_3"],
+				"Day": ["e_4", "e_5", "e_6"],
+				"Late": ["e_7", "e_8", "e_10"]
+			}
+		}
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 10,
+			"dias": 2,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 2,
+			"limite_superior_asignaciones": 3
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 10,
+			"dias": 2,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 3,
+			"limite_superior_asignaciones": 4
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 7,
+			"dias": 3,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 1,
+			"limite_superior_asignaciones": 1
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 7,
+			"dias": 3,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 2,
+			"limite_superior_asignaciones": 3
+		},
+		"FO": 0,
+		"nodos_explorados": 110,
+		"tiempo_de_exec_segundos": 0.0001141,
+		"horario_optimo":
+		{
+			"dia_1":
+			{
+				"Early": ["e_1", "e_2"],
+				"Day": ["e_3", "e_4"],
+				"Late": ["e_5", "e_6"]
+			},
+			"dia_2":
+			{
+				"Early": ["e_1", "e_2"],
+				"Day": ["e_3", "e_4"],
+				"Late": ["e_5", "e_7"]
+			},
+			"dia_3":
+			{
+				"Early": ["e_1", "e_2"],
+				"Day": ["e_3", "e_4"],
+				"Late": ["e_6", "e_7"]
+			}
+		}
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 7,
+			"dias": 3,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 3,
+			"limite_superior_asignaciones": 4
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 7,
+			"dias": 3,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 4,
+			"limite_superior_asignaciones": 5
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 10,
+			"dias": 3,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 1,
+			"limite_superior_asignaciones": 1
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 10,
+			"dias": 3,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 2,
+			"limite_superior_asignaciones": 3
+		},
+		"FO": 0,
+		"nodos_explorados": 218,
+		"tiempo_de_exec_segundos": 0.0002617,
+		"horario_optimo":
+		{
+			"dia_1":
+			{
+				"Early": ["e_1", "e_2", "e_3"],
+				"Day": ["e_4", "e_5", "e_6"],
+				"Late": ["e_7", "e_8", "e_9"]
+			},
+			"dia_2":
+			{
+				"Early": ["e_1", "e_2", "e_3"],
+				"Day": ["e_4", "e_5", "e_6"],
+				"Late": ["e_7", "e_8", "e_10"]
+			},
+			"dia_3":
+			{
+				"Early": ["e_1", "e_2", "e_3"],
+				"Day": ["e_4", "e_5", "e_6"],
+				"Late": ["e_7", "e_9", "e_10"]
+			}
+		}
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 10,
+			"dias": 3,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 3,
+			"limite_superior_asignaciones": 4
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 10,
+			"dias": 3,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 4,
+			"limite_superior_asignaciones": 5
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 7,
+			"dias": 4,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 1,
+			"limite_superior_asignaciones": 2
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 7,
+			"dias": 4,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 2,
+			"limite_superior_asignaciones": 2
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 7,
+			"dias": 4,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 3,
+			"limite_superior_asignaciones": 4
+		},
+		"FO": 0,
+		"nodos_explorados": 225,
+		"tiempo_de_exec_segundos": 0.0002497,
+		"horario_optimo":
+		{
+			"dia_1":
+			{
+				"Early": ["e_1", "e_2"],
+				"Day": ["e_3", "e_4"],
+				"Late": ["e_5", "e_6"]
+			},
+			"dia_2":
+			{
+				"Early": ["e_1", "e_2"],
+				"Day": ["e_3", "e_4"],
+				"Late": ["e_5", "e_7"]
+			},
+			"dia_3":
+			{
+				"Early": ["e_1", "e_2"],
+				"Day": ["e_3", "e_4"],
+				"Late": ["e_6", "e_7"]
+			},
+			"dia_4":
+			{
+				"Early": ["e_1", "e_2"],
+				"Day": ["e_3", "e_5"],
+				"Late": ["e_6", "e_7"]
+			}
+		}
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 7,
+			"dias": 4,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 4,
+			"limite_superior_asignaciones": 5
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 7,
+			"dias": 4,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 5,
+			"limite_superior_asignaciones": 6
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 10,
+			"dias": 4,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 1,
+			"limite_superior_asignaciones": 2
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 10,
+			"dias": 4,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 2,
+			"limite_superior_asignaciones": 2
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 10,
+			"dias": 4,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 3,
+			"limite_superior_asignaciones": 4
+		},
+		"FO": 0,
+		"nodos_explorados": 423,
+		"tiempo_de_exec_segundos": 0.0004816,
+		"horario_optimo":
+		{
+			"dia_1":
+			{
+				"Early": ["e_1", "e_2", "e_3"],
+				"Day": ["e_4", "e_5", "e_6"],
+				"Late": ["e_7", "e_8", "e_9"]
+			},
+			"dia_2":
+			{
+				"Early": ["e_1", "e_2", "e_3"],
+				"Day": ["e_4", "e_5", "e_6"],
+				"Late": ["e_7", "e_8", "e_10"]
+			},
+			"dia_3":
+			{
+				"Early": ["e_1", "e_2", "e_3"],
+				"Day": ["e_4", "e_5", "e_6"],
+				"Late": ["e_7", "e_9", "e_10"]
+			},
+			"dia_4":
+			{
+				"Early": ["e_1", "e_2", "e_3"],
+				"Day": ["e_4", "e_5", "e_6"],
+				"Late": ["e_8", "e_9", "e_10"]
+			}
+		}
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 10,
+			"dias": 4,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 4,
+			"limite_superior_asignaciones": 5
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 10,
+			"dias": 4,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 5,
+			"limite_superior_asignaciones": 6
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 7,
+			"dias": 5,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 1,
+			"limite_superior_asignaciones": 1
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 7,
+			"dias": 5,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 2,
+			"limite_superior_asignaciones": 3
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 7,
+			"dias": 5,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 3,
+			"limite_superior_asignaciones": 3
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 7,
+			"dias": 5,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 4,
+			"limite_superior_asignaciones": 5
+		},
+		"FO": 0,
+		"nodos_explorados": 481,
+		"tiempo_de_exec_segundos": 0.0005019,
+		"horario_optimo":
+		{
+			"dia_1":
+			{
+				"Early": ["e_1", "e_2"],
+				"Day": ["e_3", "e_4"],
+				"Late": ["e_5", "e_6"]
+			},
+			"dia_2":
+			{
+				"Early": ["e_1", "e_2"],
+				"Day": ["e_3", "e_4"],
+				"Late": ["e_5", "e_7"]
+			},
+			"dia_3":
+			{
+				"Early": ["e_1", "e_2"],
+				"Day": ["e_3", "e_4"],
+				"Late": ["e_6", "e_7"]
+			},
+			"dia_4":
+			{
+				"Early": ["e_1", "e_2"],
+				"Day": ["e_3", "e_5"],
+				"Late": ["e_6", "e_7"]
+			},
+			"dia_5":
+			{
+				"Early": ["e_1", "e_2"],
+				"Day": ["e_4", "e_5"],
+				"Late": ["e_6", "e_7"]
+			}
+		}
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 7,
+			"dias": 5,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 5,
+			"limite_superior_asignaciones": 6
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 7,
+			"dias": 5,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 6,
+			"limite_superior_asignaciones": 7
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 10,
+			"dias": 5,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 1,
+			"limite_superior_asignaciones": 1
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 10,
+			"dias": 5,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 2,
+			"limite_superior_asignaciones": 3
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 10,
+			"dias": 5,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 3,
+			"limite_superior_asignaciones": 3
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 10,
+			"dias": 5,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 4,
+			"limite_superior_asignaciones": 5
+		},
+		"FO": 0,
+		"nodos_explorados": 823,
+		"tiempo_de_exec_segundos": 0.0010407,
+		"horario_optimo":
+		{
+			"dia_1":
+			{
+				"Early": ["e_1", "e_2", "e_3"],
+				"Day": ["e_4", "e_5", "e_6"],
+				"Late": ["e_7", "e_8", "e_9"]
+			},
+			"dia_2":
+			{
+				"Early": ["e_1", "e_2", "e_3"],
+				"Day": ["e_4", "e_5", "e_6"],
+				"Late": ["e_7", "e_8", "e_10"]
+			},
+			"dia_3":
+			{
+				"Early": ["e_1", "e_2", "e_3"],
+				"Day": ["e_4", "e_5", "e_6"],
+				"Late": ["e_7", "e_9", "e_10"]
+			},
+			"dia_4":
+			{
+				"Early": ["e_1", "e_2", "e_3"],
+				"Day": ["e_4", "e_5", "e_6"],
+				"Late": ["e_8", "e_9", "e_10"]
+			},
+			"dia_5":
+			{
+				"Early": ["e_1", "e_2", "e_3"],
+				"Day": ["e_4", "e_5", "e_7"],
+				"Late": ["e_8", "e_9", "e_10"]
+			}
+		}
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 10,
+			"dias": 5,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 5,
+			"limite_superior_asignaciones": 6
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 10,
+			"dias": 5,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 6,
+			"limite_superior_asignaciones": 7
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	} 
+] 

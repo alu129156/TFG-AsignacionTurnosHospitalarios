@@ -18,13 +18,14 @@ if not exist %OUTPUT_IMAGE_FOLDER% (
 
 :: Activar venv y ejecutar script
 call ..\..\venv\Scripts\activate
-if %VERSION%==v0 (
+if %VERSION%==v0 if %EXEC_GRAPH% neq 1 (
     python -B heatmap_and_percentages_tables.py %OUTPUT_IMAGE_FOLDER% %OUTPUT1% %OUTPUT2%
 )
 
 if %EXEC_GRAPH%==1 (
     python -B heuristic_comparison_graph.py %OUTPUT_IMAGE_FOLDER% %OUTPUT1% %OUTPUT2%
-    python -B heuristic_comparison_graph_with_days.py %OUTPUT_IMAGE_FOLDER% %OUTPUT1% %OUTPUT2%
+    python -B heuristic_comparison_graph_coloured_variables.py %OUTPUT_IMAGE_FOLDER% %OUTPUT1% %OUTPUT2% days
+    python -B heuristic_comparison_graph_coloured_variables.py %OUTPUT_IMAGE_FOLDER% %OUTPUT1% %OUTPUT2% demand
 )
 
 deactivate
