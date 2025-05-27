@@ -45,14 +45,12 @@ if not (heuristic1_name.startswith("heuristic_") and heuristic2_name.startswith(
     print("Los dos archivos deben de ser heurísticas para realizar la comparación")
     sys.exit(1)
 
-# Cargar los archivos JSON
 with open(heuristic1_file, "r") as f:
     heuristic1_data = json.load(f)
 
 with open(heuristic2_file, "r") as f:
     heuristic2_data = json.load(f)
 
-# Extraer FO y metadata
 meta1 = extract_fo_metadata(heuristic1_data, clave)
 meta2 = extract_fo_metadata(heuristic2_data, clave)
 
@@ -74,22 +72,29 @@ max_value = max(max(fo1_vals), max(fo2_vals))
 
 # Asignar colores por categoría y bordes por exploración rápida
 unique_vals = sorted(set(p[2] for p in fo_pairs))
-color_map = {val: plt.cm.tab20(i % 20) for i, val in enumerate(unique_vals)}
+color_map = {val: plt.cm.tab10(i % 10) for i, val in enumerate(unique_vals)}
 
 # Dibujar la gráfica
 plt.figure(figsize=(8, 8))
 legend_patches = {}
 exploracion_patch_added = False
 
+# 0.5% del rango total para añadir ruido a los puntos
+fo_range = max_value - min_value
+jitter_strength = 0.005 * fo_range if fo_range > 0 else 0.5
+
 for f1, f2, categoria_val, exploracion_rapida in fo_pairs:
     fill_color = color_map[categoria_val]
     edge_color = 'black' if exploracion_rapida else 'none'
+
+    jittered_f1 = f1 + np.random.normal(0, jitter_strength)
+    jittered_f2 = f2 + np.random.normal(0, jitter_strength)
 
     if exploracion_rapida and not exploracion_patch_added:
         legend_patches["exploracion"] = mpatches.Patch(edgecolor='black', facecolor='white', label="Exploración Rápida", linewidth=2)
         exploracion_patch_added = True
 
-    plt.scatter(f1, f2, facecolors=fill_color, edgecolors=edge_color, s=100)
+    plt.scatter(jittered_f1, jittered_f2, facecolors=fill_color, edgecolors=edge_color, s=100, alpha=0.6)
 
     if categoria_val not in legend_patches:
         legend_patches[categoria_val] = mpatches.Patch(color=fill_color, label=f"{categoria.title()} {categoria_val}")
@@ -102,7 +107,7 @@ plt.xlabel(f'FO {heuristic1_name}')
 plt.ylabel(f'FO {heuristic2_name}')
 plt.title(f'Comparación de FO por {categoria.title()}')
 
-# Guardar la imagen
+
 output_suffix = f"by_{categoria}"
 comparison_plot_path = os.path.join(output_dir, f"{heuristic1_name}_vs_{heuristic2_name}_graph_{output_suffix}.png")
 plt.savefig(comparison_plot_path, bbox_inches="tight", dpi=300)

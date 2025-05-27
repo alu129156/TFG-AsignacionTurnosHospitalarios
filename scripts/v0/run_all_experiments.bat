@@ -1,5 +1,5 @@
 @echo off
-
+goto :1
 echo *EJECUTANDO: Backtracking...
 call run_experiment.bat bruteForce
 
@@ -13,7 +13,7 @@ call run_experiment.bat heuristic_Astar_3
 
 echo *EJECUTANDO: heuristic_tabuSearch...
 call run_experiment.bat heuristic_tabuSearch
-
+:1
 :: Obtener la fecha desde la variable de entorno
 call ..\date.bat
 for /f "tokens=*" %%F in ('powershell -command "echo $env:DATETIME"') do set DATETIME=%%F

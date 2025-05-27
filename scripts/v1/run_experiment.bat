@@ -12,7 +12,7 @@ set EXEC_DIR=..\..\executables\v1
 if exist %EXEC_DIR%\%NAME%.exe del %EXEC_DIR%\%NAME%.exe
 
 :: Compilar los ejecutables
-g++ ".\%NAME%.cpp" -o %EXEC_DIR%\%NAME%.exe
+g++ -std=c++17 -Iinclude "../../versions/common-params/src/json_parser.cpp" ".\src\empleado_v1.cpp" ".\src\solucion_v1.cpp" ".\src\general_utils_v1.cpp" ".\src\main_utils_v1.cpp" ".\src\nodoAstar_v1.cpp" ".\%NAME%.cpp" -o %EXEC_DIR%\%NAME%.exe
 if %ERRORLEVEL% neq 0 (
     echo Error en la compilación de %NAME%.
     exit /b %ERRORLEVEL%

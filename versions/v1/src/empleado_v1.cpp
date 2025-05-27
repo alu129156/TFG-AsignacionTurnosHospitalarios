@@ -1,14 +1,5 @@
 #include "empleado_v1.h"
-/*
-Empleado::Empleado(std::string nombre)
-    :nombre(nombre),
-    errorIncumpleMinT(0),
-    errorIncumpleMaxT(0),
-    errorIncumpleMinL(0),
-    errorIncumpleMaxL(0),
-    noL(true),
-    noT(true) {}
-*/
+
 Empleado::Empleado(std::string nombre)
     : nombre(nombre),
     errorIncumpleMinT(0),

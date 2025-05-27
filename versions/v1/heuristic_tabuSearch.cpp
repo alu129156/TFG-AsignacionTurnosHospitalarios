@@ -27,7 +27,7 @@ void calcularErroresEmpelados(vector<Empleado>& empleados, const vector<vector<E
         for (const auto& dia : horario) {
             bool trabaja_en_dia = !TRABAJA;
             for (const auto& asignacion : dia) {
-                if (asignacion.nombre == e.nombre) {
+                if (asignacion == e) {
                     trabaja_en_dia = TRABAJA;
                     e.noT = false;
                     break;
@@ -215,7 +215,8 @@ int main(int argc, char* argv[]) {
     MAX_DIAS_LIBRES_CONSECUTIVOS = cfg.max_dias_libres_consec;
     MIN_DIAS_TRABAJADOS_CONSECUTIVOS = cfg.min_dias_trab_consec;
     MAX_DIAS_TRABAJADOS_CONSECUTIVOS = cfg.max_dias_trab_consec;
-
+    cargarPesosDesdeJSON();
+    
     vector<Empleado> empleados = generarEmpleados_v1(NUM_ENFERMERAS);
 
     auto start = chrono::high_resolution_clock::now();

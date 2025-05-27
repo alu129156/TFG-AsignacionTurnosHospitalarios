@@ -2,12 +2,16 @@ CXX = g++
 CXXFLAGS = -std=c++17 -Iinclude
 SRC = ./src
 BIN = ./bin
+COMMON_PARAMS = ../common-params/src
 
-COMMON = $(SRC)/main_utils_v1.cpp \
+COMMON = $(COMMON_PARAMS)/json_parser.cpp \
+		 $(SRC)/main_utils_v1.cpp \
          $(SRC)/empleado_v1.cpp \
          $(SRC)/solucion_v1.cpp \
          $(SRC)/general_utils_v1.cpp \
-         $(SRC)/nodoAstar_v1.cpp
+         $(SRC)/nodoAstar_v1.cpp \
+		 $(SRC)/incumplimientos.cpp \
+		 $(SRC)/solucion_random_generator.cpp
 
 TARGETS = branchAndBound bruteForce heuristic_Astar heuristic_Astar_2 heuristic_Astar_3 heuristic_piston heuristic_tabuSearch
 

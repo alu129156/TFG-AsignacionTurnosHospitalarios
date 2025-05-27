@@ -154,7 +154,8 @@ int main(int argc, char* argv[]) {
     MAX_DIAS_LIBRES_CONSECUTIVOS = cfg.max_dias_libres_consec;
     MIN_DIAS_TRABAJADOS_CONSECUTIVOS = cfg.min_dias_trab_consec;
     MAX_DIAS_TRABAJADOS_CONSECUTIVOS = cfg.max_dias_trab_consec;
-
+    cargarPesosDesdeJSON();
+    
     vector<Empleado> empleados = generarEmpleados_v1(NUM_ENFERMERAS);
 
     vector<vector<Empleado>> posibleSolucion(DIAS, vector<Empleado>());
