@@ -27,13 +27,13 @@ double calcularHeuristica(NodoAStar actual, bool hoja) {
             bool eAsignado = actual.empleadoTurnoEnDia[nombreEmpleado];
             int rest_days_e = (eAsignado) ? DIAS - actual.dia - 1 : DIAS - actual.dia;
 
-            int flexibilidad = max(0, MAX_ASIGNACIONES - asignaciones_e);
-
-            int er_1 = max(0, MIN_ASIGNACIONES - (rest_days_e + asignaciones_e));
-            int er_2 = max(0, (rest_days_e + asignaciones_e) - MAX_ASIGNACIONES);
+            int flexibilidad = max(0, MAX_ASIGNACIONES - asignaciones_e) * PESO_W1;
+            
+            int er_1 = max(0, (rest_days_e + asignaciones_e) - MAX_ASIGNACIONES);
+            int er_2 = max(0, MIN_ASIGNACIONES - (rest_days_e + asignaciones_e));
 
             // Ponderación en flexibilidad (penaliza menos a empleados con más margen)
-            double penalizacion = (er_1 + er_2);
+            double penalizacion = (er_1 * PESO_W1 + er_2 * PESO_W2);
             h += penalizacion / (1.0 + flexibilidad);
         }
     }
@@ -149,7 +149,8 @@ int main(int argc, char* argv[]) {
     DEMANDA = cfg.demanda;
     MIN_ASIGNACIONES = cfg.min_asig;
     MAX_ASIGNACIONES = cfg.max_asig;
-
+    cargarPesosDesdeJSON();
+    
     vector<Empleado> empleados = generarEmpleados(NUM_ENFERMERAS);
     vector<vector<Empleado>> posibleSolucion(DIAS, vector<Empleado>());
     vector<Empleado> restEmployees = empleados;

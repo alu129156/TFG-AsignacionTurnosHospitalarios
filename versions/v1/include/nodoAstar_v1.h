@@ -1,5 +1,5 @@
-#ifndef NODO_ASTAR_H
-#define NODO_ASTAR_H
+#ifndef NODO_ASTAR_v1_H
+#define NODO_ASTAR_v1_H
 
 #include "empleado_v1.h"
 #include <vector>

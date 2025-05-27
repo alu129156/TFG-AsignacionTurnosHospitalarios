@@ -11,21 +11,22 @@
 
 extern int NUM_ENFERMERAS, DIAS, DEMANDA, MIN_ASIGNACIONES, MAX_ASIGNACIONES, MAX_DIAS_TRABAJADOS_CONSECUTIVOS,
             MIN_DIAS_TRABAJADOS_CONSECUTIVOS, MAX_DIAS_LIBRES_CONSECUTIVOS, MIN_DIAS_LIBRES_CONSECUTIVOS;
-constexpr double PESO_W1 = 10.0;
-constexpr double PESO_W2 = 10.0;
-constexpr double PESO_W3 = 10.0;
-constexpr double PESO_W4 = 10.0;
-constexpr double PESO_W5 = 10.0;
-constexpr double PESO_W6 = 10.0;
-constexpr int LIMITE_TIEMPO = 420;
+extern int LIMITE_TIEMPO;
+extern double PESO_W1, PESO_W2, PESO_W3, PESO_W4, PESO_W5, PESO_W6, PENALIZACION_UNWANTED_SHIFT_PATTERN;
+
 constexpr int ULTIMO_TURNO = 2;
 
+void cargarPesosDesdeJSON();
 void printInput();
 void verifyTime(const std::chrono::time_point<std::chrono::high_resolution_clock>& startTime);
 bool isTimeCompleted(const chrono::time_point<chrono::high_resolution_clock>& startTime);
 double calcularFuncionObjetivo(const vector<Empleado>& employees, const vector<vector<Empleado>>& solucion,
                                 unordered_map<string, int>& empleadoAsignaciones);
 double calcularFuncionObjetivoAstar(NodoAStar actual);
+double calcularFuncionObjetivoPiston(const vector<Empleado>& employees, const vector<vector<Empleado>>& solucion,
+    unordered_map<string, int>& empleadoAsignaciones, Incumplimientos& B);
 int empleadoIdx(const vector<Empleado>& empleados, string empleadoNombre);
+int calcularFlexibilidad(const Empleado& e, const unordered_map<string, int>& empleadoAsignaciones, 
+    const unordered_map<string, int>& consecutivosT, const unordered_map<string, int>& consecutivosL);
 
 #endif

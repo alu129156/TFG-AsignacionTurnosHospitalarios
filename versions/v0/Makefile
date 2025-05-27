@@ -2,8 +2,10 @@ CXX = g++
 CXXFLAGS = -std=c++17 -Iinclude
 SRC = ./src
 BIN = ./bin
+COMMON_PARAMS = ../common-params/src
 
-COMMON = $(SRC)/main_utils.cpp \
+COMMON = $(COMMON_PARAMS)/json_parser.cpp \
+		 $(SRC)/main_utils.cpp \
          $(SRC)/empleado.cpp \
          $(SRC)/solucion.cpp \
          $(SRC)/general_utils.cpp \

@@ -1,5 +1,5 @@
-#ifndef EMPLEADO_H
-#define EMPLEADO_H
+#ifndef EMPLEADO_v1_H
+#define EMPLEADO_v1_H
 
 #include <string>
 #include <stack>

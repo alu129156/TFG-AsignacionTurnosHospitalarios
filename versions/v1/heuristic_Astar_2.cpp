@@ -25,21 +25,28 @@ double calcularHeuristica(NodoAStar actual, bool hoja) {
             int consecT = actual.consecutivosT[nombreEmpleado];
             int consecL = actual.consecutivosL[nombreEmpleado];
 
-            int flexibilidad = max(0, MAX_ASIGNACIONES - asignaciones_e) +
-                               max(0, MAX_DIAS_TRABAJADOS_CONSECUTIVOS - consecT) +
-                               max(0, MAX_DIAS_LIBRES_CONSECUTIVOS - consecL);
+            int flexibilidad = max(0, MAX_ASIGNACIONES - asignaciones_e) * PESO_W1 +
+                               max(0, MAX_DIAS_TRABAJADOS_CONSECUTIVOS - consecT) * PESO_W3 +
+                               max(0, MAX_DIAS_LIBRES_CONSECUTIVOS - consecL) * PESO_W5;
 
-            int er_1 = max(0, MIN_ASIGNACIONES - (rest_days_e + asignaciones_e));
-            int er_2 = max(0, (rest_days_e + asignaciones_e) - MAX_ASIGNACIONES);
+            int er_2 = max(0, MIN_ASIGNACIONES - (rest_days_e + asignaciones_e));
+            int er_1 = max(0, (rest_days_e + asignaciones_e) - MAX_ASIGNACIONES);
+    
+            int er_4 = max(0, MIN_DIAS_TRABAJADOS_CONSECUTIVOS - (consecT + rest_days_e));
+            int er_3 = max(0, (consecT + rest_days_e) - MAX_DIAS_TRABAJADOS_CONSECUTIVOS);  
 
-            int er_3 = max(0, MIN_DIAS_LIBRES_CONSECUTIVOS - (consecL + rest_days_e));
-            int er_4 = max(0, (consecL + rest_days_e) - MAX_DIAS_LIBRES_CONSECUTIVOS);
-
-            int er_5 = max(0, MIN_DIAS_TRABAJADOS_CONSECUTIVOS - (consecT + rest_days_e));
-            int er_6 = max(0, (consecT + rest_days_e) - MAX_DIAS_TRABAJADOS_CONSECUTIVOS);
+            int er_6 = max(0, MIN_DIAS_LIBRES_CONSECUTIVOS - (consecL + rest_days_e));
+            int er_5 = max(0, (consecL + rest_days_e) - MAX_DIAS_LIBRES_CONSECUTIVOS);
 
             // Ponderación en flexibilidad (penaliza menos a empleados con más margen)
-            double penalizacion = (er_1 + er_2 + er_3 + er_4 + er_5 + er_6);
+            double penalizacion =  
+                  er_1 * PESO_W1
+                + er_2 * PESO_W2
+                + er_3 * PESO_W3
+                + er_4 * PESO_W4
+                + er_5 * PESO_W5
+                + er_6 * PESO_W6;
+
             h += penalizacion / (1.0 + flexibilidad);
         }
     }
@@ -187,6 +194,7 @@ int main(int argc, char* argv[]) {
     MAX_DIAS_LIBRES_CONSECUTIVOS = cfg.max_dias_libres_consec;
     MIN_DIAS_TRABAJADOS_CONSECUTIVOS = cfg.min_dias_trab_consec;
     MAX_DIAS_TRABAJADOS_CONSECUTIVOS = cfg.max_dias_trab_consec;
+    cargarPesosDesdeJSON();
 
     vector<Empleado> empleados = generarEmpleados_v1(NUM_ENFERMERAS);
     unordered_map<string, bool> empleadoTurnoEnDia;

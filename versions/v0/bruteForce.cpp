@@ -63,7 +63,8 @@ int main(int argc, char* argv[]) {
     DEMANDA = cfg.demanda;
     MIN_ASIGNACIONES = cfg.min_asig;
     MAX_ASIGNACIONES = cfg.max_asig;
-
+    cargarPesosDesdeJSON();
+    
     vector<Empleado> empleados = generarEmpleados(NUM_ENFERMERAS);
 
     vector<vector<Empleado>> posibleSolucion(DIAS, vector<Empleado>());

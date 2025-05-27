@@ -10,11 +10,11 @@
 #include <algorithm>
 
 extern int NUM_ENFERMERAS, DIAS, DEMANDA, MIN_ASIGNACIONES, MAX_ASIGNACIONES;
-constexpr double PESO_W1 = 10.0;
-constexpr double PESO_W2 = 10.0;
-constexpr int LIMITE_TIEMPO = 420;
+extern int LIMITE_TIEMPO;
+extern double PESO_W1, PESO_W2;
 constexpr int ULTIMO_TURNO = 2;
 
+void cargarPesosDesdeJSON();
 void printInput();
 void verifyTime(const std::chrono::time_point<std::chrono::high_resolution_clock>& startTime);
 bool isTimeCompleted(const double& elapsed);
