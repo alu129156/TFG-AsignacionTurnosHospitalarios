@@ -13,11 +13,11 @@ int MAX_DIAS_LIBRES_CONSECUTIVOS;
 int MIN_DIAS_LIBRES_CONSECUTIVOS;
 double PESO_W1, PESO_W2, PESO_W3, PESO_W4, 
         PESO_W5, PESO_W6;
-int LIMITE_TIEMPO;
+double LIMITE_TIEMPO;
 
 void cargarPesosDesdeJSON() {
     auto root = JsonParser::ParseJson();
-    LIMITE_TIEMPO = (*root.json)["tiempo_de_ejecucion_limite_algoritmos_segundos"].i;
+    LIMITE_TIEMPO = (*root.json)["tiempo_de_ejecucion_limite_algoritmos_segundos"].d;
     auto* pesos = (*root.json)["weights"].json;
     PESO_W1 = (*pesos)["weight_max_asignaciones"].d;
     PESO_W2 = (*pesos)["weight_min_asignaciones"].d;

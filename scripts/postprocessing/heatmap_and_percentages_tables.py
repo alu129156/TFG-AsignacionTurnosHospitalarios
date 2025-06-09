@@ -7,24 +7,24 @@ import sys
 import numpy as np
 from data_extraction import extract_data_corrected
 
-# Verificar los argumentos de entrada
+
+            ### 1. TABLA COMPARATIVA DE ALGORITMOS ###
+
+
 if len(sys.argv) != 4:
     print("Uso: python postprocessing_script.py <image_folder> <alg1_json> <alg2_json>")
     sys.exit(1)
 
-# Obtener los argumentos
 output_dir = sys.argv[1]
 alg1_file = sys.argv[2]
 alg2_file = sys.argv[3]
 
-# Cargar los archivos JSON
 with open(alg1_file, "r") as f:
     alg1_data = json.load(f)
 
 with open(alg2_file, "r") as f:
     alg2_data = json.load(f)
 
-# Extraer datos
 alg1_name = os.path.splitext(os.path.basename(alg1_file))[0]
 alg2_name = os.path.splitext(os.path.basename(alg2_file))[0]
 alg1_df = pd.DataFrame(extract_data_corrected(alg1_data, alg1_name))
@@ -40,11 +40,9 @@ comparison_df = pd.merge(
 # Eliminar columnas de 'Metodo' y 'Nodos Explorados' si existen
 comparison_df = comparison_df.drop(columns=[col for col in comparison_df.columns if "Metodo" in col or "Nodos Explorados" in col], errors='ignore')
 
-# Crear un mapa de calor "casero" basado en la tabla comparativa
 fig, ax = plt.subplots(figsize=(14, 10))
 ax.axis("off")
 
-# Definir la paleta de colores azules
 colors = sns.color_palette("Blues", as_cmap=True)
 
 # Normalizar tiempos para el color (de azul a rojo, gris si hay "X")
@@ -83,8 +81,6 @@ for i, row in enumerate(table_data[1:], start=1):
                 if cell_value != "X":
                     table[(i, j)].get_text().set_text(f"{cell_value} seg")
 
-
-# Ajustar la figura para incluir la leyenda debajo de la tabla
 fig.subplots_adjust(bottom=0.2)
 
 # Agregar una barra de colores (leyenda) debajo de la tabla
@@ -100,7 +96,6 @@ cbar.set_ticklabels([
     f"{round(max_time, 2)} (Azul Oscuro)"
 ])
 
-# Guardar la imagen del nuevo "heatmap"
 comparison_table_fixed_path = os.path.join(output_dir, "custom_heatmap_comparison.png")
 plt.savefig(comparison_table_fixed_path, bbox_inches="tight", dpi=300)
 plt.close()
@@ -108,6 +103,7 @@ plt.close()
 print("Proceso completado. Archivos generados en:", output_dir)
 
 
+            ### 2. TABLA % NODOS EXPLORADOS ###
 
 
 # Filtrar filas sin NaN en nodos explorados para el cálculo de porcentajes

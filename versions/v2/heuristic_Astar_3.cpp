@@ -14,6 +14,7 @@
 #include "include/nodoAstar_v2.h"
 
 #define MAX_COLA_SIZE 1000
+#define LIMITE_EXPLORACION_PORCENTAJE 0.1
 
 // Calcular h(n) --> Saco un caso desfavorable, que puede subir h(n)
 double calcularHeuristica(NodoAStar actual, bool hoja) {
@@ -64,12 +65,13 @@ NodoAStar explorarArbolAStar(
     const unordered_map<string, int>& consecT,
     const chrono::time_point<chrono::high_resolution_clock>& startTime
 ) {
-    priority_queue<NodoAStar, vector<NodoAStar>, greater<NodoAStar>> frontera;
+    multiset<NodoAStar, less<NodoAStar>> frontera;
+    //priority_queue<NodoAStar, vector<NodoAStar>, greater<NodoAStar>> frontera;
     vector<vector<Empleado>> solucionInicial(DIAS, vector<Empleado>());
     vector<Turno> turnosTrabajados = {Turnos().early, Turnos().day, Turnos().late};
     vector<int> DEMANDAS = {DEM_EARLY, DEM_DAY, DEM_LATE};
 
-    frontera.push({false, solucionInicial, empleados, empleados,
+    frontera.insert({false, solucionInicial, empleados, empleados,
          empleadoAsignaciones, empleadoTurnoEnDia, consecT, consecL, 0, 0, 0, 0.0, 0.0, 0.0});
 
     NodoAStar mejorSolucion;
@@ -78,8 +80,18 @@ NodoAStar explorarArbolAStar(
     double umbral_factor = 1.75; // 175% ==> Se aceptan soluciones hasta un 75% peores que la mejorFO encontrada
 
     while (!frontera.empty()) {
-        NodoAStar actual = frontera.top();
-        frontera.pop();
+        auto now = chrono::high_resolution_clock::now();
+        double restTime = 1.0 - chrono::duration<double>(now - startTime).count()/LIMITE_TIEMPO;
+        auto it = frontera.begin();
+        NodoAStar actual = *it;
+        if(!actual.needQuickExploration) {
+            frontera.erase(it);
+        }
+
+        if (restTime <= LIMITE_EXPLORACION_PORCENTAJE && mejorSolucion.f == numeric_limits<double>::max()) {
+            actual.needQuickExploration = true;
+            frontera.clear();
+        }
 
         vector<Empleado> empleadosDisponibles = actual.restEmpleados;
 
@@ -90,6 +102,9 @@ NodoAStar explorarArbolAStar(
         // Explorar hijos
         for (int i = 0; i < empleadosDisponibles.size(); i++) {
             if(isTimeCompleted(startTime)) {
+                if(mejorSolucion.f == numeric_limits<double>::max()) {
+                    verifyTime(startTime); // Solución no encontrada, exit y muestra que se ha excedido
+                }
                 return mejorSolucion;
             }
 
@@ -190,7 +205,7 @@ NodoAStar explorarArbolAStar(
                             hijo.h = calcularHeuristica(hijo, true);
                             hijo.f = hijo.g + hijo.h;
                             if (hijo.f < mejorSolucion.f) {
-                                cout << "FO: " << hijo.f << endl;
+                                    //cout << "FO: " << hijo.f << endl;
                                 primera_hoja_encontrada = true;
                                 mejorSolucion = hijo;
                             }
@@ -206,13 +221,15 @@ NodoAStar explorarArbolAStar(
                 hijo.h = calcularHeuristica(hijo, false);
                 hijo.f = hijo.g + hijo.h;
 
-                if (frontera.size() < MAX_COLA_SIZE) {
-                    frontera.push(hijo);
-                } else if (hijo.f < frontera.top().f) {
-                    frontera.pop();
-                    frontera.push(hijo);
-                }
-                
+                if (frontera.size() >= MAX_COLA_SIZE) {
+                    auto peorNodo = prev(frontera.end());
+                    if (hijo.f < peorNodo->f) {
+                        frontera.erase(peorNodo);
+                        frontera.insert(hijo);
+                    }
+                } else {
+                    frontera.insert(hijo);
+                }            
             }
         }
     }

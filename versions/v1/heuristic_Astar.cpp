@@ -74,7 +74,12 @@ NodoAStar explorarArbolAStar(
 
         // Explorar hijos
         for (int i = 0; i < empleadosDisponibles.size(); i++) {
-            isTimeCompleted(startTime);
+            if(isTimeCompleted(startTime)) {
+                if(mejorSolucion.f == numeric_limits<double>::max()) {
+                    verifyTime(startTime); // Solución no encontrada, exit y muestra que se ha excedido
+                }
+                return mejorSolucion;
+            }
 
 
             NodoAStar hijo = actual;

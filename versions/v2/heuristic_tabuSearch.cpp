@@ -178,7 +178,6 @@ vector<SolucionFinal> generarVecinos(
 SolucionFinal tabuSearch(const vector<Empleado>& empleados) {
     auto start_time = chrono::high_resolution_clock::now();
     SolucionFinal mejorSolucion = generarSolucionAleatoria(empleados);
-        //imprimirResultado(mejorSolucion, 30);
     SolucionFinal solucionActual = mejorSolucion;
     vector<SolucionFinal> listaTabu;
 
@@ -207,7 +206,7 @@ SolucionFinal tabuSearch(const vector<Empleado>& empleados) {
 
         if (mejorVecino.funcionObjetivo < mejorSolucion.funcionObjetivo) {
             mejorSolucion = mejorVecino;
-                cout << mejorSolucion.funcionObjetivo << endl;
+                //cout << mejorSolucion.funcionObjetivo << endl;
         }
 
         listaTabu.push_back(solucionActual);
