@@ -8,11 +8,11 @@ int DEMANDA;
 int MIN_ASIGNACIONES;
 int MAX_ASIGNACIONES;
 double PESO_W1, PESO_W2;
-int LIMITE_TIEMPO;
+double LIMITE_TIEMPO;
 
 void cargarPesosDesdeJSON() {
     auto root = JsonParser::ParseJson();
-    LIMITE_TIEMPO = (*root.json)["tiempo_de_ejecucion_limite_algoritmos_segundos"].i;
+    LIMITE_TIEMPO = (*root.json)["tiempo_de_ejecucion_limite_algoritmos_segundos"].d;
     auto* pesos = (*root.json)["weights"].json;
     PESO_W1 = (*pesos)["weight_max_asignaciones"].d;
     PESO_W2 = (*pesos)["weight_min_asignaciones"].d;

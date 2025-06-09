@@ -10,7 +10,7 @@
 #include <algorithm>
 
 extern int NUM_ENFERMERAS, DIAS, DEMANDA, MIN_ASIGNACIONES, MAX_ASIGNACIONES;
-extern int LIMITE_TIEMPO;
+extern double LIMITE_TIEMPO;
 extern double PESO_W1, PESO_W2;
 constexpr int ULTIMO_TURNO = 2;
 

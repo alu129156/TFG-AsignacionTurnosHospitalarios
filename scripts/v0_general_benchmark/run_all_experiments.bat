@@ -19,9 +19,9 @@ call ..\date.bat
 for /f "tokens=*" %%F in ('powershell -command "echo $env:DATETIME"') do set DATETIME=%%F
 set IMAGES_FOLDER=images---%DATETIME%
 
-call ..\postprocessing\postprocessing.bat bruteForce branchAndBound_1 Backtracking-BranchAndBound2 %IMAGES_FOLDER% v0 0
-call ..\postprocessing\postprocessing.bat branchAndBound_1 branchAndBound_2 BranchAndBound1-BranchAndBound2 %IMAGES_FOLDER% v0 0
-call ..\postprocessing\postprocessing.bat heuristic_Astar_3 heuristic_tabuSearch Astar-TabuSearch %IMAGES_FOLDER% v0 1
+call ..\postprocessing\postprocessing.bat bruteForce branchAndBound_1 Backtracking-BranchAndBound2 %IMAGES_FOLDER% v0 0 0
+call ..\postprocessing\postprocessing.bat branchAndBound_1 branchAndBound_2 BranchAndBound1-BranchAndBound2 %IMAGES_FOLDER% v0 0 0
+call ..\postprocessing\postprocessing.bat heuristic_Astar_3 heuristic_tabuSearch Astar-TabuSearch %IMAGES_FOLDER% v0 1 0
 
 echo TODOS LOS EXPERIMENTOS FINALIZADOS.
 pause

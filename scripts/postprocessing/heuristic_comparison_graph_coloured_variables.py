@@ -11,26 +11,28 @@ def extract_fo_metadata(data, key):
     enriched = []
     for entry in data:
         if "mensaje" not in entry and isinstance(entry.get("FO"), (int, float)):
+            categoria_val = entry["input_data"].get(key)
+            if key == "demanda" and isinstance(categoria_val, dict):
+                categoria_val = sum(categoria_val.values())
             enriched.append({
                 "FO": entry["FO"],
-                "Categoria": entry["input_data"].get(key),
+                "Categoria": categoria_val,
                 "ExploracionRapida": entry.get("exploracion_rapida", False)
             })
     return enriched
 
-# Verificar los argumentos de entrada
+
 if len(sys.argv) != 5:
-    print("Uso: python heuristic_comparison.py <image_folder> <heuristic1_json> <heuristic2_json> <Days|Demand|Nurses>")
+    print("Uso: python heuristic_comparison.py <image_folder> <heuristic1_json> <heuristic2_json> <Days|Demand>")
     sys.exit(1)
 
-# Obtener los argumentos
 output_dir = sys.argv[1]
 heuristic1_file = sys.argv[2]
 heuristic2_file = sys.argv[3]
 categoria = sys.argv[4].lower()
 
-# Determinar clave
-clave_map = {"days": "dias", "demand": "demanda", "nurses": "numero_enfermeras"}
+
+clave_map = {"days": "dias", "demand": "demanda"}
 if categoria not in clave_map:
     print("La categoría debe ser una de: Days, Demand, Nurses")
     sys.exit(1)
@@ -44,6 +46,16 @@ heuristic2_name = os.path.splitext(os.path.basename(heuristic2_file))[0]
 if not (heuristic1_name.startswith("heuristic_") and heuristic2_name.startswith("heuristic_")):
     print("Los dos archivos deben de ser heurísticas para realizar la comparación")
     sys.exit(1)
+
+heuristic1_name = os.path.splitext(os.path.basename(heuristic1_file))[0].replace("heuristic_", "", 1)
+heuristic2_name = os.path.splitext(os.path.basename(heuristic2_file))[0].replace("heuristic_", "", 1)
+
+# Quitar sufijos si existen
+for suf in ["_general_benchmark", "_limit_cases_benchmark"]:
+    if heuristic1_name.endswith(suf):
+        heuristic1_name = heuristic1_name[: -len(suf)]
+    if heuristic2_name.endswith(suf):
+        heuristic2_name = heuristic2_name[: -len(suf)]
 
 with open(heuristic1_file, "r") as f:
     heuristic1_data = json.load(f)
@@ -74,7 +86,7 @@ max_value = max(max(fo1_vals), max(fo2_vals))
 unique_vals = sorted(set(p[2] for p in fo_pairs))
 color_map = {val: plt.cm.tab10(i % 10) for i, val in enumerate(unique_vals)}
 
-# Dibujar la gráfica
+
 plt.figure(figsize=(8, 8))
 legend_patches = {}
 exploracion_patch_added = False
@@ -109,7 +121,7 @@ plt.title(f'Comparación de FO por {categoria.title()}')
 
 
 output_suffix = f"by_{categoria}"
-comparison_plot_path = os.path.join(output_dir, f"{heuristic1_name}_vs_{heuristic2_name}_graph_{output_suffix}.png")
+comparison_plot_path = os.path.join(output_dir, f"{heuristic1_name}_vs_{heuristic2_name}_{output_suffix}.png")
 plt.savefig(comparison_plot_path, bbox_inches="tight", dpi=300)
 plt.close()
 

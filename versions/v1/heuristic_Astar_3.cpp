@@ -100,7 +100,10 @@ NodoAStar explorarArbolAStar(
         for (int i = 0; i < empleadosDisponibles.size(); i++) {
             NodoAStar hijo = actual;
             auto now = chrono::high_resolution_clock::now();
-            if(isTimeCompleted(now)) {
+            if(isTimeCompleted(startTime)) {
+                if(mejorSolucion.f == numeric_limits<double>::max()) {
+                    verifyTime(startTime); // Solución no encontrada, exit y muestra que se ha excedido
+                }
                 return mejorSolucion;
             }
 
