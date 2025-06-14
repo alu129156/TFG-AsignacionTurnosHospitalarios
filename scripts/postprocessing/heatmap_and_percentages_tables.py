@@ -7,6 +7,14 @@ import sys
 import numpy as np
 from data_extraction import extract_data_corrected
 
+def nombre_acortado(nombre):
+    if nombre == "bruteForce":
+        return "bF"
+    if nombre == "branchAndBound_1":
+        return "B&B1"
+    if nombre == "branchAndBound_2":
+        return "B&B2"
+    return nombre
 
             ### 1. TABLA COMPARATIVA DE ALGORITMOS ###
 
@@ -27,6 +35,8 @@ with open(alg2_file, "r") as f:
 
 alg1_name = os.path.splitext(os.path.basename(alg1_file))[0]
 alg2_name = os.path.splitext(os.path.basename(alg2_file))[0]
+alg1_name = nombre_acortado(alg1_name)
+alg2_name = nombre_acortado(alg2_name)
 alg1_df = pd.DataFrame(extract_data_corrected(alg1_data, alg1_name))
 alg2_df = pd.DataFrame(extract_data_corrected(alg2_data, alg2_name))
 
@@ -34,7 +44,7 @@ alg2_df = pd.DataFrame(extract_data_corrected(alg2_data, alg2_name))
 comparison_df = pd.merge(
     alg1_df, alg2_df,
     on=["Dias", "Enfermeras", "Demanda", "LS", "US"],
-    suffixes=(f"_{alg1_name}", f"_{alg2_name}")
+    suffixes=(f"-{alg1_name}", f"-{alg2_name}")
 )
 
 # Eliminar columnas de 'Metodo' y 'Nodos Explorados' si existen
@@ -55,7 +65,7 @@ def color_mapper(value):
         return '#CCCCCC'
 
 # Obtener min y max de tiempos
-valid_times = comparison_df[[f"Tiempo_{alg1_name}", f"Tiempo_{alg2_name}"]].replace("X", np.nan).astype(float).dropna().values.flatten()
+valid_times = comparison_df[[f"Tiempo-{alg1_name}", f"Tiempo-{alg2_name}"]].replace("X", np.nan).astype(float).dropna().values.flatten()
 if len(valid_times) > 0:
     min_time, max_time = np.min(valid_times), np.max(valid_times)
 else:
@@ -64,6 +74,7 @@ else:
 # Construcción de la tabla de colores
 table_data = [comparison_df.columns.to_list()] + comparison_df.fillna("X").values.tolist()
 table = ax.table(cellText=table_data, cellLoc='center', loc='center', colLabels=None)
+table.auto_set_column_width([i for i in range(len(comparison_df.columns))])
 
 # Aplicar negrita a la primera fila
 for j, key in enumerate(table_data[0]):
@@ -80,20 +91,23 @@ for i, row in enumerate(table_data[1:], start=1):
                 table[(i, j)].set_facecolor(cell_color)
                 if cell_value != "X":
                     table[(i, j)].get_text().set_text(f"{cell_value} seg")
+        if (col_name == f"FO-{alg1_name}" or col_name == f"FO-{alg2_name}") and row[j] != "X":
+            table[(i, j)].get_text().set_color('red')
+
 
 fig.subplots_adjust(bottom=0.2)
 
 # Agregar una barra de colores (leyenda) debajo de la tabla
 cax = fig.add_axes([0.2, 0.05, 0.6, 0.03])  # Posición: [left, bottom, width, height]
 cbar = plt.colorbar(plt.cm.ScalarMappable(cmap="Blues"), cax=cax, orientation="horizontal")
-cbar.set_label("Tiempo en Segundos (Escala de Azul)")
+cbar.set_label("Tiempo (segundos)")
 
 # Definir valores de referencia en la barra de colores
 cbar.set_ticks([0, 0.5, 1])
 cbar.set_ticklabels([
-    f"{round(min_time, 2)} (Azul Claro)", 
-    f"{round((min_time + max_time) / 2, 2)} (Azul Medio)", 
-    f"{round(max_time, 2)} (Azul Oscuro)"
+    f"{round(min_time, 2)}", 
+    f"{round((min_time + max_time) / 2, 2)}", 
+    f"{round(max_time, 2)}"
 ])
 
 comparison_table_fixed_path = os.path.join(output_dir, "custom_heatmap_comparison.png")
@@ -107,7 +121,7 @@ print("Proceso completado. Archivos generados en:", output_dir)
 
 
 # Filtrar filas sin NaN en nodos explorados para el cálculo de porcentajes
-filtered_df = comparison_df.dropna(subset=[f"Tiempo_{alg1_name}", f"Tiempo_{alg2_name}"])
+filtered_df = comparison_df.dropna(subset=[f"Tiempo-{alg1_name}", f"Tiempo-{alg2_name}"])
 
 # Tabla de porcentaje de nodos explorados
 if not filtered_df.empty:

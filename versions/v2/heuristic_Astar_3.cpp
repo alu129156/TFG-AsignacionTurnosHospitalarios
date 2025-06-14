@@ -66,7 +66,6 @@ NodoAStar explorarArbolAStar(
     const chrono::time_point<chrono::high_resolution_clock>& startTime
 ) {
     multiset<NodoAStar, less<NodoAStar>> frontera;
-    //priority_queue<NodoAStar, vector<NodoAStar>, greater<NodoAStar>> frontera;
     vector<vector<Empleado>> solucionInicial(DIAS, vector<Empleado>());
     vector<Turno> turnosTrabajados = {Turnos().early, Turnos().day, Turnos().late};
     vector<int> DEMANDAS = {DEM_EARLY, DEM_DAY, DEM_LATE};

@@ -221,7 +221,7 @@ int explorarArbol(
                     mejorSolucion.funcionObjetivo = fo;
                     mejorSolucion.solucion = posibleSolucion;
                     mejorSolucion.B = B;
-                    cout << fo << endl;
+                    //cout << fo << endl;
                 }
             } else { // Siguiente Dia
                 bool poda_sigDia = podaHeuristica(mejorSolucion, posibleSolucion, employees, empleadoAsignaciones, dia, empleadoTurnoEnDia, startTime);
