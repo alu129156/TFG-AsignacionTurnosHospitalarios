@@ -7,7 +7,7 @@
     git clone https://github.com/alu129156/TFG-AsignacionTurnosHospitalarios.git
     cd TFG-AsignacionTurnosHospitalarios
     ```
-2. Crea un entorno virtual, usando como nombre "venv":
+2. Crea un entorno virtual, usando como nombre de entorno "venv":
     ```sh
     python -m venv venv
     ```
