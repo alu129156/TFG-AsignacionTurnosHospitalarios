@@ -41,7 +41,7 @@
     ```sh
     cd versions\v{idVersion}\{algorithm}.cpp
     ```
-2. Utilizando el IDE de Visual Studio Code, acceda al desplegable "Terminal", arriba a la izquierda, y siga estos pasos:
+2. Utilizando el IDE de Visual Studio Code, acceda al desplegable "Terminal", en la parte superior, y siga estos pasos:
     ```sh
     Terminal → Run Build Task → Build (v{idVersion})
     ```
