@@ -1,0 +1,12 @@
+{
+    "tiempo_de_ejecucion_limite_algoritmos_segundos": 600.0,
+    "weights": {
+        "weight_min_asignaciones": 10.0,
+        "weight_max_asignaciones": 10.0,
+        "weight_min_dias_libres_consecutivos": 10.0,
+        "weight_max_dias_libres_consecutivos": 10.0,
+        "weight_min_dias_trabajados_consecutivos": 10.0,
+        "weight_max_dias_trabajados_consecutivos": 10.0,
+        "weight_unwanted_shift_patterns": 10.0
+    }
+}

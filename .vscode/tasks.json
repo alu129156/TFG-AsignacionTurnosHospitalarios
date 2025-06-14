@@ -1,0 +1,64 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build (v0)",
+      "type": "shell",
+      "command": "make",
+      "args": [
+        "${fileBasenameNoExtension}"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}/versions/v0"
+      },
+      "problemMatcher": [],
+      "group": "build"
+    },
+    {
+      "label": "Build (v1)",
+      "type": "shell",
+      "command": "make",
+      "args": [
+        "${fileBasenameNoExtension}"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}/versions/v1"
+      },
+      "problemMatcher": [],
+      "group": "build"
+    },
+    {
+      "label": "Build (v2)",
+      "type": "shell",
+      "command": "make",
+      "args": [
+        "${fileBasenameNoExtension}"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}/versions/v2"
+      },
+      "problemMatcher": [],
+      "group": "build"
+    },
+    {
+      "type": "cppbuild",
+      "label": "C/C++: cl.exe build active file",
+      "command": "cl.exe",
+      "args": [
+        "/Zi",
+        "/EHsc",
+        "/nologo",
+        "/Fe${fileDirname}\\${fileBasenameNoExtension}.exe",
+        "${file}"
+      ],
+      "options": {
+        "cwd": "${fileDirname}"
+      },
+      "problemMatcher": [
+        "$msCompile"
+      ],
+      "group": "build",
+      "detail": "compiler: cl.exe"
+    }
+  ]
+}

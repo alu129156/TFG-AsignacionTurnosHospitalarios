@@ -1,0 +1,5921 @@
+[ 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 2,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 0,
+			"limite_superior_asignaciones": 1,
+			"limite_inferior_dias_libres_consecutivos": 0,
+			"limite_superior_dias_libres_consecutivos": 0,
+			"limite_inferior_dias_trabajados_consecutivos": 1,
+			"limite_superior_dias_trabajados_consecutivos": 2
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 2,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 0,
+			"limite_superior_asignaciones": 2,
+			"limite_inferior_dias_libres_consecutivos": 0,
+			"limite_superior_dias_libres_consecutivos": 0,
+			"limite_inferior_dias_trabajados_consecutivos": 1,
+			"limite_superior_dias_trabajados_consecutivos": 2
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 2,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 1,
+			"limite_superior_asignaciones": 1,
+			"limite_inferior_dias_libres_consecutivos": 0,
+			"limite_superior_dias_libres_consecutivos": 0,
+			"limite_inferior_dias_trabajados_consecutivos": 1,
+			"limite_superior_dias_trabajados_consecutivos": 2
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 2,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 1,
+			"limite_superior_asignaciones": 2,
+			"limite_inferior_dias_libres_consecutivos": 0,
+			"limite_superior_dias_libres_consecutivos": 0,
+			"limite_inferior_dias_trabajados_consecutivos": 1,
+			"limite_superior_dias_trabajados_consecutivos": 2
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 2,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 0,
+			"limite_superior_asignaciones": 1,
+			"limite_inferior_dias_libres_consecutivos": 0,
+			"limite_superior_dias_libres_consecutivos": 0,
+			"limite_inferior_dias_trabajados_consecutivos": 1,
+			"limite_superior_dias_trabajados_consecutivos": 2
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 2,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 0,
+			"limite_superior_asignaciones": 2,
+			"limite_inferior_dias_libres_consecutivos": 0,
+			"limite_superior_dias_libres_consecutivos": 0,
+			"limite_inferior_dias_trabajados_consecutivos": 1,
+			"limite_superior_dias_trabajados_consecutivos": 2
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 2,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 1,
+			"limite_superior_asignaciones": 1,
+			"limite_inferior_dias_libres_consecutivos": 0,
+			"limite_superior_dias_libres_consecutivos": 0,
+			"limite_inferior_dias_trabajados_consecutivos": 1,
+			"limite_superior_dias_trabajados_consecutivos": 2
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 2,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 1,
+			"limite_superior_asignaciones": 2,
+			"limite_inferior_dias_libres_consecutivos": 0,
+			"limite_superior_dias_libres_consecutivos": 0,
+			"limite_inferior_dias_trabajados_consecutivos": 1,
+			"limite_superior_dias_trabajados_consecutivos": 2
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 2,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 0,
+			"limite_superior_asignaciones": 1,
+			"limite_inferior_dias_libres_consecutivos": 0,
+			"limite_superior_dias_libres_consecutivos": 0,
+			"limite_inferior_dias_trabajados_consecutivos": 1,
+			"limite_superior_dias_trabajados_consecutivos": 2
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 2,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 0,
+			"limite_superior_asignaciones": 2,
+			"limite_inferior_dias_libres_consecutivos": 0,
+			"limite_superior_dias_libres_consecutivos": 0,
+			"limite_inferior_dias_trabajados_consecutivos": 1,
+			"limite_superior_dias_trabajados_consecutivos": 2
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 2,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 1,
+			"limite_superior_asignaciones": 1,
+			"limite_inferior_dias_libres_consecutivos": 0,
+			"limite_superior_dias_libres_consecutivos": 0,
+			"limite_inferior_dias_trabajados_consecutivos": 1,
+			"limite_superior_dias_trabajados_consecutivos": 2
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 2,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 1,
+			"limite_superior_asignaciones": 2,
+			"limite_inferior_dias_libres_consecutivos": 0,
+			"limite_superior_dias_libres_consecutivos": 0,
+			"limite_inferior_dias_trabajados_consecutivos": 1,
+			"limite_superior_dias_trabajados_consecutivos": 2
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 3,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 0,
+			"limite_superior_asignaciones": 1,
+			"limite_inferior_dias_libres_consecutivos": 1,
+			"limite_superior_dias_libres_consecutivos": 1,
+			"limite_inferior_dias_trabajados_consecutivos": 1,
+			"limite_superior_dias_trabajados_consecutivos": 2
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 3,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 0,
+			"limite_superior_asignaciones": 3,
+			"limite_inferior_dias_libres_consecutivos": 1,
+			"limite_superior_dias_libres_consecutivos": 1,
+			"limite_inferior_dias_trabajados_consecutivos": 1,
+			"limite_superior_dias_trabajados_consecutivos": 2
+		},
+		"FO": 0,
+		"nodos_explorados": 488436,
+		"tiempo_de_exec_segundos": 3.59903,
+		"horario_optimo":
+		{
+			"dia_1":
+			{
+				"Early": ["e_1", "e_2"],
+				"Day": ["e_3", "e_4"],
+				"Late": ["e_5", "e_6"]
+			},
+			"dia_2":
+			{
+				"Early": ["e_1", "e_7"],
+				"Day": ["e_8", "e_9"],
+				"Late": ["e_10", "e_11"]
+			},
+			"dia_3":
+			{
+				"Early": ["e_2", "e_3"],
+				"Day": ["e_4", "e_5"],
+				"Late": ["e_6", "e_7"]
+			}
+		}
+	},
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 3,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 1,
+			"limite_superior_asignaciones": 1,
+			"limite_inferior_dias_libres_consecutivos": 1,
+			"limite_superior_dias_libres_consecutivos": 1,
+			"limite_inferior_dias_trabajados_consecutivos": 1,
+			"limite_superior_dias_trabajados_consecutivos": 2
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 3,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 1,
+			"limite_superior_asignaciones": 3,
+			"limite_inferior_dias_libres_consecutivos": 1,
+			"limite_superior_dias_libres_consecutivos": 1,
+			"limite_inferior_dias_trabajados_consecutivos": 1,
+			"limite_superior_dias_trabajados_consecutivos": 2
+		},
+		"FO": 0,
+		"nodos_explorados": 2529530,
+		"tiempo_de_exec_segundos": 22.4422,
+		"horario_optimo":
+		{
+			"dia_1":
+			{
+				"Early": ["e_1", "e_2"],
+				"Day": ["e_3", "e_4"],
+				"Late": ["e_5", "e_6"]
+			},
+			"dia_2":
+			{
+				"Early": ["e_1", "e_7"],
+				"Day": ["e_8", "e_9"],
+				"Late": ["e_10", "e_11"]
+			},
+			"dia_3":
+			{
+				"Early": ["e_2", "e_3"],
+				"Day": ["e_4", "e_5"],
+				"Late": ["e_6", "e_7"]
+			}
+		}
+	},
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 3,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 2,
+			"limite_superior_asignaciones": 1,
+			"limite_inferior_dias_libres_consecutivos": 1,
+			"limite_superior_dias_libres_consecutivos": 1,
+			"limite_inferior_dias_trabajados_consecutivos": 1,
+			"limite_superior_dias_trabajados_consecutivos": 2
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 3,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 2,
+			"limite_superior_asignaciones": 3,
+			"limite_inferior_dias_libres_consecutivos": 1,
+			"limite_superior_dias_libres_consecutivos": 1,
+			"limite_inferior_dias_trabajados_consecutivos": 1,
+			"limite_superior_dias_trabajados_consecutivos": 2
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 3,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 0,
+			"limite_superior_asignaciones": 1,
+			"limite_inferior_dias_libres_consecutivos": 1,
+			"limite_superior_dias_libres_consecutivos": 1,
+			"limite_inferior_dias_trabajados_consecutivos": 1,
+			"limite_superior_dias_trabajados_consecutivos": 2
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 3,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 0,
+			"limite_superior_asignaciones": 3,
+			"limite_inferior_dias_libres_consecutivos": 1,
+			"limite_superior_dias_libres_consecutivos": 1,
+			"limite_inferior_dias_trabajados_consecutivos": 1,
+			"limite_superior_dias_trabajados_consecutivos": 2
+		},
+		"FO": 0,
+		"nodos_explorados": 76817920,
+		"tiempo_de_exec_segundos": 409.308,
+		"horario_optimo":
+		{
+			"dia_1":
+			{
+				"Early": ["e_1", "e_2", "e_3"],
+				"Day": ["e_4", "e_5", "e_6"],
+				"Late": ["e_7", "e_8", "e_9"]
+			},
+			"dia_2":
+			{
+				"Early": ["e_1", "e_2", "e_3"],
+				"Day": ["e_4", "e_10", "e_11"],
+				"Late": ["e_12", "e_13", "e_14"]
+			},
+			"dia_3":
+			{
+				"Early": ["e_5", "e_6", "e_7"],
+				"Day": ["e_8", "e_9", "e_10"],
+				"Late": ["e_11", "e_12", "e_13"]
+			}
+		}
+	},
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 3,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 1,
+			"limite_superior_asignaciones": 1,
+			"limite_inferior_dias_libres_consecutivos": 1,
+			"limite_superior_dias_libres_consecutivos": 1,
+			"limite_inferior_dias_trabajados_consecutivos": 1,
+			"limite_superior_dias_trabajados_consecutivos": 2
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 3,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 1,
+			"limite_superior_asignaciones": 3,
+			"limite_inferior_dias_libres_consecutivos": 1,
+			"limite_superior_dias_libres_consecutivos": 1,
+			"limite_inferior_dias_trabajados_consecutivos": 1,
+			"limite_superior_dias_trabajados_consecutivos": 2
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 3,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 2,
+			"limite_superior_asignaciones": 1,
+			"limite_inferior_dias_libres_consecutivos": 1,
+			"limite_superior_dias_libres_consecutivos": 1,
+			"limite_inferior_dias_trabajados_consecutivos": 1,
+			"limite_superior_dias_trabajados_consecutivos": 2
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 3,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 2,
+			"limite_superior_asignaciones": 3,
+			"limite_inferior_dias_libres_consecutivos": 1,
+			"limite_superior_dias_libres_consecutivos": 1,
+			"limite_inferior_dias_trabajados_consecutivos": 1,
+			"limite_superior_dias_trabajados_consecutivos": 2
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 3,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 0,
+			"limite_superior_asignaciones": 1,
+			"limite_inferior_dias_libres_consecutivos": 1,
+			"limite_superior_dias_libres_consecutivos": 1,
+			"limite_inferior_dias_trabajados_consecutivos": 1,
+			"limite_superior_dias_trabajados_consecutivos": 2
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 3,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 0,
+			"limite_superior_asignaciones": 3,
+			"limite_inferior_dias_libres_consecutivos": 1,
+			"limite_superior_dias_libres_consecutivos": 1,
+			"limite_inferior_dias_trabajados_consecutivos": 1,
+			"limite_superior_dias_trabajados_consecutivos": 2
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 3,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 1,
+			"limite_superior_asignaciones": 1,
+			"limite_inferior_dias_libres_consecutivos": 1,
+			"limite_superior_dias_libres_consecutivos": 1,
+			"limite_inferior_dias_trabajados_consecutivos": 1,
+			"limite_superior_dias_trabajados_consecutivos": 2
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 3,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 1,
+			"limite_superior_asignaciones": 3,
+			"limite_inferior_dias_libres_consecutivos": 1,
+			"limite_superior_dias_libres_consecutivos": 1,
+			"limite_inferior_dias_trabajados_consecutivos": 1,
+			"limite_superior_dias_trabajados_consecutivos": 2
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 3,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 2,
+			"limite_superior_asignaciones": 1,
+			"limite_inferior_dias_libres_consecutivos": 1,
+			"limite_superior_dias_libres_consecutivos": 1,
+			"limite_inferior_dias_trabajados_consecutivos": 1,
+			"limite_superior_dias_trabajados_consecutivos": 2
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 3,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 2,
+			"limite_superior_asignaciones": 3,
+			"limite_inferior_dias_libres_consecutivos": 1,
+			"limite_superior_dias_libres_consecutivos": 1,
+			"limite_inferior_dias_trabajados_consecutivos": 1,
+			"limite_superior_dias_trabajados_consecutivos": 2
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 4,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 0,
+			"limite_superior_asignaciones": 2,
+			"limite_inferior_dias_libres_consecutivos": 1,
+			"limite_superior_dias_libres_consecutivos": 1,
+			"limite_inferior_dias_trabajados_consecutivos": 1,
+			"limite_superior_dias_trabajados_consecutivos": 3
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 4,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 0,
+			"limite_superior_asignaciones": 4,
+			"limite_inferior_dias_libres_consecutivos": 1,
+			"limite_superior_dias_libres_consecutivos": 1,
+			"limite_inferior_dias_trabajados_consecutivos": 1,
+			"limite_superior_dias_trabajados_consecutivos": 3
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 4,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 1,
+			"limite_superior_asignaciones": 2,
+			"limite_inferior_dias_libres_consecutivos": 1,
+			"limite_superior_dias_libres_consecutivos": 1,
+			"limite_inferior_dias_trabajados_consecutivos": 1,
+			"limite_superior_dias_trabajados_consecutivos": 3
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 4,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 1,
+			"limite_superior_asignaciones": 4,
+			"limite_inferior_dias_libres_consecutivos": 1,
+			"limite_superior_dias_libres_consecutivos": 1,
+			"limite_inferior_dias_trabajados_consecutivos": 1,
+			"limite_superior_dias_trabajados_consecutivos": 3
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 4,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 2,
+			"limite_superior_asignaciones": 2,
+			"limite_inferior_dias_libres_consecutivos": 1,
+			"limite_superior_dias_libres_consecutivos": 1,
+			"limite_inferior_dias_trabajados_consecutivos": 1,
+			"limite_superior_dias_trabajados_consecutivos": 3
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 4,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 2,
+			"limite_superior_asignaciones": 4,
+			"limite_inferior_dias_libres_consecutivos": 1,
+			"limite_superior_dias_libres_consecutivos": 1,
+			"limite_inferior_dias_trabajados_consecutivos": 1,
+			"limite_superior_dias_trabajados_consecutivos": 3
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 4,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 3,
+			"limite_superior_asignaciones": 2,
+			"limite_inferior_dias_libres_consecutivos": 1,
+			"limite_superior_dias_libres_consecutivos": 1,
+			"limite_inferior_dias_trabajados_consecutivos": 1,
+			"limite_superior_dias_trabajados_consecutivos": 3
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 4,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 3,
+			"limite_superior_asignaciones": 4,
+			"limite_inferior_dias_libres_consecutivos": 1,
+			"limite_superior_dias_libres_consecutivos": 1,
+			"limite_inferior_dias_trabajados_consecutivos": 1,
+			"limite_superior_dias_trabajados_consecutivos": 3
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 4,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 0,
+			"limite_superior_asignaciones": 2,
+			"limite_inferior_dias_libres_consecutivos": 1,
+			"limite_superior_dias_libres_consecutivos": 1,
+			"limite_inferior_dias_trabajados_consecutivos": 1,
+			"limite_superior_dias_trabajados_consecutivos": 3
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 4,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 0,
+			"limite_superior_asignaciones": 4,
+			"limite_inferior_dias_libres_consecutivos": 1,
+			"limite_superior_dias_libres_consecutivos": 1,
+			"limite_inferior_dias_trabajados_consecutivos": 1,
+			"limite_superior_dias_trabajados_consecutivos": 3
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 4,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 1,
+			"limite_superior_asignaciones": 2,
+			"limite_inferior_dias_libres_consecutivos": 1,
+			"limite_superior_dias_libres_consecutivos": 1,
+			"limite_inferior_dias_trabajados_consecutivos": 1,
+			"limite_superior_dias_trabajados_consecutivos": 3
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 4,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 1,
+			"limite_superior_asignaciones": 4,
+			"limite_inferior_dias_libres_consecutivos": 1,
+			"limite_superior_dias_libres_consecutivos": 1,
+			"limite_inferior_dias_trabajados_consecutivos": 1,
+			"limite_superior_dias_trabajados_consecutivos": 3
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 4,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 2,
+			"limite_superior_asignaciones": 2,
+			"limite_inferior_dias_libres_consecutivos": 1,
+			"limite_superior_dias_libres_consecutivos": 1,
+			"limite_inferior_dias_trabajados_consecutivos": 1,
+			"limite_superior_dias_trabajados_consecutivos": 3
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 4,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 2,
+			"limite_superior_asignaciones": 4,
+			"limite_inferior_dias_libres_consecutivos": 1,
+			"limite_superior_dias_libres_consecutivos": 1,
+			"limite_inferior_dias_trabajados_consecutivos": 1,
+			"limite_superior_dias_trabajados_consecutivos": 3
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 4,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 3,
+			"limite_superior_asignaciones": 2,
+			"limite_inferior_dias_libres_consecutivos": 1,
+			"limite_superior_dias_libres_consecutivos": 1,
+			"limite_inferior_dias_trabajados_consecutivos": 1,
+			"limite_superior_dias_trabajados_consecutivos": 3
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 4,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 3,
+			"limite_superior_asignaciones": 4,
+			"limite_inferior_dias_libres_consecutivos": 1,
+			"limite_superior_dias_libres_consecutivos": 1,
+			"limite_inferior_dias_trabajados_consecutivos": 1,
+			"limite_superior_dias_trabajados_consecutivos": 3
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 4,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 0,
+			"limite_superior_asignaciones": 2,
+			"limite_inferior_dias_libres_consecutivos": 1,
+			"limite_superior_dias_libres_consecutivos": 1,
+			"limite_inferior_dias_trabajados_consecutivos": 1,
+			"limite_superior_dias_trabajados_consecutivos": 3
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 4,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 0,
+			"limite_superior_asignaciones": 4,
+			"limite_inferior_dias_libres_consecutivos": 1,
+			"limite_superior_dias_libres_consecutivos": 1,
+			"limite_inferior_dias_trabajados_consecutivos": 1,
+			"limite_superior_dias_trabajados_consecutivos": 3
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 4,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 1,
+			"limite_superior_asignaciones": 2,
+			"limite_inferior_dias_libres_consecutivos": 1,
+			"limite_superior_dias_libres_consecutivos": 1,
+			"limite_inferior_dias_trabajados_consecutivos": 1,
+			"limite_superior_dias_trabajados_consecutivos": 3
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 4,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 1,
+			"limite_superior_asignaciones": 4,
+			"limite_inferior_dias_libres_consecutivos": 1,
+			"limite_superior_dias_libres_consecutivos": 1,
+			"limite_inferior_dias_trabajados_consecutivos": 1,
+			"limite_superior_dias_trabajados_consecutivos": 3
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 4,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 2,
+			"limite_superior_asignaciones": 2,
+			"limite_inferior_dias_libres_consecutivos": 1,
+			"limite_superior_dias_libres_consecutivos": 1,
+			"limite_inferior_dias_trabajados_consecutivos": 1,
+			"limite_superior_dias_trabajados_consecutivos": 3
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 4,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 2,
+			"limite_superior_asignaciones": 4,
+			"limite_inferior_dias_libres_consecutivos": 1,
+			"limite_superior_dias_libres_consecutivos": 1,
+			"limite_inferior_dias_trabajados_consecutivos": 1,
+			"limite_superior_dias_trabajados_consecutivos": 3
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 4,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 3,
+			"limite_superior_asignaciones": 2,
+			"limite_inferior_dias_libres_consecutivos": 1,
+			"limite_superior_dias_libres_consecutivos": 1,
+			"limite_inferior_dias_trabajados_consecutivos": 1,
+			"limite_superior_dias_trabajados_consecutivos": 3
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 4,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 3,
+			"limite_superior_asignaciones": 4,
+			"limite_inferior_dias_libres_consecutivos": 1,
+			"limite_superior_dias_libres_consecutivos": 1,
+			"limite_inferior_dias_trabajados_consecutivos": 1,
+			"limite_superior_dias_trabajados_consecutivos": 3
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 5,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 0,
+			"limite_superior_asignaciones": 2,
+			"limite_inferior_dias_libres_consecutivos": 1,
+			"limite_superior_dias_libres_consecutivos": 1,
+			"limite_inferior_dias_trabajados_consecutivos": 2,
+			"limite_superior_dias_trabajados_consecutivos": 4
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 5,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 0,
+			"limite_superior_asignaciones": 5,
+			"limite_inferior_dias_libres_consecutivos": 1,
+			"limite_superior_dias_libres_consecutivos": 1,
+			"limite_inferior_dias_trabajados_consecutivos": 2,
+			"limite_superior_dias_trabajados_consecutivos": 4
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 5,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 1,
+			"limite_superior_asignaciones": 2,
+			"limite_inferior_dias_libres_consecutivos": 1,
+			"limite_superior_dias_libres_consecutivos": 1,
+			"limite_inferior_dias_trabajados_consecutivos": 2,
+			"limite_superior_dias_trabajados_consecutivos": 4
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 5,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 1,
+			"limite_superior_asignaciones": 5,
+			"limite_inferior_dias_libres_consecutivos": 1,
+			"limite_superior_dias_libres_consecutivos": 1,
+			"limite_inferior_dias_trabajados_consecutivos": 2,
+			"limite_superior_dias_trabajados_consecutivos": 4
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 5,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 2,
+			"limite_superior_asignaciones": 2,
+			"limite_inferior_dias_libres_consecutivos": 1,
+			"limite_superior_dias_libres_consecutivos": 1,
+			"limite_inferior_dias_trabajados_consecutivos": 2,
+			"limite_superior_dias_trabajados_consecutivos": 4
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 5,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 2,
+			"limite_superior_asignaciones": 5,
+			"limite_inferior_dias_libres_consecutivos": 1,
+			"limite_superior_dias_libres_consecutivos": 1,
+			"limite_inferior_dias_trabajados_consecutivos": 2,
+			"limite_superior_dias_trabajados_consecutivos": 4
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 5,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 3,
+			"limite_superior_asignaciones": 2,
+			"limite_inferior_dias_libres_consecutivos": 1,
+			"limite_superior_dias_libres_consecutivos": 1,
+			"limite_inferior_dias_trabajados_consecutivos": 2,
+			"limite_superior_dias_trabajados_consecutivos": 4
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 5,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 3,
+			"limite_superior_asignaciones": 5,
+			"limite_inferior_dias_libres_consecutivos": 1,
+			"limite_superior_dias_libres_consecutivos": 1,
+			"limite_inferior_dias_trabajados_consecutivos": 2,
+			"limite_superior_dias_trabajados_consecutivos": 4
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 5,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 4,
+			"limite_superior_asignaciones": 2,
+			"limite_inferior_dias_libres_consecutivos": 1,
+			"limite_superior_dias_libres_consecutivos": 1,
+			"limite_inferior_dias_trabajados_consecutivos": 2,
+			"limite_superior_dias_trabajados_consecutivos": 4
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 5,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 4,
+			"limite_superior_asignaciones": 5,
+			"limite_inferior_dias_libres_consecutivos": 1,
+			"limite_superior_dias_libres_consecutivos": 1,
+			"limite_inferior_dias_trabajados_consecutivos": 2,
+			"limite_superior_dias_trabajados_consecutivos": 4
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 5,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 0,
+			"limite_superior_asignaciones": 2,
+			"limite_inferior_dias_libres_consecutivos": 1,
+			"limite_superior_dias_libres_consecutivos": 1,
+			"limite_inferior_dias_trabajados_consecutivos": 2,
+			"limite_superior_dias_trabajados_consecutivos": 4
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 5,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 0,
+			"limite_superior_asignaciones": 5,
+			"limite_inferior_dias_libres_consecutivos": 1,
+			"limite_superior_dias_libres_consecutivos": 1,
+			"limite_inferior_dias_trabajados_consecutivos": 2,
+			"limite_superior_dias_trabajados_consecutivos": 4
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 5,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 1,
+			"limite_superior_asignaciones": 2,
+			"limite_inferior_dias_libres_consecutivos": 1,
+			"limite_superior_dias_libres_consecutivos": 1,
+			"limite_inferior_dias_trabajados_consecutivos": 2,
+			"limite_superior_dias_trabajados_consecutivos": 4
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 5,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 1,
+			"limite_superior_asignaciones": 5,
+			"limite_inferior_dias_libres_consecutivos": 1,
+			"limite_superior_dias_libres_consecutivos": 1,
+			"limite_inferior_dias_trabajados_consecutivos": 2,
+			"limite_superior_dias_trabajados_consecutivos": 4
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 5,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 2,
+			"limite_superior_asignaciones": 2,
+			"limite_inferior_dias_libres_consecutivos": 1,
+			"limite_superior_dias_libres_consecutivos": 1,
+			"limite_inferior_dias_trabajados_consecutivos": 2,
+			"limite_superior_dias_trabajados_consecutivos": 4
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 5,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 2,
+			"limite_superior_asignaciones": 5,
+			"limite_inferior_dias_libres_consecutivos": 1,
+			"limite_superior_dias_libres_consecutivos": 1,
+			"limite_inferior_dias_trabajados_consecutivos": 2,
+			"limite_superior_dias_trabajados_consecutivos": 4
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 5,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 3,
+			"limite_superior_asignaciones": 2,
+			"limite_inferior_dias_libres_consecutivos": 1,
+			"limite_superior_dias_libres_consecutivos": 1,
+			"limite_inferior_dias_trabajados_consecutivos": 2,
+			"limite_superior_dias_trabajados_consecutivos": 4
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 5,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 3,
+			"limite_superior_asignaciones": 5,
+			"limite_inferior_dias_libres_consecutivos": 1,
+			"limite_superior_dias_libres_consecutivos": 1,
+			"limite_inferior_dias_trabajados_consecutivos": 2,
+			"limite_superior_dias_trabajados_consecutivos": 4
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 5,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 4,
+			"limite_superior_asignaciones": 2,
+			"limite_inferior_dias_libres_consecutivos": 1,
+			"limite_superior_dias_libres_consecutivos": 1,
+			"limite_inferior_dias_trabajados_consecutivos": 2,
+			"limite_superior_dias_trabajados_consecutivos": 4
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 5,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 4,
+			"limite_superior_asignaciones": 5,
+			"limite_inferior_dias_libres_consecutivos": 1,
+			"limite_superior_dias_libres_consecutivos": 1,
+			"limite_inferior_dias_trabajados_consecutivos": 2,
+			"limite_superior_dias_trabajados_consecutivos": 4
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 5,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 0,
+			"limite_superior_asignaciones": 2,
+			"limite_inferior_dias_libres_consecutivos": 1,
+			"limite_superior_dias_libres_consecutivos": 1,
+			"limite_inferior_dias_trabajados_consecutivos": 2,
+			"limite_superior_dias_trabajados_consecutivos": 4
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 5,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 0,
+			"limite_superior_asignaciones": 5,
+			"limite_inferior_dias_libres_consecutivos": 1,
+			"limite_superior_dias_libres_consecutivos": 1,
+			"limite_inferior_dias_trabajados_consecutivos": 2,
+			"limite_superior_dias_trabajados_consecutivos": 4
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 5,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 1,
+			"limite_superior_asignaciones": 2,
+			"limite_inferior_dias_libres_consecutivos": 1,
+			"limite_superior_dias_libres_consecutivos": 1,
+			"limite_inferior_dias_trabajados_consecutivos": 2,
+			"limite_superior_dias_trabajados_consecutivos": 4
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 5,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 1,
+			"limite_superior_asignaciones": 5,
+			"limite_inferior_dias_libres_consecutivos": 1,
+			"limite_superior_dias_libres_consecutivos": 1,
+			"limite_inferior_dias_trabajados_consecutivos": 2,
+			"limite_superior_dias_trabajados_consecutivos": 4
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 5,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 2,
+			"limite_superior_asignaciones": 2,
+			"limite_inferior_dias_libres_consecutivos": 1,
+			"limite_superior_dias_libres_consecutivos": 1,
+			"limite_inferior_dias_trabajados_consecutivos": 2,
+			"limite_superior_dias_trabajados_consecutivos": 4
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 5,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 2,
+			"limite_superior_asignaciones": 5,
+			"limite_inferior_dias_libres_consecutivos": 1,
+			"limite_superior_dias_libres_consecutivos": 1,
+			"limite_inferior_dias_trabajados_consecutivos": 2,
+			"limite_superior_dias_trabajados_consecutivos": 4
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 5,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 3,
+			"limite_superior_asignaciones": 2,
+			"limite_inferior_dias_libres_consecutivos": 1,
+			"limite_superior_dias_libres_consecutivos": 1,
+			"limite_inferior_dias_trabajados_consecutivos": 2,
+			"limite_superior_dias_trabajados_consecutivos": 4
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 5,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 3,
+			"limite_superior_asignaciones": 5,
+			"limite_inferior_dias_libres_consecutivos": 1,
+			"limite_superior_dias_libres_consecutivos": 1,
+			"limite_inferior_dias_trabajados_consecutivos": 2,
+			"limite_superior_dias_trabajados_consecutivos": 4
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 5,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 4,
+			"limite_superior_asignaciones": 2,
+			"limite_inferior_dias_libres_consecutivos": 1,
+			"limite_superior_dias_libres_consecutivos": 1,
+			"limite_inferior_dias_trabajados_consecutivos": 2,
+			"limite_superior_dias_trabajados_consecutivos": 4
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 5,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 4,
+			"limite_superior_asignaciones": 5,
+			"limite_inferior_dias_libres_consecutivos": 1,
+			"limite_superior_dias_libres_consecutivos": 1,
+			"limite_inferior_dias_trabajados_consecutivos": 2,
+			"limite_superior_dias_trabajados_consecutivos": 4
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 6,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 0,
+			"limite_superior_asignaciones": 3,
+			"limite_inferior_dias_libres_consecutivos": 1,
+			"limite_superior_dias_libres_consecutivos": 1,
+			"limite_inferior_dias_trabajados_consecutivos": 3,
+			"limite_superior_dias_trabajados_consecutivos": 5
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 6,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 0,
+			"limite_superior_asignaciones": 6,
+			"limite_inferior_dias_libres_consecutivos": 1,
+			"limite_superior_dias_libres_consecutivos": 1,
+			"limite_inferior_dias_trabajados_consecutivos": 3,
+			"limite_superior_dias_trabajados_consecutivos": 5
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 6,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 1,
+			"limite_superior_asignaciones": 3,
+			"limite_inferior_dias_libres_consecutivos": 1,
+			"limite_superior_dias_libres_consecutivos": 1,
+			"limite_inferior_dias_trabajados_consecutivos": 3,
+			"limite_superior_dias_trabajados_consecutivos": 5
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 6,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 1,
+			"limite_superior_asignaciones": 6,
+			"limite_inferior_dias_libres_consecutivos": 1,
+			"limite_superior_dias_libres_consecutivos": 1,
+			"limite_inferior_dias_trabajados_consecutivos": 3,
+			"limite_superior_dias_trabajados_consecutivos": 5
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 6,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 2,
+			"limite_superior_asignaciones": 3,
+			"limite_inferior_dias_libres_consecutivos": 1,
+			"limite_superior_dias_libres_consecutivos": 1,
+			"limite_inferior_dias_trabajados_consecutivos": 3,
+			"limite_superior_dias_trabajados_consecutivos": 5
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 6,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 2,
+			"limite_superior_asignaciones": 6,
+			"limite_inferior_dias_libres_consecutivos": 1,
+			"limite_superior_dias_libres_consecutivos": 1,
+			"limite_inferior_dias_trabajados_consecutivos": 3,
+			"limite_superior_dias_trabajados_consecutivos": 5
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 6,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 3,
+			"limite_superior_asignaciones": 3,
+			"limite_inferior_dias_libres_consecutivos": 1,
+			"limite_superior_dias_libres_consecutivos": 1,
+			"limite_inferior_dias_trabajados_consecutivos": 3,
+			"limite_superior_dias_trabajados_consecutivos": 5
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 6,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 3,
+			"limite_superior_asignaciones": 6,
+			"limite_inferior_dias_libres_consecutivos": 1,
+			"limite_superior_dias_libres_consecutivos": 1,
+			"limite_inferior_dias_trabajados_consecutivos": 3,
+			"limite_superior_dias_trabajados_consecutivos": 5
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 6,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 4,
+			"limite_superior_asignaciones": 3,
+			"limite_inferior_dias_libres_consecutivos": 1,
+			"limite_superior_dias_libres_consecutivos": 1,
+			"limite_inferior_dias_trabajados_consecutivos": 3,
+			"limite_superior_dias_trabajados_consecutivos": 5
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 6,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 4,
+			"limite_superior_asignaciones": 6,
+			"limite_inferior_dias_libres_consecutivos": 1,
+			"limite_superior_dias_libres_consecutivos": 1,
+			"limite_inferior_dias_trabajados_consecutivos": 3,
+			"limite_superior_dias_trabajados_consecutivos": 5
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 6,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 5,
+			"limite_superior_asignaciones": 3,
+			"limite_inferior_dias_libres_consecutivos": 1,
+			"limite_superior_dias_libres_consecutivos": 1,
+			"limite_inferior_dias_trabajados_consecutivos": 3,
+			"limite_superior_dias_trabajados_consecutivos": 5
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 6,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 5,
+			"limite_superior_asignaciones": 6,
+			"limite_inferior_dias_libres_consecutivos": 1,
+			"limite_superior_dias_libres_consecutivos": 1,
+			"limite_inferior_dias_trabajados_consecutivos": 3,
+			"limite_superior_dias_trabajados_consecutivos": 5
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 6,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 0,
+			"limite_superior_asignaciones": 3,
+			"limite_inferior_dias_libres_consecutivos": 1,
+			"limite_superior_dias_libres_consecutivos": 1,
+			"limite_inferior_dias_trabajados_consecutivos": 3,
+			"limite_superior_dias_trabajados_consecutivos": 5
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 6,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 0,
+			"limite_superior_asignaciones": 6,
+			"limite_inferior_dias_libres_consecutivos": 1,
+			"limite_superior_dias_libres_consecutivos": 1,
+			"limite_inferior_dias_trabajados_consecutivos": 3,
+			"limite_superior_dias_trabajados_consecutivos": 5
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 6,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 1,
+			"limite_superior_asignaciones": 3,
+			"limite_inferior_dias_libres_consecutivos": 1,
+			"limite_superior_dias_libres_consecutivos": 1,
+			"limite_inferior_dias_trabajados_consecutivos": 3,
+			"limite_superior_dias_trabajados_consecutivos": 5
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 6,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 1,
+			"limite_superior_asignaciones": 6,
+			"limite_inferior_dias_libres_consecutivos": 1,
+			"limite_superior_dias_libres_consecutivos": 1,
+			"limite_inferior_dias_trabajados_consecutivos": 3,
+			"limite_superior_dias_trabajados_consecutivos": 5
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 6,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 2,
+			"limite_superior_asignaciones": 3,
+			"limite_inferior_dias_libres_consecutivos": 1,
+			"limite_superior_dias_libres_consecutivos": 1,
+			"limite_inferior_dias_trabajados_consecutivos": 3,
+			"limite_superior_dias_trabajados_consecutivos": 5
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 6,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 2,
+			"limite_superior_asignaciones": 6,
+			"limite_inferior_dias_libres_consecutivos": 1,
+			"limite_superior_dias_libres_consecutivos": 1,
+			"limite_inferior_dias_trabajados_consecutivos": 3,
+			"limite_superior_dias_trabajados_consecutivos": 5
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 6,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 3,
+			"limite_superior_asignaciones": 3,
+			"limite_inferior_dias_libres_consecutivos": 1,
+			"limite_superior_dias_libres_consecutivos": 1,
+			"limite_inferior_dias_trabajados_consecutivos": 3,
+			"limite_superior_dias_trabajados_consecutivos": 5
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 6,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 3,
+			"limite_superior_asignaciones": 6,
+			"limite_inferior_dias_libres_consecutivos": 1,
+			"limite_superior_dias_libres_consecutivos": 1,
+			"limite_inferior_dias_trabajados_consecutivos": 3,
+			"limite_superior_dias_trabajados_consecutivos": 5
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 6,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 4,
+			"limite_superior_asignaciones": 3,
+			"limite_inferior_dias_libres_consecutivos": 1,
+			"limite_superior_dias_libres_consecutivos": 1,
+			"limite_inferior_dias_trabajados_consecutivos": 3,
+			"limite_superior_dias_trabajados_consecutivos": 5
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 6,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 4,
+			"limite_superior_asignaciones": 6,
+			"limite_inferior_dias_libres_consecutivos": 1,
+			"limite_superior_dias_libres_consecutivos": 1,
+			"limite_inferior_dias_trabajados_consecutivos": 3,
+			"limite_superior_dias_trabajados_consecutivos": 5
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 6,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 5,
+			"limite_superior_asignaciones": 3,
+			"limite_inferior_dias_libres_consecutivos": 1,
+			"limite_superior_dias_libres_consecutivos": 1,
+			"limite_inferior_dias_trabajados_consecutivos": 3,
+			"limite_superior_dias_trabajados_consecutivos": 5
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 6,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 5,
+			"limite_superior_asignaciones": 6,
+			"limite_inferior_dias_libres_consecutivos": 1,
+			"limite_superior_dias_libres_consecutivos": 1,
+			"limite_inferior_dias_trabajados_consecutivos": 3,
+			"limite_superior_dias_trabajados_consecutivos": 5
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 6,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 0,
+			"limite_superior_asignaciones": 3,
+			"limite_inferior_dias_libres_consecutivos": 1,
+			"limite_superior_dias_libres_consecutivos": 1,
+			"limite_inferior_dias_trabajados_consecutivos": 3,
+			"limite_superior_dias_trabajados_consecutivos": 5
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 6,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 0,
+			"limite_superior_asignaciones": 6,
+			"limite_inferior_dias_libres_consecutivos": 1,
+			"limite_superior_dias_libres_consecutivos": 1,
+			"limite_inferior_dias_trabajados_consecutivos": 3,
+			"limite_superior_dias_trabajados_consecutivos": 5
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"	
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 6,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 1,
+			"limite_superior_asignaciones": 3,
+			"limite_inferior_dias_libres_consecutivos": 1,
+			"limite_superior_dias_libres_consecutivos": 1,
+			"limite_inferior_dias_trabajados_consecutivos": 3,
+			"limite_superior_dias_trabajados_consecutivos": 5
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 6,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 1,
+			"limite_superior_asignaciones": 6,
+			"limite_inferior_dias_libres_consecutivos": 1,
+			"limite_superior_dias_libres_consecutivos": 1,
+			"limite_inferior_dias_trabajados_consecutivos": 3,
+			"limite_superior_dias_trabajados_consecutivos": 5
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 6,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 2,
+			"limite_superior_asignaciones": 3,
+			"limite_inferior_dias_libres_consecutivos": 1,
+			"limite_superior_dias_libres_consecutivos": 1,
+			"limite_inferior_dias_trabajados_consecutivos": 3,
+			"limite_superior_dias_trabajados_consecutivos": 5
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 6,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 2,
+			"limite_superior_asignaciones": 6,
+			"limite_inferior_dias_libres_consecutivos": 1,
+			"limite_superior_dias_libres_consecutivos": 1,
+			"limite_inferior_dias_trabajados_consecutivos": 3,
+			"limite_superior_dias_trabajados_consecutivos": 5
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 6,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 3,
+			"limite_superior_asignaciones": 3,
+			"limite_inferior_dias_libres_consecutivos": 1,
+			"limite_superior_dias_libres_consecutivos": 1,
+			"limite_inferior_dias_trabajados_consecutivos": 3,
+			"limite_superior_dias_trabajados_consecutivos": 5
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 6,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 3,
+			"limite_superior_asignaciones": 6,
+			"limite_inferior_dias_libres_consecutivos": 1,
+			"limite_superior_dias_libres_consecutivos": 1,
+			"limite_inferior_dias_trabajados_consecutivos": 3,
+			"limite_superior_dias_trabajados_consecutivos": 5
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 6,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 4,
+			"limite_superior_asignaciones": 3,
+			"limite_inferior_dias_libres_consecutivos": 1,
+			"limite_superior_dias_libres_consecutivos": 1,
+			"limite_inferior_dias_trabajados_consecutivos": 3,
+			"limite_superior_dias_trabajados_consecutivos": 5
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 6,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 4,
+			"limite_superior_asignaciones": 6,
+			"limite_inferior_dias_libres_consecutivos": 1,
+			"limite_superior_dias_libres_consecutivos": 1,
+			"limite_inferior_dias_trabajados_consecutivos": 3,
+			"limite_superior_dias_trabajados_consecutivos": 5
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 6,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 5,
+			"limite_superior_asignaciones": 3,
+			"limite_inferior_dias_libres_consecutivos": 1,
+			"limite_superior_dias_libres_consecutivos": 1,
+			"limite_inferior_dias_trabajados_consecutivos": 3,
+			"limite_superior_dias_trabajados_consecutivos": 5
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 6,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 5,
+			"limite_superior_asignaciones": 6,
+			"limite_inferior_dias_libres_consecutivos": 1,
+			"limite_superior_dias_libres_consecutivos": 1,
+			"limite_inferior_dias_trabajados_consecutivos": 3,
+			"limite_superior_dias_trabajados_consecutivos": 5
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 7,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 0,
+			"limite_superior_asignaciones": 3,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 4,
+			"limite_superior_dias_trabajados_consecutivos": 5
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 7,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 0,
+			"limite_superior_asignaciones": 7,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 4,
+			"limite_superior_dias_trabajados_consecutivos": 5
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 7,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 1,
+			"limite_superior_asignaciones": 3,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 4,
+			"limite_superior_dias_trabajados_consecutivos": 5
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 7,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 1,
+			"limite_superior_asignaciones": 7,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 4,
+			"limite_superior_dias_trabajados_consecutivos": 5
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 7,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 2,
+			"limite_superior_asignaciones": 3,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 4,
+			"limite_superior_dias_trabajados_consecutivos": 5
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 7,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 2,
+			"limite_superior_asignaciones": 7,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 4,
+			"limite_superior_dias_trabajados_consecutivos": 5
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 7,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 3,
+			"limite_superior_asignaciones": 3,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 4,
+			"limite_superior_dias_trabajados_consecutivos": 5
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 7,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 3,
+			"limite_superior_asignaciones": 7,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 4,
+			"limite_superior_dias_trabajados_consecutivos": 5
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 7,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 4,
+			"limite_superior_asignaciones": 3,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 4,
+			"limite_superior_dias_trabajados_consecutivos": 5
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 7,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 4,
+			"limite_superior_asignaciones": 7,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 4,
+			"limite_superior_dias_trabajados_consecutivos": 5
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 7,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 5,
+			"limite_superior_asignaciones": 3,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 4,
+			"limite_superior_dias_trabajados_consecutivos": 5
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 7,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 5,
+			"limite_superior_asignaciones": 7,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 4,
+			"limite_superior_dias_trabajados_consecutivos": 5
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 7,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 6,
+			"limite_superior_asignaciones": 3,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 4,
+			"limite_superior_dias_trabajados_consecutivos": 5
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 7,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 6,
+			"limite_superior_asignaciones": 7,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 4,
+			"limite_superior_dias_trabajados_consecutivos": 5
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 7,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 0,
+			"limite_superior_asignaciones": 3,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 4,
+			"limite_superior_dias_trabajados_consecutivos": 5
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 7,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 0,
+			"limite_superior_asignaciones": 7,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 4,
+			"limite_superior_dias_trabajados_consecutivos": 5
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 7,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 1,
+			"limite_superior_asignaciones": 3,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 4,
+			"limite_superior_dias_trabajados_consecutivos": 5
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 7,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 1,
+			"limite_superior_asignaciones": 7,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 4,
+			"limite_superior_dias_trabajados_consecutivos": 5
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 7,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 2,
+			"limite_superior_asignaciones": 3,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 4,
+			"limite_superior_dias_trabajados_consecutivos": 5
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 7,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 2,
+			"limite_superior_asignaciones": 7,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 4,
+			"limite_superior_dias_trabajados_consecutivos": 5
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 7,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 3,
+			"limite_superior_asignaciones": 3,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 4,
+			"limite_superior_dias_trabajados_consecutivos": 5
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 7,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 3,
+			"limite_superior_asignaciones": 7,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 4,
+			"limite_superior_dias_trabajados_consecutivos": 5
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 7,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 4,
+			"limite_superior_asignaciones": 3,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 4,
+			"limite_superior_dias_trabajados_consecutivos": 5
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 7,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 4,
+			"limite_superior_asignaciones": 7,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 4,
+			"limite_superior_dias_trabajados_consecutivos": 5
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 7,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 5,
+			"limite_superior_asignaciones": 3,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 4,
+			"limite_superior_dias_trabajados_consecutivos": 5
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 7,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 5,
+			"limite_superior_asignaciones": 7,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 4,
+			"limite_superior_dias_trabajados_consecutivos": 5
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 7,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 6,
+			"limite_superior_asignaciones": 3,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 4,
+			"limite_superior_dias_trabajados_consecutivos": 5
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 7,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 6,
+			"limite_superior_asignaciones": 7,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 4,
+			"limite_superior_dias_trabajados_consecutivos": 5
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 7,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 0,
+			"limite_superior_asignaciones": 3,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 4,
+			"limite_superior_dias_trabajados_consecutivos": 5
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 7,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 0,
+			"limite_superior_asignaciones": 7,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 4,
+			"limite_superior_dias_trabajados_consecutivos": 5
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 7,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 1,
+			"limite_superior_asignaciones": 3,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 4,
+			"limite_superior_dias_trabajados_consecutivos": 5
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 7,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 1,
+			"limite_superior_asignaciones": 7,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 4,
+			"limite_superior_dias_trabajados_consecutivos": 5
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 7,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 2,
+			"limite_superior_asignaciones": 3,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 4,
+			"limite_superior_dias_trabajados_consecutivos": 5
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 7,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 2,
+			"limite_superior_asignaciones": 7,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 4,
+			"limite_superior_dias_trabajados_consecutivos": 5
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 7,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 3,
+			"limite_superior_asignaciones": 3,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 4,
+			"limite_superior_dias_trabajados_consecutivos": 5
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 7,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 3,
+			"limite_superior_asignaciones": 7,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 4,
+			"limite_superior_dias_trabajados_consecutivos": 5
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 7,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 4,
+			"limite_superior_asignaciones": 3,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 4,
+			"limite_superior_dias_trabajados_consecutivos": 5
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 7,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 4,
+			"limite_superior_asignaciones": 7,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 4,
+			"limite_superior_dias_trabajados_consecutivos": 5
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 7,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 5,
+			"limite_superior_asignaciones": 3,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 4,
+			"limite_superior_dias_trabajados_consecutivos": 5
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 7,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 5,
+			"limite_superior_asignaciones": 7,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 4,
+			"limite_superior_dias_trabajados_consecutivos": 5
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 7,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 6,
+			"limite_superior_asignaciones": 3,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 4,
+			"limite_superior_dias_trabajados_consecutivos": 5
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 7,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 6,
+			"limite_superior_asignaciones": 7,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 4,
+			"limite_superior_dias_trabajados_consecutivos": 5
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 8,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 0,
+			"limite_superior_asignaciones": 4,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 5,
+			"limite_superior_dias_trabajados_consecutivos": 6
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 8,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 0,
+			"limite_superior_asignaciones": 8,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 5,
+			"limite_superior_dias_trabajados_consecutivos": 6
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 8,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 1,
+			"limite_superior_asignaciones": 4,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 5,
+			"limite_superior_dias_trabajados_consecutivos": 6
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 8,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 1,
+			"limite_superior_asignaciones": 8,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 5,
+			"limite_superior_dias_trabajados_consecutivos": 6
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 8,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 2,
+			"limite_superior_asignaciones": 4,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 5,
+			"limite_superior_dias_trabajados_consecutivos": 6
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 8,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 2,
+			"limite_superior_asignaciones": 8,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 5,
+			"limite_superior_dias_trabajados_consecutivos": 6
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 8,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 3,
+			"limite_superior_asignaciones": 4,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 5,
+			"limite_superior_dias_trabajados_consecutivos": 6
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 8,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 3,
+			"limite_superior_asignaciones": 8,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 5,
+			"limite_superior_dias_trabajados_consecutivos": 6
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 8,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 4,
+			"limite_superior_asignaciones": 4,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 5,
+			"limite_superior_dias_trabajados_consecutivos": 6
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 8,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 4,
+			"limite_superior_asignaciones": 8,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 5,
+			"limite_superior_dias_trabajados_consecutivos": 6
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 8,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 5,
+			"limite_superior_asignaciones": 4,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 5,
+			"limite_superior_dias_trabajados_consecutivos": 6
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 8,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 5,
+			"limite_superior_asignaciones": 8,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 5,
+			"limite_superior_dias_trabajados_consecutivos": 6
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 8,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 6,
+			"limite_superior_asignaciones": 4,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 5,
+			"limite_superior_dias_trabajados_consecutivos": 6
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 8,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 6,
+			"limite_superior_asignaciones": 8,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 5,
+			"limite_superior_dias_trabajados_consecutivos": 6
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 8,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 7,
+			"limite_superior_asignaciones": 4,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 5,
+			"limite_superior_dias_trabajados_consecutivos": 6
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 8,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 7,
+			"limite_superior_asignaciones": 8,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 5,
+			"limite_superior_dias_trabajados_consecutivos": 6
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 8,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 0,
+			"limite_superior_asignaciones": 4,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 5,
+			"limite_superior_dias_trabajados_consecutivos": 6
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 8,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 0,
+			"limite_superior_asignaciones": 8,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 5,
+			"limite_superior_dias_trabajados_consecutivos": 6
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 8,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 1,
+			"limite_superior_asignaciones": 4,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 5,
+			"limite_superior_dias_trabajados_consecutivos": 6
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 8,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 1,
+			"limite_superior_asignaciones": 8,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 5,
+			"limite_superior_dias_trabajados_consecutivos": 6
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 8,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 2,
+			"limite_superior_asignaciones": 4,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 5,
+			"limite_superior_dias_trabajados_consecutivos": 6
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 8,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 2,
+			"limite_superior_asignaciones": 8,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 5,
+			"limite_superior_dias_trabajados_consecutivos": 6
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 8,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 3,
+			"limite_superior_asignaciones": 4,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 5,
+			"limite_superior_dias_trabajados_consecutivos": 6
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 8,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 3,
+			"limite_superior_asignaciones": 8,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 5,
+			"limite_superior_dias_trabajados_consecutivos": 6
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 8,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 4,
+			"limite_superior_asignaciones": 4,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 5,
+			"limite_superior_dias_trabajados_consecutivos": 6
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 8,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 4,
+			"limite_superior_asignaciones": 8,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 5,
+			"limite_superior_dias_trabajados_consecutivos": 6
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 8,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 5,
+			"limite_superior_asignaciones": 4,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 5,
+			"limite_superior_dias_trabajados_consecutivos": 6
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 8,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 5,
+			"limite_superior_asignaciones": 8,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 5,
+			"limite_superior_dias_trabajados_consecutivos": 6
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 8,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 6,
+			"limite_superior_asignaciones": 4,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 5,
+			"limite_superior_dias_trabajados_consecutivos": 6
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 8,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 6,
+			"limite_superior_asignaciones": 8,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 5,
+			"limite_superior_dias_trabajados_consecutivos": 6
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 8,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 7,
+			"limite_superior_asignaciones": 4,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 5,
+			"limite_superior_dias_trabajados_consecutivos": 6
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 8,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 7,
+			"limite_superior_asignaciones": 8,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 5,
+			"limite_superior_dias_trabajados_consecutivos": 6
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 8,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 0,
+			"limite_superior_asignaciones": 4,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 5,
+			"limite_superior_dias_trabajados_consecutivos": 6
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 8,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 0,
+			"limite_superior_asignaciones": 8,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 5,
+			"limite_superior_dias_trabajados_consecutivos": 6
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 8,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 1,
+			"limite_superior_asignaciones": 4,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 5,
+			"limite_superior_dias_trabajados_consecutivos": 6
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 8,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 1,
+			"limite_superior_asignaciones": 8,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 5,
+			"limite_superior_dias_trabajados_consecutivos": 6
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 8,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 2,
+			"limite_superior_asignaciones": 4,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 5,
+			"limite_superior_dias_trabajados_consecutivos": 6
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 8,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 2,
+			"limite_superior_asignaciones": 8,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 5,
+			"limite_superior_dias_trabajados_consecutivos": 6
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 8,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 3,
+			"limite_superior_asignaciones": 4,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 5,
+			"limite_superior_dias_trabajados_consecutivos": 6
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 8,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 3,
+			"limite_superior_asignaciones": 8,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 5,
+			"limite_superior_dias_trabajados_consecutivos": 6
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 8,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 4,
+			"limite_superior_asignaciones": 4,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 5,
+			"limite_superior_dias_trabajados_consecutivos": 6
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 8,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 4,
+			"limite_superior_asignaciones": 8,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 5,
+			"limite_superior_dias_trabajados_consecutivos": 6
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 8,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 5,
+			"limite_superior_asignaciones": 4,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 5,
+			"limite_superior_dias_trabajados_consecutivos": 6
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 8,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 5,
+			"limite_superior_asignaciones": 8,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 5,
+			"limite_superior_dias_trabajados_consecutivos": 6
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 8,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 6,
+			"limite_superior_asignaciones": 4,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 5,
+			"limite_superior_dias_trabajados_consecutivos": 6
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 8,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 6,
+			"limite_superior_asignaciones": 8,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 5,
+			"limite_superior_dias_trabajados_consecutivos": 6
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 8,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 7,
+			"limite_superior_asignaciones": 4,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 5,
+			"limite_superior_dias_trabajados_consecutivos": 6
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 8,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 7,
+			"limite_superior_asignaciones": 8,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 5,
+			"limite_superior_dias_trabajados_consecutivos": 6
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 9,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 0,
+			"limite_superior_asignaciones": 4,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 6,
+			"limite_superior_dias_trabajados_consecutivos": 7
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 9,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 0,
+			"limite_superior_asignaciones": 9,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 6,
+			"limite_superior_dias_trabajados_consecutivos": 7
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 9,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 1,
+			"limite_superior_asignaciones": 4,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 6,
+			"limite_superior_dias_trabajados_consecutivos": 7
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 9,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 1,
+			"limite_superior_asignaciones": 9,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 6,
+			"limite_superior_dias_trabajados_consecutivos": 7
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 9,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 2,
+			"limite_superior_asignaciones": 4,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 6,
+			"limite_superior_dias_trabajados_consecutivos": 7
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 9,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 2,
+			"limite_superior_asignaciones": 9,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 6,
+			"limite_superior_dias_trabajados_consecutivos": 7
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 9,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 3,
+			"limite_superior_asignaciones": 4,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 6,
+			"limite_superior_dias_trabajados_consecutivos": 7
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 9,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 3,
+			"limite_superior_asignaciones": 9,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 6,
+			"limite_superior_dias_trabajados_consecutivos": 7
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 9,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 4,
+			"limite_superior_asignaciones": 4,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 6,
+			"limite_superior_dias_trabajados_consecutivos": 7
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 9,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 4,
+			"limite_superior_asignaciones": 9,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 6,
+			"limite_superior_dias_trabajados_consecutivos": 7
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 9,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 5,
+			"limite_superior_asignaciones": 4,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 6,
+			"limite_superior_dias_trabajados_consecutivos": 7
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 9,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 5,
+			"limite_superior_asignaciones": 9,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 6,
+			"limite_superior_dias_trabajados_consecutivos": 7
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 9,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 6,
+			"limite_superior_asignaciones": 4,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 6,
+			"limite_superior_dias_trabajados_consecutivos": 7
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 9,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 6,
+			"limite_superior_asignaciones": 9,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 6,
+			"limite_superior_dias_trabajados_consecutivos": 7
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 9,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 7,
+			"limite_superior_asignaciones": 4,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 6,
+			"limite_superior_dias_trabajados_consecutivos": 7
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 9,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 7,
+			"limite_superior_asignaciones": 9,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 6,
+			"limite_superior_dias_trabajados_consecutivos": 7
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 9,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 8,
+			"limite_superior_asignaciones": 4,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 6,
+			"limite_superior_dias_trabajados_consecutivos": 7
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 9,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 8,
+			"limite_superior_asignaciones": 9,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 6,
+			"limite_superior_dias_trabajados_consecutivos": 7
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 9,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 0,
+			"limite_superior_asignaciones": 4,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 6,
+			"limite_superior_dias_trabajados_consecutivos": 7
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 9,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 0,
+			"limite_superior_asignaciones": 9,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 6,
+			"limite_superior_dias_trabajados_consecutivos": 7
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 9,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 1,
+			"limite_superior_asignaciones": 4,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 6,
+			"limite_superior_dias_trabajados_consecutivos": 7
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 9,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 1,
+			"limite_superior_asignaciones": 9,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 6,
+			"limite_superior_dias_trabajados_consecutivos": 7
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 9,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 2,
+			"limite_superior_asignaciones": 4,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 6,
+			"limite_superior_dias_trabajados_consecutivos": 7
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 9,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 2,
+			"limite_superior_asignaciones": 9,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 6,
+			"limite_superior_dias_trabajados_consecutivos": 7
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 9,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 3,
+			"limite_superior_asignaciones": 4,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 6,
+			"limite_superior_dias_trabajados_consecutivos": 7
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 9,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 3,
+			"limite_superior_asignaciones": 9,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 6,
+			"limite_superior_dias_trabajados_consecutivos": 7
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 9,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 4,
+			"limite_superior_asignaciones": 4,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 6,
+			"limite_superior_dias_trabajados_consecutivos": 7
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 9,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 4,
+			"limite_superior_asignaciones": 9,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 6,
+			"limite_superior_dias_trabajados_consecutivos": 7
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 9,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 5,
+			"limite_superior_asignaciones": 4,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 6,
+			"limite_superior_dias_trabajados_consecutivos": 7
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 9,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 5,
+			"limite_superior_asignaciones": 9,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 6,
+			"limite_superior_dias_trabajados_consecutivos": 7
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 9,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 6,
+			"limite_superior_asignaciones": 4,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 6,
+			"limite_superior_dias_trabajados_consecutivos": 7
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 9,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 6,
+			"limite_superior_asignaciones": 9,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 6,
+			"limite_superior_dias_trabajados_consecutivos": 7
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 9,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 7,
+			"limite_superior_asignaciones": 4,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 6,
+			"limite_superior_dias_trabajados_consecutivos": 7
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 9,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 7,
+			"limite_superior_asignaciones": 9,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 6,
+			"limite_superior_dias_trabajados_consecutivos": 7
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 9,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 8,
+			"limite_superior_asignaciones": 4,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 6,
+			"limite_superior_dias_trabajados_consecutivos": 7
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 9,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 8,
+			"limite_superior_asignaciones": 9,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 6,
+			"limite_superior_dias_trabajados_consecutivos": 7
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 9,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 0,
+			"limite_superior_asignaciones": 4,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 6,
+			"limite_superior_dias_trabajados_consecutivos": 7
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 9,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 0,
+			"limite_superior_asignaciones": 9,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 6,
+			"limite_superior_dias_trabajados_consecutivos": 7
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 9,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 1,
+			"limite_superior_asignaciones": 4,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 6,
+			"limite_superior_dias_trabajados_consecutivos": 7
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 9,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 1,
+			"limite_superior_asignaciones": 9,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 6,
+			"limite_superior_dias_trabajados_consecutivos": 7
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 9,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 2,
+			"limite_superior_asignaciones": 4,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 6,
+			"limite_superior_dias_trabajados_consecutivos": 7
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 9,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 2,
+			"limite_superior_asignaciones": 9,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 6,
+			"limite_superior_dias_trabajados_consecutivos": 7
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 9,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 3,
+			"limite_superior_asignaciones": 4,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 6,
+			"limite_superior_dias_trabajados_consecutivos": 7
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 9,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 3,
+			"limite_superior_asignaciones": 9,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 6,
+			"limite_superior_dias_trabajados_consecutivos": 7
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 9,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 4,
+			"limite_superior_asignaciones": 4,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 6,
+			"limite_superior_dias_trabajados_consecutivos": 7
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 9,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 4,
+			"limite_superior_asignaciones": 9,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 6,
+			"limite_superior_dias_trabajados_consecutivos": 7
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 9,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 5,
+			"limite_superior_asignaciones": 4,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 6,
+			"limite_superior_dias_trabajados_consecutivos": 7
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 9,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 5,
+			"limite_superior_asignaciones": 9,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 6,
+			"limite_superior_dias_trabajados_consecutivos": 7
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 9,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 6,
+			"limite_superior_asignaciones": 4,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 6,
+			"limite_superior_dias_trabajados_consecutivos": 7
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 9,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 6,
+			"limite_superior_asignaciones": 9,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 6,
+			"limite_superior_dias_trabajados_consecutivos": 7
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 9,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 7,
+			"limite_superior_asignaciones": 4,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 6,
+			"limite_superior_dias_trabajados_consecutivos": 7
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 9,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 7,
+			"limite_superior_asignaciones": 9,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 6,
+			"limite_superior_dias_trabajados_consecutivos": 7
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 9,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 8,
+			"limite_superior_asignaciones": 4,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 6,
+			"limite_superior_dias_trabajados_consecutivos": 7
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 9,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 8,
+			"limite_superior_asignaciones": 9,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 2,
+			"limite_inferior_dias_trabajados_consecutivos": 6,
+			"limite_superior_dias_trabajados_consecutivos": 7
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 10,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 0,
+			"limite_superior_asignaciones": 5,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 7,
+			"limite_superior_dias_trabajados_consecutivos": 8
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 10,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 0,
+			"limite_superior_asignaciones": 10,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 7,
+			"limite_superior_dias_trabajados_consecutivos": 8
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 10,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 1,
+			"limite_superior_asignaciones": 5,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 7,
+			"limite_superior_dias_trabajados_consecutivos": 8
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 10,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 1,
+			"limite_superior_asignaciones": 10,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 7,
+			"limite_superior_dias_trabajados_consecutivos": 8
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 10,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 2,
+			"limite_superior_asignaciones": 5,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 7,
+			"limite_superior_dias_trabajados_consecutivos": 8
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 10,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 2,
+			"limite_superior_asignaciones": 10,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 7,
+			"limite_superior_dias_trabajados_consecutivos": 8
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 10,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 3,
+			"limite_superior_asignaciones": 5,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 7,
+			"limite_superior_dias_trabajados_consecutivos": 8
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 10,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 3,
+			"limite_superior_asignaciones": 10,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 7,
+			"limite_superior_dias_trabajados_consecutivos": 8
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 10,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 4,
+			"limite_superior_asignaciones": 5,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 7,
+			"limite_superior_dias_trabajados_consecutivos": 8
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 10,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 4,
+			"limite_superior_asignaciones": 10,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 7,
+			"limite_superior_dias_trabajados_consecutivos": 8
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 10,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 5,
+			"limite_superior_asignaciones": 5,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 7,
+			"limite_superior_dias_trabajados_consecutivos": 8
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 10,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 5,
+			"limite_superior_asignaciones": 10,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 7,
+			"limite_superior_dias_trabajados_consecutivos": 8
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 10,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 6,
+			"limite_superior_asignaciones": 5,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 7,
+			"limite_superior_dias_trabajados_consecutivos": 8
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 10,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 6,
+			"limite_superior_asignaciones": 10,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 7,
+			"limite_superior_dias_trabajados_consecutivos": 8
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 10,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 7,
+			"limite_superior_asignaciones": 5,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 7,
+			"limite_superior_dias_trabajados_consecutivos": 8
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 10,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 7,
+			"limite_superior_asignaciones": 10,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 7,
+			"limite_superior_dias_trabajados_consecutivos": 8
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 10,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 8,
+			"limite_superior_asignaciones": 5,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 7,
+			"limite_superior_dias_trabajados_consecutivos": 8
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 10,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 8,
+			"limite_superior_asignaciones": 10,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 7,
+			"limite_superior_dias_trabajados_consecutivos": 8
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 10,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 9,
+			"limite_superior_asignaciones": 5,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 7,
+			"limite_superior_dias_trabajados_consecutivos": 8
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 10,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 9,
+			"limite_superior_asignaciones": 10,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 7,
+			"limite_superior_dias_trabajados_consecutivos": 8
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 10,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 0,
+			"limite_superior_asignaciones": 5,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 7,
+			"limite_superior_dias_trabajados_consecutivos": 8
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 10,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 0,
+			"limite_superior_asignaciones": 10,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 7,
+			"limite_superior_dias_trabajados_consecutivos": 8
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 10,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 1,
+			"limite_superior_asignaciones": 5,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 7,
+			"limite_superior_dias_trabajados_consecutivos": 8
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 10,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 1,
+			"limite_superior_asignaciones": 10,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 7,
+			"limite_superior_dias_trabajados_consecutivos": 8
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 10,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 2,
+			"limite_superior_asignaciones": 5,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 7,
+			"limite_superior_dias_trabajados_consecutivos": 8
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 10,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 2,
+			"limite_superior_asignaciones": 10,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 7,
+			"limite_superior_dias_trabajados_consecutivos": 8
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 10,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 3,
+			"limite_superior_asignaciones": 5,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 7,
+			"limite_superior_dias_trabajados_consecutivos": 8
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 10,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 3,
+			"limite_superior_asignaciones": 10,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 7,
+			"limite_superior_dias_trabajados_consecutivos": 8
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 10,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 4,
+			"limite_superior_asignaciones": 5,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 7,
+			"limite_superior_dias_trabajados_consecutivos": 8
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 10,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 4,
+			"limite_superior_asignaciones": 10,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 7,
+			"limite_superior_dias_trabajados_consecutivos": 8
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 10,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 5,
+			"limite_superior_asignaciones": 5,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 7,
+			"limite_superior_dias_trabajados_consecutivos": 8
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 10,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 5,
+			"limite_superior_asignaciones": 10,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 7,
+			"limite_superior_dias_trabajados_consecutivos": 8
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 10,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 6,
+			"limite_superior_asignaciones": 5,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 7,
+			"limite_superior_dias_trabajados_consecutivos": 8
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 10,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 6,
+			"limite_superior_asignaciones": 10,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 7,
+			"limite_superior_dias_trabajados_consecutivos": 8
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 10,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 7,
+			"limite_superior_asignaciones": 5,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 7,
+			"limite_superior_dias_trabajados_consecutivos": 8
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 10,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 7,
+			"limite_superior_asignaciones": 10,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 7,
+			"limite_superior_dias_trabajados_consecutivos": 8
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 10,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 8,
+			"limite_superior_asignaciones": 5,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 7,
+			"limite_superior_dias_trabajados_consecutivos": 8
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 10,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 8,
+			"limite_superior_asignaciones": 10,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 7,
+			"limite_superior_dias_trabajados_consecutivos": 8
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 10,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 9,
+			"limite_superior_asignaciones": 5,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 7,
+			"limite_superior_dias_trabajados_consecutivos": 8
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 10,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 9,
+			"limite_superior_asignaciones": 10,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 7,
+			"limite_superior_dias_trabajados_consecutivos": 8
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 10,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 0,
+			"limite_superior_asignaciones": 5,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 7,
+			"limite_superior_dias_trabajados_consecutivos": 8
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 10,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 0,
+			"limite_superior_asignaciones": 10,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 7,
+			"limite_superior_dias_trabajados_consecutivos": 8
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 10,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 1,
+			"limite_superior_asignaciones": 5,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 7,
+			"limite_superior_dias_trabajados_consecutivos": 8
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 10,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 1,
+			"limite_superior_asignaciones": 10,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 7,
+			"limite_superior_dias_trabajados_consecutivos": 8
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 10,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 2,
+			"limite_superior_asignaciones": 5,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 7,
+			"limite_superior_dias_trabajados_consecutivos": 8
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 10,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 2,
+			"limite_superior_asignaciones": 10,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 7,
+			"limite_superior_dias_trabajados_consecutivos": 8
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 10,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 3,
+			"limite_superior_asignaciones": 5,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 7,
+			"limite_superior_dias_trabajados_consecutivos": 8
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 10,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 3,
+			"limite_superior_asignaciones": 10,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 7,
+			"limite_superior_dias_trabajados_consecutivos": 8
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 10,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 4,
+			"limite_superior_asignaciones": 5,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 7,
+			"limite_superior_dias_trabajados_consecutivos": 8
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 10,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 4,
+			"limite_superior_asignaciones": 10,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 7,
+			"limite_superior_dias_trabajados_consecutivos": 8
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 10,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 5,
+			"limite_superior_asignaciones": 5,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 7,
+			"limite_superior_dias_trabajados_consecutivos": 8
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 10,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 5,
+			"limite_superior_asignaciones": 10,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 7,
+			"limite_superior_dias_trabajados_consecutivos": 8
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 10,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 6,
+			"limite_superior_asignaciones": 5,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 7,
+			"limite_superior_dias_trabajados_consecutivos": 8
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 10,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 6,
+			"limite_superior_asignaciones": 10,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 7,
+			"limite_superior_dias_trabajados_consecutivos": 8
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 10,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 7,
+			"limite_superior_asignaciones": 5,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 7,
+			"limite_superior_dias_trabajados_consecutivos": 8
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 10,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 7,
+			"limite_superior_asignaciones": 10,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 7,
+			"limite_superior_dias_trabajados_consecutivos": 8
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 10,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 8,
+			"limite_superior_asignaciones": 5,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 7,
+			"limite_superior_dias_trabajados_consecutivos": 8
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 10,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 8,
+			"limite_superior_asignaciones": 10,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 7,
+			"limite_superior_dias_trabajados_consecutivos": 8
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 10,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 9,
+			"limite_superior_asignaciones": 5,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 7,
+			"limite_superior_dias_trabajados_consecutivos": 8
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 10,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 9,
+			"limite_superior_asignaciones": 10,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 7,
+			"limite_superior_dias_trabajados_consecutivos": 8
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 11,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 0,
+			"limite_superior_asignaciones": 5,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 8,
+			"limite_superior_dias_trabajados_consecutivos": 9
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 11,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 0,
+			"limite_superior_asignaciones": 11,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 8,
+			"limite_superior_dias_trabajados_consecutivos": 9
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 11,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 1,
+			"limite_superior_asignaciones": 5,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 8,
+			"limite_superior_dias_trabajados_consecutivos": 9
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 11,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 1,
+			"limite_superior_asignaciones": 11,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 8,
+			"limite_superior_dias_trabajados_consecutivos": 9
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 11,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 2,
+			"limite_superior_asignaciones": 5,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 8,
+			"limite_superior_dias_trabajados_consecutivos": 9
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 11,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 2,
+			"limite_superior_asignaciones": 11,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 8,
+			"limite_superior_dias_trabajados_consecutivos": 9
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 11,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 3,
+			"limite_superior_asignaciones": 5,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 8,
+			"limite_superior_dias_trabajados_consecutivos": 9
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 11,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 3,
+			"limite_superior_asignaciones": 11,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 8,
+			"limite_superior_dias_trabajados_consecutivos": 9
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 11,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 4,
+			"limite_superior_asignaciones": 5,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 8,
+			"limite_superior_dias_trabajados_consecutivos": 9
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 11,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 4,
+			"limite_superior_asignaciones": 11,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 8,
+			"limite_superior_dias_trabajados_consecutivos": 9
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 11,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 5,
+			"limite_superior_asignaciones": 5,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 8,
+			"limite_superior_dias_trabajados_consecutivos": 9
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 11,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 5,
+			"limite_superior_asignaciones": 11,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 8,
+			"limite_superior_dias_trabajados_consecutivos": 9
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 11,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 6,
+			"limite_superior_asignaciones": 5,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 8,
+			"limite_superior_dias_trabajados_consecutivos": 9
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 11,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 6,
+			"limite_superior_asignaciones": 11,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 8,
+			"limite_superior_dias_trabajados_consecutivos": 9
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 11,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 7,
+			"limite_superior_asignaciones": 5,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 8,
+			"limite_superior_dias_trabajados_consecutivos": 9
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 11,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 7,
+			"limite_superior_asignaciones": 11,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 8,
+			"limite_superior_dias_trabajados_consecutivos": 9
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 11,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 8,
+			"limite_superior_asignaciones": 5,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 8,
+			"limite_superior_dias_trabajados_consecutivos": 9
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 11,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 8,
+			"limite_superior_asignaciones": 11,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 8,
+			"limite_superior_dias_trabajados_consecutivos": 9
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 11,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 9,
+			"limite_superior_asignaciones": 5,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 8,
+			"limite_superior_dias_trabajados_consecutivos": 9
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 11,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 9,
+			"limite_superior_asignaciones": 11,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 8,
+			"limite_superior_dias_trabajados_consecutivos": 9
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 11,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 10,
+			"limite_superior_asignaciones": 5,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 8,
+			"limite_superior_dias_trabajados_consecutivos": 9
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 11,
+			"dias": 11,
+			"demanda": 2,
+			"limite_inferior_asignaciones": 10,
+			"limite_superior_asignaciones": 11,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 8,
+			"limite_superior_dias_trabajados_consecutivos": 9
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 11,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 0,
+			"limite_superior_asignaciones": 5,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 8,
+			"limite_superior_dias_trabajados_consecutivos": 9
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 11,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 0,
+			"limite_superior_asignaciones": 11,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 8,
+			"limite_superior_dias_trabajados_consecutivos": 9
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 11,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 1,
+			"limite_superior_asignaciones": 5,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 8,
+			"limite_superior_dias_trabajados_consecutivos": 9
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 11,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 1,
+			"limite_superior_asignaciones": 11,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 8,
+			"limite_superior_dias_trabajados_consecutivos": 9
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 11,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 2,
+			"limite_superior_asignaciones": 5,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 8,
+			"limite_superior_dias_trabajados_consecutivos": 9
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 11,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 2,
+			"limite_superior_asignaciones": 11,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 8,
+			"limite_superior_dias_trabajados_consecutivos": 9
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 11,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 3,
+			"limite_superior_asignaciones": 5,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 8,
+			"limite_superior_dias_trabajados_consecutivos": 9
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 11,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 3,
+			"limite_superior_asignaciones": 11,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 8,
+			"limite_superior_dias_trabajados_consecutivos": 9
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 11,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 4,
+			"limite_superior_asignaciones": 5,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 8,
+			"limite_superior_dias_trabajados_consecutivos": 9
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 11,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 4,
+			"limite_superior_asignaciones": 11,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 8,
+			"limite_superior_dias_trabajados_consecutivos": 9
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 11,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 5,
+			"limite_superior_asignaciones": 5,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 8,
+			"limite_superior_dias_trabajados_consecutivos": 9
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 11,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 5,
+			"limite_superior_asignaciones": 11,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 8,
+			"limite_superior_dias_trabajados_consecutivos": 9
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 11,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 6,
+			"limite_superior_asignaciones": 5,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 8,
+			"limite_superior_dias_trabajados_consecutivos": 9
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 11,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 6,
+			"limite_superior_asignaciones": 11,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 8,
+			"limite_superior_dias_trabajados_consecutivos": 9
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 11,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 7,
+			"limite_superior_asignaciones": 5,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 8,
+			"limite_superior_dias_trabajados_consecutivos": 9
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 11,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 7,
+			"limite_superior_asignaciones": 11,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 8,
+			"limite_superior_dias_trabajados_consecutivos": 9
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 11,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 8,
+			"limite_superior_asignaciones": 5,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 8,
+			"limite_superior_dias_trabajados_consecutivos": 9
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 11,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 8,
+			"limite_superior_asignaciones": 11,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 8,
+			"limite_superior_dias_trabajados_consecutivos": 9
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 11,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 9,
+			"limite_superior_asignaciones": 5,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 8,
+			"limite_superior_dias_trabajados_consecutivos": 9
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 11,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 9,
+			"limite_superior_asignaciones": 11,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 8,
+			"limite_superior_dias_trabajados_consecutivos": 9
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 11,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 10,
+			"limite_superior_asignaciones": 5,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 8,
+			"limite_superior_dias_trabajados_consecutivos": 9
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 14,
+			"dias": 11,
+			"demanda": 3,
+			"limite_inferior_asignaciones": 10,
+			"limite_superior_asignaciones": 11,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 8,
+			"limite_superior_dias_trabajados_consecutivos": 9
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 11,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 0,
+			"limite_superior_asignaciones": 5,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 8,
+			"limite_superior_dias_trabajados_consecutivos": 9
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 11,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 0,
+			"limite_superior_asignaciones": 11,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 8,
+			"limite_superior_dias_trabajados_consecutivos": 9
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 11,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 1,
+			"limite_superior_asignaciones": 5,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 8,
+			"limite_superior_dias_trabajados_consecutivos": 9
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 11,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 1,
+			"limite_superior_asignaciones": 11,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 8,
+			"limite_superior_dias_trabajados_consecutivos": 9
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 11,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 2,
+			"limite_superior_asignaciones": 5,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 8,
+			"limite_superior_dias_trabajados_consecutivos": 9
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 11,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 2,
+			"limite_superior_asignaciones": 11,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 8,
+			"limite_superior_dias_trabajados_consecutivos": 9
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 11,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 3,
+			"limite_superior_asignaciones": 5,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 8,
+			"limite_superior_dias_trabajados_consecutivos": 9
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 11,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 3,
+			"limite_superior_asignaciones": 11,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 8,
+			"limite_superior_dias_trabajados_consecutivos": 9
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 11,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 4,
+			"limite_superior_asignaciones": 5,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 8,
+			"limite_superior_dias_trabajados_consecutivos": 9
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 11,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 4,
+			"limite_superior_asignaciones": 11,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 8,
+			"limite_superior_dias_trabajados_consecutivos": 9
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 11,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 5,
+			"limite_superior_asignaciones": 5,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 8,
+			"limite_superior_dias_trabajados_consecutivos": 9
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 11,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 5,
+			"limite_superior_asignaciones": 11,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 8,
+			"limite_superior_dias_trabajados_consecutivos": 9
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 11,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 6,
+			"limite_superior_asignaciones": 5,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 8,
+			"limite_superior_dias_trabajados_consecutivos": 9
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 11,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 6,
+			"limite_superior_asignaciones": 11,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 8,
+			"limite_superior_dias_trabajados_consecutivos": 9
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 11,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 7,
+			"limite_superior_asignaciones": 5,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 8,
+			"limite_superior_dias_trabajados_consecutivos": 9
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 11,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 7,
+			"limite_superior_asignaciones": 11,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 8,
+			"limite_superior_dias_trabajados_consecutivos": 9
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 11,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 8,
+			"limite_superior_asignaciones": 5,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 8,
+			"limite_superior_dias_trabajados_consecutivos": 9
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 11,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 8,
+			"limite_superior_asignaciones": 11,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 8,
+			"limite_superior_dias_trabajados_consecutivos": 9
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 11,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 9,
+			"limite_superior_asignaciones": 5,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 8,
+			"limite_superior_dias_trabajados_consecutivos": 9
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 11,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 9,
+			"limite_superior_asignaciones": 11,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 8,
+			"limite_superior_dias_trabajados_consecutivos": 9
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 11,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 10,
+			"limite_superior_asignaciones": 5,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 8,
+			"limite_superior_dias_trabajados_consecutivos": 9
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	}, 
+	{
+		"input_data":
+		{
+			"numero_enfermeras": 17,
+			"dias": 11,
+			"demanda": 4,
+			"limite_inferior_asignaciones": 10,
+			"limite_superior_asignaciones": 11,
+			"limite_inferior_dias_libres_consecutivos": 2,
+			"limite_superior_dias_libres_consecutivos": 3,
+			"limite_inferior_dias_trabajados_consecutivos": 8,
+			"limite_superior_dias_trabajados_consecutivos": 9
+		},
+		"mensaje": "se ha excedido del tiempo maximo permitido"
+	} 
+]
