@@ -1,6 +1,6 @@
 # 🏥TFG-AsignacionTurnosHospitalarios
 
-## ⚙️Configuración inicial 🔧
+## ⚙️Configuración inicial
 
 1. Clona el repositorio:
     ```sh
