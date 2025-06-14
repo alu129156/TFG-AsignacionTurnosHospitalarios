@@ -1,5 +1,5 @@
 @echo off
-goto :1
+
 echo *EJECUTANDO: Backtracking...
 call run_experiment.bat bruteForce
 
@@ -8,16 +8,15 @@ call run_experiment.bat branchAndBound
 
 echo *EJECUTANDO: heuristic_Astar...
 call run_experiment.bat heuristic_Astar
-:1
+
 echo *EJECUTANDO: heuristic_Astar_2...
 call run_experiment.bat heuristic_Astar_2
-goto :3
+
 echo *EJECUTANDO: heuristic_Astar_3...
 call run_experiment.bat heuristic_Astar_3
 
 echo *EJECUTANDO: heuristic_tabu_search...
 call run_experiment.bat heuristic_tabuSearch
-:3
 
 :: Obtener la fecha desde la variable de entorno
 call ..\date.bat

@@ -9,33 +9,34 @@ def cargar_json(path):
     with open(path, "r") as f:
         return json.load(f)
 
-def extraer_info(data, clave_color):
-    enriched = []
-    for entry in data:
-        if "mensaje" not in entry and isinstance(entry.get("FO"), (int, float)):
-            input_data = entry["input_data"]
-            dias = input_data.get("dias", 0)
-            if clave_color == "dias":
-                categoria = dias
-            elif clave_color == "demanda":
-                demanda = input_data.get("demanda", {})
-                categoria = sum(demanda.get(k, 0) for k in ["early", "day", "late"])
-            else:
-                raise ValueError("Categoría no reconocida")
-            enriched.append({
-                "FO": entry["FO"],
-                "categoria": categoria,
-                "dias": dias,
-                "exploracion": entry.get("exploracion_rapida", False)
-            })
-    return enriched
+def get_input_key(entry):
+    key_items = []
+    for k, v in entry["input_data"].items():
+        if isinstance(v, dict):
+            key_items.append((k, tuple(sorted(v.items()))))
+        else:
+            key_items.append((k, v))
+    return tuple(sorted(key_items))
+
+def get_visual_jitter(fo):
+    if fo < 20:
+        return 2.5
+    if fo < 50:
+        return 2
+    elif fo < 100:
+        return 1.5
+    elif fo < 300:
+        return 1
+    elif fo < 1000:
+        return 0.5
+    else:
+        return 0.25
 
 def graficar_por_grupo(fo_pairs, nombre1, nombre2, output_dir, grupo_id, min_dia, max_dia, categoria_nombre):
     grupo = [p for p in fo_pairs if min_dia <= p[2] <= max_dia]
     if not grupo:
         return
 
-    # Preparar colores
     colores = plt.cm.tab10
     categorias = sorted(set(p[3] for p in grupo))
     color_map = {c: colores(i % 10) for i, c in enumerate(categorias)}
@@ -44,9 +45,9 @@ def graficar_por_grupo(fo_pairs, nombre1, nombre2, output_dir, grupo_id, min_dia
     leyenda = {}
     min_fo = min(min(p[0], p[1]) for p in grupo)
     max_fo = max(max(p[0], p[1]) for p in grupo)
-    jitter = 0.005 * (max_fo - min_fo) if max_fo > min_fo else 1
 
     for f1, f2, dias, categoria, exploracion in grupo:
+        jitter = get_visual_jitter((f1 + f2) / 2)
         x = f1 + np.random.normal(0, jitter)
         y = f2 + np.random.normal(0, jitter)
         color = color_map[categoria]
@@ -64,7 +65,12 @@ def graficar_por_grupo(fo_pairs, nombre1, nombre2, output_dir, grupo_id, min_dia
     plt.xlabel(f'FO {nombre1}')
     plt.ylabel(f'FO {nombre2}')
     plt.title(f'Grupo {grupo_id}: Días {min_dia}–{max_dia}')
-    plt.legend(handles=list(leyenda.values()))
+
+    # Ordenar leyenda
+    legend_sorted = [leyenda[k] for k in sorted(k for k in leyenda if isinstance(k, (int, float)))]
+    if "exploracion" in leyenda:
+        legend_sorted.append(leyenda["exploracion"])
+    plt.legend(handles=legend_sorted)
 
     os.makedirs(output_dir, exist_ok=True)
     filename = f"group{grupo_id}_{nombre2}_vs_{nombre1}_by_{categoria_nombre}.png"
@@ -73,27 +79,50 @@ def graficar_por_grupo(fo_pairs, nombre1, nombre2, output_dir, grupo_id, min_dia
 
 def main():
     if len(sys.argv) != 5:
-        print("Uso: python heuristic_comparison_split_by_group.py <image_folder> <heuristic1_json> <heuristic2_json> <days|demand>")
+        print("Uso: python heuristic_comparison_split_by_days.py <image_folder> <heuristic1_json> <heuristic2_json> <days|demand>")
         sys.exit(1)
 
     output_dir = sys.argv[1]
-    f_astar = sys.argv[2]
-    f_tabu = sys.argv[3]
+    f1_path = sys.argv[2]
+    f2_path = sys.argv[3]
     categoria = sys.argv[4].lower()
-
     clave_color = "dias" if categoria == "days" else "demanda" if categoria == "demand" else None
     if not clave_color:
-        print("La categoría debe ser 'days' o 'demand'")
+        print("Categoría inválida. Usa 'days' o 'demand'.")
         sys.exit(1)
 
-    d1 = extraer_info(cargar_json(f_astar), clave_color)
-    d2 = extraer_info(cargar_json(f_tabu), clave_color)
+    d1_raw = cargar_json(f1_path)
+    d2_raw = cargar_json(f2_path)
 
-    # Combinar entradas (FO1, FO2, días, categoría, exploración)
+    indexed1 = {
+        get_input_key(e): e for e in d1_raw
+        if "mensaje" not in e and isinstance(e.get("FO"), (int, float))
+    }
+    indexed2 = {
+        get_input_key(e): e for e in d2_raw
+        if "mensaje" not in e and isinstance(e.get("FO"), (int, float))
+    }
+
+    common_keys = set(indexed1.keys()) & set(indexed2.keys())
+
     fo_pairs = []
-    for e1, e2 in zip(d1, d2):
-        if isinstance(e1["FO"], (int, float)) and isinstance(e2["FO"], (int, float)):
-            fo_pairs.append((e1["FO"], e2["FO"], e1["dias"], e1["categoria"], e1["exploracion"] or e2["exploracion"]))
+    for key in common_keys:
+        e1 = indexed1[key]
+        e2 = indexed2[key]
+        input_data = e1["input_data"]
+        dias = input_data.get("dias", 0)
+        if clave_color == "dias":
+            categoria_val = dias
+        elif clave_color == "demanda":
+            demanda = input_data.get("demanda")
+            if isinstance(demanda, dict):
+                categoria_val = sum(demanda.get(k, 0) for k in ["early", "day", "late"])
+            elif isinstance(demanda, int):
+                categoria_val = demanda * 3
+            else:
+                categoria_val = -1  # fallback
+        exploracion = e1.get("exploracion_rapida", False) or e2.get("exploracion_rapida", False)
+        fo_pairs.append((e1["FO"], e2["FO"], dias, categoria_val, exploracion))
 
     # Grupos por días
     graficar_por_grupo(fo_pairs, "Astar_3", "tabuSearch", output_dir, 1, 2, 8, categoria)
