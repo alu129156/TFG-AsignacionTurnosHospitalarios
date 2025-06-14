@@ -37,7 +37,7 @@
 
 ## 🧪Ejecución unitaria de un algoritmo
 
-1. Selecciona con doble click el algoritmo "{algorithm}.cpp" que desea ejecutar de la versión v{idVersion}:
+1. Selecciona con doble click el algoritmo "{algorithm}.cpp" que desea ejecutar de la versión "v{idVersion}":
     ```sh
     cd versions\v{idVersion}\{algorithm}.cpp
     ```
