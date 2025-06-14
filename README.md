@@ -60,7 +60,7 @@
     cd output\v{idVersion}
     ```
     * Aquí se encuentran todas las carpetas con todas las comparaciones hechas en los benchmarks:
-            * Ficheros de outputs del benchmark de cada algoritmo en formato JSON
+       * Ficheros de outputs del benchmark de cada algoritmo en formato JSON
       
-            * En las carpetas que hay, se encuentran las tablas y gráficas comparativas entre pares de algoritmos.
+      * En las carpetas que hay, se encuentran las tablas y gráficas comparativas entre pares de algoritmos.
 
