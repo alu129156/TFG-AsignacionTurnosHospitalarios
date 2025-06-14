@@ -33,7 +33,7 @@
     .\run_all_experiments.bat
     ```
     Se encarga de ejecutar todas las comparaciones de algoritmos de la versión elegida.
-> Nota: Este benchmark está completamente automatizado pero puede llegar a durar hasta varios días para la ejecución completa
+> Nota: Este benchmark está completamente automatizado pero su ejecución completa puede llegar a durar hasta varios días
 
 ## 🧪Ejecución unitaria de un algoritmo
 
@@ -43,7 +43,7 @@
     ```
 2. Utilizando el IDE de Visual Studio Code, acceda al desplegable Terminal arriba a la izquierda y siga estos pasos:
     ```sh
-    Terminal --> Run Build Task --> Build (v{idVersion})
+    Terminal → Run Build Task → Build (v{idVersion})
     ```
    * Con esto se habrá compilado el algoritmo seleccionado
 > Impotante: La Build a seleccionar debe de corresponder con la versión del algoritmo que está ejecutando
@@ -61,4 +61,6 @@
     ```
     * Aquí se encuentran todas las carpetas con todas las comparaciones hechas en los benchmarks:
             * Ficheros de outputs del benchmark de cada algoritmo en formato JSON
+      
             * En las carpetas que hay, se encuentran las tablas y gráficas comparativas entre pares de algoritmos.
+
