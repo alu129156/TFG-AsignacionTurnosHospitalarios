@@ -31,8 +31,7 @@ if %EXEC_GRAPH%==1 (
 
 if %VERSION%==v2 (
     if %IS_LIMIT_CASES_BENCH%==0 (
-        python -B heuristic_comparison_split_by_days.py %OUTPUT_IMAGE_FOLDER% %OUTPUT1% %OUTPUT2% days
-        python -B heuristic_comparison_split_by_days.py %OUTPUT_IMAGE_FOLDER% %OUTPUT1% %OUTPUT2% demand
+        python -B heuristic_comparison_split_by_days.py %OUTPUT_IMAGE_FOLDER% %OUTPUT1% %OUTPUT2%
     )
 )
 
