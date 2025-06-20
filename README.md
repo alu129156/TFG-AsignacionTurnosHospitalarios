@@ -11,9 +11,17 @@
     ```sh
     python -m venv venv
     ```
-3. Instala las dependencias:
+3. Activa el entorno virtual:
+    ```sh
+    .\venv\Scripts\activate
+    ```
+5. Instala las dependencias con el entorno virtual activado:
     ```sh
     pip install -r requirements.txt
+    ```
+6. Desactiva el entorno virtual:
+    ```sh
+    deactivate
     ```
     
 ## 🔧Requisitos mínimos para la ejecución del proyecto
