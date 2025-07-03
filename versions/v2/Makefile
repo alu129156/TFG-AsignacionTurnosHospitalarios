@@ -19,7 +19,7 @@ all: $(TARGETS)
 $(BIN):
 	powershell -Command "if (!(Test-Path -Path '$(BIN)')) { New-Item -ItemType Directory -Path '$(BIN)' }"
 
-heuristic_Astar_2: $(COMMON) heuristic_Astar_2.cpp | $(BIN)
+heuristic_Astar_3: $(COMMON) heuristic_Astar_3.cpp | $(BIN)
 	$(CXX) $(CXXFLAGS) $^ -o $(BIN)/$@
 
 heuristic_tabuSearch: $(COMMON) heuristic_tabuSearch.cpp | $(BIN)
